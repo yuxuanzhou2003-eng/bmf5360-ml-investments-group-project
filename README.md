@@ -1,4 +1,21 @@
-# BMF5360 Group Project: ML Stock-Selection Pilot
+# BMF5360 Group Project: ML Investment Research
+
+## Hierarchical fund baseline — September 13, 2026
+
+The code and aggregate results corresponding to the five-strategy screenshot are in
+[the hierarchical baseline guide](research/hierarchical_baseline_20260913/README.md).
+It covers equal sleeves, momentum, three-layer Logistic/Random Forest and SPY, with
+cash-excess Sharpe and a 10 bps transaction-cost assumption. Start with
+`run_hierarchical_fund_v1.py` and `export_hierarchical_comparison_v1.py`;
+use the separate `requirements-hierarchical.txt` environment.
+This release requires authorized local LSEG-derived inputs, which are not bundled.
+The 2024–2025 period is reused development, not an independent test.
+
+## Earlier midterm snapshot
+
+The sections below describe the earlier midterm package. Their sealed-target status
+is historical and is not a claim that 2023–2025 calendar observations remained unseen
+in subsequent research.
 
 Course project for NUS BMF5360 Machine Learning in Investments. Current deliverable is the midterm report (Week 5).
 
