@@ -1,0 +1,243 @@
+{
+  "schema_version": "ai_pool_daily_baseline_model_ready_v1",
+  "run_id": "20260910T052100000000Z",
+  "generated_at_utc": "2026-09-10T05:07:12.827625+00:00",
+  "status": "partial_model_ready_daily_controls_only",
+  "model_ready": false,
+  "config_path": "ai_pool_daily_baseline_model_ready_v1_config.json",
+  "config_sha256": "ea3112332b6edbceb4c6cb37a1f6e704446c548ff97a914a254ca6498bbadb72",
+  "builder_path": "build_ai_pool_daily_baseline_model_ready_v1.py",
+  "builder_sha256": "ef16f32bde0bc7672bf6458a19bd8fe3573f9770ac03fad87fe870f6eb73cae8",
+  "inputs": {
+    "membership": {
+      "run_id": "20260910T023221976393Z",
+      "path": "data/clean/ai_pool_v1/20260910T023221976393Z/ai_pool_membership_pit.csv"
+    },
+    "returns": {
+      "path": "data/clean/v2/returns.csv"
+    },
+    "prices": {
+      "path": "data/clean/v3/20260909T012417705069Z/prices.csv"
+    },
+    "candidate_list": {
+      "path": "data/audit/ai_pool_expansion_v1/20260910T045000Z/candidate_registry.csv"
+    }
+  },
+  "membership_source_mode": "exploratory_static_candidate",
+  "pit_status": "not_full_pit_provisional_static_candidate_registry",
+  "input_hashes": {
+    "membership": {
+      "path": "data/clean/ai_pool_v1/20260910T023221976393Z/ai_pool_membership_pit.csv",
+      "sha256": "d07e5696ce9c49f66b09dc18ac27473d185c5e19a417b96b5445b56f4f36d468"
+    },
+    "returns": {
+      "path": "data/clean/v2/returns.csv",
+      "sha256": "6bf47e09767024f59a5ea8e54c905226bc05dc74c678ff7f58c9200e204a375d"
+    },
+    "prices": {
+      "path": "data/clean/v3/20260909T012417705069Z/prices.csv",
+      "sha256": "a4656aed40112abed7124045cc8b8313d49eafb96b86552bf8f1a50fdb0a5bb8"
+    },
+    "config": {
+      "path": "ai_pool_daily_baseline_model_ready_v1_config.json",
+      "sha256": "ea3112332b6edbceb4c6cb37a1f6e704446c548ff97a914a254ca6498bbadb72"
+    },
+    "builder": {
+      "path": "build_ai_pool_daily_baseline_model_ready_v1.py",
+      "sha256": "ef16f32bde0bc7672bf6458a19bd8fe3573f9770ac03fad87fe870f6eb73cae8"
+    },
+    "candidate_list": {
+      "path": "data/audit/ai_pool_expansion_v1/20260910T045000Z/candidate_registry.csv",
+      "sha256": "b165060c7d61be0a3ff31f3b337dda1730f0e154efb1a4ac1b61cf693f038cde"
+    }
+  },
+  "output_hashes": {
+    "model_features": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/model_features.csv",
+      "sha256": "f52e8fd8ac5e577be9af6bbf5765ff1d3ae43d5c22c34b41274e32eec5ef7fbe"
+    },
+    "metadata": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/metadata.csv",
+      "sha256": "e2d07494f4714940081a3a6f47938cb4aee11b4ebba767815316be2e7ee5fc2d"
+    },
+    "eligibility": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/eligibility.csv",
+      "sha256": "b8e27820152f1b9b3a74f7a0f6f5b4f38289270ad000a8d9c4bb5fc2c17c2da2"
+    },
+    "targets_dev": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/targets_dev.csv",
+      "sha256": "9b1446bcdb1c5c9504f277d9db54768c47a026de5659cc9d72ec5f1834051b11"
+    },
+    "targets_test_sealed": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/targets_test_sealed.csv",
+      "sha256": "e593dd8c30ee2599861b02abdcd95bde2a67667c69587e37c790fa206cdd1d2a"
+    },
+    "membership_snapshot_audit": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/membership_snapshot_audit.csv",
+      "sha256": "43025b41872eab1152c0d88d0e66c19aaaadcde879f8ec3dc0e994226ce3f1ed"
+    },
+    "candidate_instruments": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/candidate_instruments.csv",
+      "sha256": "952193a930db3f8655035e2cf58b650c6ca2237f998231482b6cf75fd6e59acc"
+    },
+    "input_coverage": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/input_coverage.csv",
+      "sha256": "6a2e55fbce6673440729686f745ab26c3a4ae82ba559738b407f585b2cc6eaba"
+    },
+    "feature_missingness": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/feature_missingness.csv",
+      "sha256": "1012df453491002ab757c4ab48adb2454ad5ee25e716b3ac190df24c3101514f"
+    },
+    "split_counts": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/split_counts.csv",
+      "sha256": "aeb84d611e96150ea13229d53fe2914f4f757b60a0649f203dbad2510e8c2e78"
+    }
+  },
+  "counts": {
+    "candidate_requested_instruments": 49,
+    "candidate_source_explicit_member_instruments": 10,
+    "formation_sessions": 2889,
+    "membership_snapshot_audit_rows": 141561,
+    "master_rows": 110829,
+    "active_instruments": 49,
+    "training_rows": 49948,
+    "validation_rows": 21671,
+    "test_rows": 39210,
+    "dev_label_rows": 71619,
+    "dev_label_complete_rows": 69868,
+    "test_target_sealed_rows": 39210,
+    "boundary_purged_rows": 1751,
+    "non_overlap_selected_rows": 3326,
+    "supervised_model_eligible_rows": 3326,
+    "rows_with_any_feature_missing": 437,
+    "source_returns_rows_filtered": 152291,
+    "source_prices_rows_filtered": 152308,
+    "registry_rows": 49,
+    "registry_direct_local_pit_candidates": 9,
+    "registry_provisional_static_candidates": 40,
+    "registry_pit_eligible_now_candidates": 9
+  },
+  "feature_columns": [
+    "momentum_1",
+    "momentum_5",
+    "momentum_20",
+    "momentum_60",
+    "volatility_20_ann",
+    "volatility_60_ann",
+    "volume_median_20_log1p",
+    "volume_median_60_log1p",
+    "dollar_volume_median_20_log1p",
+    "dollar_volume_median_60_log1p",
+    "spread_median_20_bps",
+    "spread_median_60_bps",
+    "beta_126",
+    "idio_vol_126_ann",
+    "beta_obs_126",
+    "spy_momentum_1",
+    "spy_momentum_5",
+    "spy_momentum_20",
+    "spy_momentum_60",
+    "spy_volatility_20_ann",
+    "spy_volatility_60_ann"
+  ],
+  "core_feature_gate": [
+    "momentum_20",
+    "volatility_20_ann",
+    "volatility_60_ann",
+    "dollar_volume_median_20_log1p",
+    "spread_median_20_bps",
+    "beta_126",
+    "idio_vol_126_ann",
+    "spy_momentum_20",
+    "spy_volatility_20_ann"
+  ],
+  "split_counts": [
+    {
+      "split": "training",
+      "security_day_rows": 49948,
+      "formation_sessions": 1511,
+      "instruments": 40,
+      "boundary_purged_rows": 827,
+      "label_available_rows": 49121,
+      "test_target_sealed_rows": 0,
+      "entry_trade_eligible_rows": 49948,
+      "core_feature_available_rows": 49648,
+      "non_overlap_selected_rows": 2334,
+      "supervised_model_eligible_rows": 2334
+    },
+    {
+      "split": "validation",
+      "security_day_rows": 21671,
+      "formation_sessions": 503,
+      "instruments": 44,
+      "boundary_purged_rows": 924,
+      "label_available_rows": 20747,
+      "test_target_sealed_rows": 0,
+      "entry_trade_eligible_rows": 21671,
+      "core_feature_available_rows": 21671,
+      "non_overlap_selected_rows": 992,
+      "supervised_model_eligible_rows": 992
+    },
+    {
+      "split": "test",
+      "security_day_rows": 39210,
+      "formation_sessions": 875,
+      "instruments": 49,
+      "boundary_purged_rows": 0,
+      "label_available_rows": 0,
+      "test_target_sealed_rows": 39210,
+      "entry_trade_eligible_rows": 39206,
+      "core_feature_available_rows": 39113,
+      "non_overlap_selected_rows": 0,
+      "supervised_model_eligible_rows": 0
+    },
+    {
+      "split": "out_of_window",
+      "security_day_rows": 0,
+      "formation_sessions": 0,
+      "instruments": 0,
+      "boundary_purged_rows": 0,
+      "label_available_rows": 0,
+      "test_target_sealed_rows": 0,
+      "entry_trade_eligible_rows": 0,
+      "core_feature_available_rows": 0,
+      "non_overlap_selected_rows": 0,
+      "supervised_model_eligible_rows": 0
+    },
+    {
+      "split": "all",
+      "security_day_rows": 110829,
+      "formation_sessions": 2889,
+      "instruments": 49,
+      "boundary_purged_rows": 1751,
+      "label_available_rows": 69868,
+      "test_target_sealed_rows": 39210,
+      "entry_trade_eligible_rows": 110825,
+      "core_feature_available_rows": 110432,
+      "non_overlap_selected_rows": 3326,
+      "supervised_model_eligible_rows": 3326
+    }
+  ],
+  "test_policy": "Do not read, aggregate, score, rank, predict, or write any test-period future return. Test rows may retain daily schedule and eligibility metadata, but target values are absent and test_target_sealed is recorded.",
+  "checks": {
+    "membership_known_keys_unique": true,
+    "active_rows_are_member_states": true,
+    "active_rows_inside_corrected_spans": true,
+    "master_sample_ids_unique": true,
+    "features_exclude_future_and_targets": true,
+    "reference_strictly_before_formation": true,
+    "dev_targets_only_training_validation": true,
+    "test_target_values_not_written": true,
+    "test_master_target_columns_na": true,
+    "no_infinite_features": true,
+    "no_physical_row_deletion": true,
+    "no_imputation_or_winsorization": true,
+    "non_overlap_gap_at_least_h21": true,
+    "no_event_study_inputs": true
+  },
+  "limitations": [
+    "The expanded candidate registry is exploratory_static_candidate mode: 9 candidates have direct_local_pit evidence and 40 use provisional static issuer-role evidence with registry member spans. AI role evidence is not a complete point-in-time history; this run must not be described as an unbiased full-PIT AI backtest.",
+    "Only the 21-session target was run. H5 is not generated in this version.",
+    "The active pool is small in the current 10-RIC validation universe; daily top/bottom 20% spread diagnostics generally use one security per side and do not meet a 10-per-side economic portfolio gate."
+  ]
+}

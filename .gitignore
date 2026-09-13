@@ -44,3 +44,15 @@ data/audit/*
 !data/clean/
 data/clean/*
 !data/clean/daily_macro_v1/
+
+# --- 主模型训练输入（冻结版），封存测试标签与大体积元数据不放行 ---
+!data/model_ready_ai_pool_daily_v1/
+data/model_ready_ai_pool_daily_v1/*
+!data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/
+data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/targets_test_sealed.csv
+data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/metadata.csv
+data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/membership_snapshot_audit.csv
+!data/clean/ai_daily_macro_features_v1/
+data/clean/ai_daily_macro_features_v1/*
+!data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/
+!data/audit/ai_daily_enhanced_inputs_v1/

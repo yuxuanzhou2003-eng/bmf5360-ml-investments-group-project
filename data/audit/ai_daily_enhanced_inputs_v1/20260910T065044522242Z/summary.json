@@ -1,0 +1,532 @@
+{
+  "schema_version": "ai_daily_enhanced_inputs_audit_v1",
+  "audit_script_version": "1.0.0",
+  "audit_script_sha256": "4480db27137d99e129c58e04c3c68f05de093eec0ece2fa43e1df7b1eaec9d76",
+  "run_id": "20260910T065044522242Z",
+  "started_at_utc": "2026-09-10T06:50:44.522242+00:00",
+  "completed_at_utc": "2026-09-10T06:50:49.605518+00:00",
+  "status": "PASS",
+  "overall_pass": true,
+  "blocking_failures": [],
+  "check_status_counts": {
+    "PASS": 32,
+    "WARN": 3,
+    "FAIL": 2
+  },
+  "input_versions": {
+    "base_model_ready": {
+      "run_id": "20260910T052100000000Z",
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z"
+    },
+    "macro_clean": {
+      "run_id": "20260910T062700000000Z",
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z"
+    },
+    "ai_state_clean": {
+      "run_id": "20260910T144000000000Z",
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z"
+    }
+  },
+  "input_hashes": {
+    "base_model_features": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/model_features.csv",
+      "sha256": "f52e8fd8ac5e577be9af6bbf5765ff1d3ae43d5c22c34b41274e32eec5ef7fbe"
+    },
+    "base_metadata": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/metadata.csv",
+      "sha256": "e2d07494f4714940081a3a6f47938cb4aee11b4ebba767815316be2e7ee5fc2d"
+    },
+    "base_eligibility": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/eligibility.csv",
+      "sha256": "b8e27820152f1b9b3a74f7a0f6f5b4f38289270ad000a8d9c4bb5fc2c17c2da2"
+    },
+    "base_split_counts": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/split_counts.csv",
+      "sha256": "aeb84d611e96150ea13229d53fe2914f4f757b60a0649f203dbad2510e8c2e78"
+    },
+    "base_feature_missingness": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/feature_missingness.csv",
+      "sha256": "1012df453491002ab757c4ab48adb2454ad5ee25e716b3ac190df24c3101514f"
+    },
+    "base_summary": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/summary.json",
+      "sha256": "5e46bc160f40b1a36aa6cb6087d67a00aebe4c12397eeca6cb89f2981c17f8d7"
+    },
+    "base_config": {
+      "path": "ai_pool_daily_baseline_model_ready_v1_config.json",
+      "sha256": "ea3112332b6edbceb4c6cb37a1f6e704446c548ff97a914a254ca6498bbadb72"
+    },
+    "macro_features": {
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z/macro_features.csv",
+      "sha256": "d1cf8d86c86c9d87ae8eefe54d61a361c501d07ea9dcb16afd5fef5eae6f02a5"
+    },
+    "macro_features_train_valid": {
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z/macro_features_train_valid.csv",
+      "sha256": "dafec1f6d237ba4c2dd226c8139ef4c81cd447135f7a8d318b9f3cfc1b9076a3"
+    },
+    "macro_spy_sessions": {
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z/spy_sessions.csv",
+      "sha256": "5c868607d39ffedc3181d794a49c43ad9fd52c03339476390ece9e5d9de2a928"
+    },
+    "macro_clean_summary": {
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z/clean_summary.json",
+      "sha256": "6b891bab7e01a11af50bd23dc961e490675bef4a86b73f2b5bea32d9d85cf8a0"
+    },
+    "macro_build_config": {
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z/build_config.json",
+      "sha256": "3889f753aa3fb46d143bfd43235ae4fc8671f2209d90c2420b2e341ae55b95ae"
+    },
+    "macro_feature_definitions": {
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z/feature_definitions.json",
+      "sha256": "f4eb2d9bd980be1acd48015d7057561449aaa31e45c6fdb60dd562b1b3260140"
+    },
+    "ai_state_features": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/ai_state_features.csv",
+      "sha256": "2c8a196263ffb09351caa461942de23764191dab0ce5a7d8f4db307e4544649c"
+    },
+    "ai_pool_member_coverage": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/pool_member_coverage.csv",
+      "sha256": "1ae85300efd8e4fd2acd4a727499f1697a302cfa18cba397cf08c1130b3484f5"
+    },
+    "ai_etf_coverage": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/etf_coverage.csv",
+      "sha256": "8d6537601b4688d190ce8f69b5e04d68bac4a3b9eb6360a2868356da0680b161"
+    },
+    "ai_summary": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/summary.json",
+      "sha256": "2edb157ecd2c3f5615cf19f72e6394f213901d00b519d739da042fa5b5de3917"
+    },
+    "ai_independent_validation": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/independent_validation.json",
+      "sha256": "ef03229e5affcd6d930ec13b808cb768058531a2d200a1a79d70ab8a7e24918a"
+    },
+    "ai_config": {
+      "path": "ai_daily_macro_feature_v1_config.json",
+      "sha256": "f73a87b187ce7b2525a8cc9234f27442ed7b3d11d7f461d49d4b969ad986b528"
+    },
+    "ai_spec": {
+      "path": "AI_DAILY_MACRO_FEATURE_SPEC.md",
+      "sha256": "75a9afc833100c97386e8dd86d51f701ab1d04598644030664d9d113b3871690"
+    }
+  },
+  "input_rows_and_instruments": {
+    "base_model_features": {
+      "rows": 110829,
+      "instruments": 49,
+      "formation_sessions": 2889,
+      "date_range": [
+        "2015-01-02",
+        "2026-06-30"
+      ]
+    },
+    "base_metadata": {
+      "rows": 110829,
+      "instruments": 49,
+      "formation_sessions": 2889,
+      "date_range": [
+        "2015-01-02",
+        "2026-06-30"
+      ]
+    },
+    "base_eligibility": {
+      "rows": 110829,
+      "instruments": 49,
+      "formation_sessions": 2889,
+      "date_range": [
+        "2015-01-02",
+        "2026-06-30"
+      ]
+    },
+    "macro_features": {
+      "rows": 3228,
+      "instruments": 1,
+      "formation_sessions": 3228,
+      "date_range": [
+        "2013-11-04",
+        "2026-09-04"
+      ]
+    },
+    "macro_features_train_valid": {
+      "rows": 2014,
+      "instruments": 1,
+      "formation_sessions": 2014,
+      "date_range": [
+        "2015-01-02",
+        "2022-12-30"
+      ]
+    },
+    "ai_state_features": {
+      "rows": 2889,
+      "instruments": 2889,
+      "formation_sessions": 2889,
+      "date_range": [
+        "2015-01-02",
+        "2026-06-30"
+      ]
+    },
+    "ai_pool_member_coverage": {
+      "rows": 110829,
+      "instruments": 49,
+      "formation_sessions": 2889,
+      "date_range": [
+        "2015-01-02",
+        "2026-06-30"
+      ]
+    },
+    "ai_etf_coverage": {
+      "rows": 14445,
+      "instruments": 5,
+      "formation_sessions": 2889,
+      "date_range": [
+        "2015-01-02",
+        "2026-06-30"
+      ]
+    }
+  },
+  "primary_non_overlap_anchors": {
+    "rows": 3326,
+    "training_rows": 2334,
+    "validation_rows": 992,
+    "instruments": 44,
+    "formation_sessions": 533,
+    "selection_rule": "eligibility.split in {training, validation} and non_overlap_selected == true",
+    "missing_rate_threshold": 0.05
+  },
+  "safe_feature_lists": {
+    "baseline_controls_verified": [
+      "momentum_1",
+      "momentum_5",
+      "momentum_20",
+      "momentum_60",
+      "volatility_20_ann",
+      "volatility_60_ann",
+      "volume_median_20_log1p",
+      "volume_median_60_log1p",
+      "dollar_volume_median_20_log1p",
+      "dollar_volume_median_60_log1p",
+      "spread_median_20_bps",
+      "spread_median_60_bps",
+      "beta_126",
+      "idio_vol_126_ann",
+      "beta_obs_126",
+      "spy_momentum_1",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_volatility_20_ann",
+      "spy_volatility_60_ann"
+    ],
+    "macro_recommended_incremental": [
+      "vix_level",
+      "vix_change_1d",
+      "vix_change_5d",
+      "vix_change_20d",
+      "vix_percentile_252d",
+      "dgs3mo_level",
+      "dgs3mo_change_5d",
+      "dgs3mo_change_20d",
+      "dgs2_level",
+      "dgs2_change_5d",
+      "dgs2_change_20d",
+      "dgs10_level",
+      "dgs10_change_5d",
+      "dgs10_change_20d",
+      "broad_dollar_level",
+      "broad_dollar_change_5d",
+      "broad_dollar_change_20d",
+      "broad_dollar_change_60d",
+      "term_spread_10y_2y",
+      "term_spread_10y_3m"
+    ],
+    "ai_recommended_incremental": [
+      "etf_soxx_momentum_5",
+      "etf_soxx_momentum_20",
+      "etf_soxx_momentum_60",
+      "etf_soxx_volatility_20_ann",
+      "etf_soxx_volatility_60_ann",
+      "etf_soxx_max_drawdown_60",
+      "etf_xlk_momentum_5",
+      "etf_xlk_momentum_20",
+      "etf_xlk_momentum_60",
+      "etf_xlk_volatility_20_ann",
+      "etf_xlk_volatility_60_ann",
+      "etf_xlk_max_drawdown_60",
+      "soxx_relative_spy_return_5",
+      "soxx_relative_spy_return_20",
+      "soxx_relative_spy_return_60",
+      "pool_breadth_up_1",
+      "pool_breadth_above_ma20",
+      "pool_breadth_above_ma60",
+      "pool_cross_sectional_dispersion_1",
+      "pool_equal_weight_return_1",
+      "pool_equal_weight_relative_spy_return_1"
+    ],
+    "combined_recommended_incremental": [
+      "vix_level",
+      "vix_change_1d",
+      "vix_change_5d",
+      "vix_change_20d",
+      "vix_percentile_252d",
+      "dgs3mo_level",
+      "dgs3mo_change_5d",
+      "dgs3mo_change_20d",
+      "dgs2_level",
+      "dgs2_change_5d",
+      "dgs2_change_20d",
+      "dgs10_level",
+      "dgs10_change_5d",
+      "dgs10_change_20d",
+      "broad_dollar_level",
+      "broad_dollar_change_5d",
+      "broad_dollar_change_20d",
+      "broad_dollar_change_60d",
+      "term_spread_10y_2y",
+      "term_spread_10y_3m",
+      "etf_soxx_momentum_5",
+      "etf_soxx_momentum_20",
+      "etf_soxx_momentum_60",
+      "etf_soxx_volatility_20_ann",
+      "etf_soxx_volatility_60_ann",
+      "etf_soxx_max_drawdown_60",
+      "etf_xlk_momentum_5",
+      "etf_xlk_momentum_20",
+      "etf_xlk_momentum_60",
+      "etf_xlk_volatility_20_ann",
+      "etf_xlk_volatility_60_ann",
+      "etf_xlk_max_drawdown_60",
+      "soxx_relative_spy_return_5",
+      "soxx_relative_spy_return_20",
+      "soxx_relative_spy_return_60",
+      "pool_breadth_up_1",
+      "pool_breadth_above_ma20",
+      "pool_breadth_above_ma60",
+      "pool_cross_sectional_dispersion_1",
+      "pool_equal_weight_return_1",
+      "pool_equal_weight_relative_spy_return_1"
+    ],
+    "macro_excluded_from_development": [
+      "high_yield_oas_level",
+      "high_yield_oas_change_5d",
+      "high_yield_oas_change_20d",
+      "investment_grade_oas_level",
+      "investment_grade_oas_change_5d",
+      "investment_grade_oas_change_20d"
+    ],
+    "ai_excluded_from_incremental": [
+      "etf_aiq_momentum_5",
+      "etf_aiq_momentum_20",
+      "etf_aiq_momentum_60",
+      "etf_aiq_volatility_20_ann",
+      "etf_aiq_volatility_60_ann",
+      "etf_aiq_max_drawdown_60",
+      "etf_botz_momentum_5",
+      "etf_botz_momentum_20",
+      "etf_botz_momentum_60",
+      "etf_botz_volatility_20_ann",
+      "etf_botz_volatility_60_ann",
+      "etf_botz_max_drawdown_60",
+      "etf_igv_momentum_5",
+      "etf_igv_momentum_20",
+      "etf_igv_momentum_60",
+      "etf_igv_volatility_20_ann",
+      "etf_igv_volatility_60_ann",
+      "etf_igv_max_drawdown_60",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_return_1"
+    ],
+    "exact_base_ai_overlap_excluded": [
+      "spy_momentum_20",
+      "spy_momentum_5",
+      "spy_momentum_60"
+    ],
+    "exact_base_macro_overlap": []
+  },
+  "missingness_summary": {
+    "base_over_5pct_all_anchors": [],
+    "macro_all_missing_all_anchors": [
+      "high_yield_oas_change_20d",
+      "high_yield_oas_change_5d",
+      "high_yield_oas_level",
+      "investment_grade_oas_change_20d",
+      "investment_grade_oas_change_5d",
+      "investment_grade_oas_level"
+    ],
+    "macro_over_5pct_all_anchors": [
+      "high_yield_oas_change_20d",
+      "high_yield_oas_change_5d",
+      "high_yield_oas_level",
+      "investment_grade_oas_change_20d",
+      "investment_grade_oas_change_5d",
+      "investment_grade_oas_level"
+    ],
+    "ai_all_missing_all_anchors": [],
+    "ai_over_5pct_all_anchors": [
+      "etf_aiq_max_drawdown_60",
+      "etf_aiq_momentum_20",
+      "etf_aiq_momentum_5",
+      "etf_aiq_momentum_60",
+      "etf_aiq_volatility_20_ann",
+      "etf_aiq_volatility_60_ann",
+      "etf_botz_max_drawdown_60",
+      "etf_botz_momentum_20",
+      "etf_botz_momentum_5",
+      "etf_botz_momentum_60",
+      "etf_botz_volatility_20_ann",
+      "etf_botz_volatility_60_ann",
+      "etf_igv_max_drawdown_60",
+      "etf_igv_momentum_20",
+      "etf_igv_momentum_5",
+      "etf_igv_momentum_60",
+      "etf_igv_volatility_20_ann",
+      "etf_igv_volatility_60_ann"
+    ]
+  },
+  "duplicate_or_derived_controls": {
+    "exact_name_overlap_base_ai": [
+      "spy_momentum_20",
+      "spy_momentum_5",
+      "spy_momentum_60"
+    ],
+    "exact_name_overlap_base_macro": [],
+    "formula_comparisons_on_anchors": {
+      "spy_momentum_5__spy_momentum_5": {
+        "comparable_rows": 3326,
+        "nonzero_rows_at_1e-12": 519,
+        "max_abs_difference": 0.006671647539108996
+      },
+      "spy_momentum_20__spy_momentum_20": {
+        "comparable_rows": 3326,
+        "nonzero_rows_at_1e-12": 2184,
+        "max_abs_difference": 0.007268594239301512
+      },
+      "spy_momentum_60__spy_momentum_60": {
+        "comparable_rows": 3326,
+        "nonzero_rows_at_1e-12": 3304,
+        "max_abs_difference": 0.011816043756439215
+      },
+      "spy_momentum_1__spy_return_1": {
+        "comparable_rows": 3326,
+        "nonzero_rows_at_1e-12": 23,
+        "max_abs_difference": 0.0058592213744287
+      }
+    },
+    "derived_relationships_to_review": [
+      "macro.term_spread_10y_2y = dgs10_level - dgs2_level",
+      "macro.term_spread_10y_3m = dgs10_level - dgs3mo_level",
+      "ai.soxx_relative_spy_return_{5,20,60} = ai.etf_soxx_momentum_{5,20,60} - ai.spy_momentum_{5,20,60}; source is close-derived",
+      "ai.pool_equal_weight_relative_spy_return_1 = ai.pool_equal_weight_return_1 - ai.spy_return_1"
+    ],
+    "recommendation": "Do not add duplicate SPY controls; reconcile the close-derived AI spy_return_1/relative-return source with the returns-derived baseline before any combined model interpretation."
+  },
+  "potential_leakage_or_lookahead_flags": {
+    "target_like_feature_names": {
+      "base_model_features": [],
+      "macro_features": [],
+      "ai_state_features": []
+    },
+    "metadata_target_reason_present_but_excluded": "target_reason exists in metadata/eligibility for audit only and was not joined as a model feature",
+    "base_audit_only_fields": [
+      "feature_missing_count",
+      "feature_missing_list"
+    ],
+    "macro_audit_only_field_count": 85,
+    "ai_diagnostic_only_fields": [
+      "reference_lag_sessions",
+      "pool_active_member_count",
+      "etf_soxx_close_obs_count_last_5",
+      "etf_soxx_close_obs_count_last_20",
+      "etf_soxx_close_obs_count_last_60",
+      "etf_soxx_reason_code",
+      "etf_xlk_close_obs_count_last_5",
+      "etf_xlk_close_obs_count_last_20",
+      "etf_xlk_close_obs_count_last_60",
+      "etf_xlk_reason_code",
+      "etf_aiq_close_obs_count_last_5",
+      "etf_aiq_close_obs_count_last_20",
+      "etf_aiq_close_obs_count_last_60",
+      "etf_aiq_reason_code",
+      "etf_botz_close_obs_count_last_5",
+      "etf_botz_close_obs_count_last_20",
+      "etf_botz_close_obs_count_last_60",
+      "etf_botz_reason_code",
+      "etf_igv_close_obs_count_last_5",
+      "etf_igv_close_obs_count_last_20",
+      "etf_igv_close_obs_count_last_60",
+      "etf_igv_reason_code",
+      "pool_valid_return_count",
+      "pool_valid_ma20_count",
+      "pool_valid_ma60_count",
+      "pool_low_coverage_return",
+      "pool_low_coverage_ma20",
+      "pool_low_coverage_ma60",
+      "pool_low_coverage",
+      "pool_reason_code",
+      "etf_coverage_reason_codes",
+      "feature_reason_code"
+    ],
+    "membership_registry_status_rows": {
+      "provisional_static_source": 86531,
+      "direct_local_pit": 24298
+    },
+    "membership_registry_status_instruments": {
+      "direct_local_pit": 9,
+      "provisional_static_source": 40
+    },
+    "membership_caveat": "provisional_static_source rows use exploratory static registry spans and are not full historical point-in-time AI-role evidence"
+  },
+  "processing_transparency": {
+    "purpose": "Audit enhanced daily feature inputs before model integration without fitting models or reading test target values.",
+    "rules": [
+      "Use literal security_id/Instrument keys; no name mapping or issuer merge.",
+      "Require formation date to map to the immediately prior SPY session for base metadata, macro, AI state, pool coverage, and ETF coverage.",
+      "Require macro source and effective observation dates to be no later than the macro reference session.",
+      "Use only non-overlap training/validation anchors for primary missingness screening.",
+      "Use <=5% missingness in both training and validation anchor subsets as a conservative safe-candidate gate.",
+      "Keep source missing values as NA; no imputation, winsorization, forward fill, backward fill, deduplication, unit conversion, timezone conversion, row deletion, or company exclusion was performed.",
+      "Do not read targets_test_sealed.csv, targets_dev.csv, model runs, predictions, or metrics."
+    ],
+    "row_effect": {
+      "input_rows_removed": 0,
+      "input_instruments_removed": 0,
+      "quarantine": "none; audit-only exclusions are reason-coded in feature_inventory.csv"
+    },
+    "units_and_time": "Date-only comparisons; no timezone conversion or unit changes. Source units remain as supplied by upstream clean tables."
+  },
+  "upstream_status_evidence": {
+    "base_model_ready_declared_status": "partial_model_ready_daily_controls_only",
+    "base_model_ready_declared_checks": {
+      "membership_known_keys_unique": true,
+      "active_rows_are_member_states": true,
+      "active_rows_inside_corrected_spans": true,
+      "master_sample_ids_unique": true,
+      "features_exclude_future_and_targets": true,
+      "reference_strictly_before_formation": true,
+      "dev_targets_only_training_validation": true,
+      "test_target_values_not_written": true,
+      "test_master_target_columns_na": true,
+      "no_infinite_features": true,
+      "no_physical_row_deletion": true,
+      "no_imputation_or_winsorization": true,
+      "non_overlap_gap_at_least_h21": true,
+      "no_event_study_inputs": true
+    },
+    "macro_clean_declared_status": "built_with_credit_spread_training_coverage_unavailable",
+    "ai_state_declared_status": "complete_clean_ai_industry_state",
+    "ai_independent_validation_status": "independently_verified",
+    "ai_independent_validation_failed_checks": 0
+  },
+  "artifact_files": {
+    "summary": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/summary.json",
+    "checks": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/checks.csv",
+    "anchor_feature_missingness": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/anchor_feature_missingness.csv",
+    "feature_inventory": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/feature_inventory.csv"
+  },
+  "limitations": [
+    "This is an input audit only; no model was fitted and no model performance conclusion is made.",
+    "Current FRED clean inputs are not a complete historical vintage database; release-time and revision risk remains an upstream limitation.",
+    "The expanded AI pool includes provisional static registry evidence for historical membership; safe alignment does not make the resulting backtest a full-PIT unbiased AI-role study.",
+    "Fields with high or all-missing anchors are excluded from the recommended incremental list; no imputation decision is implied."
+  ]
+}

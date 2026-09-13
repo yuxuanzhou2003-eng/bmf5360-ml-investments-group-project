@@ -1,0 +1,6 @@
+split,security_day_rows,formation_sessions,instruments,boundary_purged_rows,label_available_rows,test_target_sealed_rows,entry_trade_eligible_rows,core_feature_available_rows,non_overlap_selected_rows,supervised_model_eligible_rows
+training,49948,1511,40,827,49121,0,49948,49648,2334,2334
+validation,21671,503,44,924,20747,0,21671,21671,992,992
+test,39210,875,49,0,0,39210,39206,39113,0,0
+out_of_window,0,0,0,0,0,0,0,0,0,0
+all,110829,2889,49,1751,69868,39210,110825,110432,3326,3326

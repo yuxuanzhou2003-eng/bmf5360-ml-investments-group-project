@@ -1,0 +1,210 @@
+source,feature,numeric_feature,recommended_incremental,anchor_missing_fraction_all,classification,rationale,exact_base_overlap,formula_or_derived_relationship
+base,momentum_1,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,momentum_5,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,momentum_20,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,momentum_60,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,volatility_20_ann,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,volatility_60_ann,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,volume_median_20_log1p,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,volume_median_60_log1p,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,dollar_volume_median_20_log1p,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,dollar_volume_median_60_log1p,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,spread_median_20_bps,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,spread_median_60_bps,True,True,0.0006013229104028864,baseline_control,configured controls-only baseline field,False,False
+base,beta_126,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,idio_vol_126_ann,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,beta_obs_126,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,spy_momentum_1,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,spy_momentum_5,True,True,0.0,baseline_control,configured controls-only baseline field,True,False
+base,spy_momentum_20,True,True,0.0,baseline_control,configured controls-only baseline field,True,False
+base,spy_momentum_60,True,True,0.0,baseline_control,configured controls-only baseline field,True,False
+base,spy_volatility_20_ann,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+base,spy_volatility_60_ann,True,True,0.0,baseline_control,configured controls-only baseline field,False,False
+macro,vix_level,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,vix_change_1d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,vix_change_5d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,vix_change_20d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,vix_percentile_252d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs3mo_level,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs3mo_change_5d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs3mo_change_20d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs2_level,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs2_change_5d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs2_change_20d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs10_level,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs10_change_5d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,dgs10_change_20d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,high_yield_oas_level,True,False,1.0,exclude_all_missing,credit-spread source begins after the development window,False,False
+macro,high_yield_oas_change_5d,True,False,1.0,exclude_all_missing,credit-spread source begins after the development window,False,False
+macro,high_yield_oas_change_20d,True,False,1.0,exclude_all_missing,credit-spread source begins after the development window,False,False
+macro,investment_grade_oas_level,True,False,1.0,exclude_all_missing,credit-spread source begins after the development window,False,False
+macro,investment_grade_oas_change_5d,True,False,1.0,exclude_all_missing,credit-spread source begins after the development window,False,False
+macro,investment_grade_oas_change_20d,True,False,1.0,exclude_all_missing,credit-spread source begins after the development window,False,False
+macro,broad_dollar_level,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,broad_dollar_change_5d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,broad_dollar_change_20d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,broad_dollar_change_60d,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,False
+macro,term_spread_10y_2y,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,True
+macro,term_spread_10y_3m,True,True,0.0,safe_candidate,strictly lagged macro feature with usable anchor coverage,False,True
+ai,etf_soxx_momentum_5,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_soxx_momentum_20,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_soxx_momentum_60,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_soxx_volatility_20_ann,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_soxx_volatility_60_ann,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_soxx_max_drawdown_60,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_xlk_momentum_5,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_xlk_momentum_20,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_xlk_momentum_60,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_xlk_volatility_20_ann,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_xlk_volatility_60_ann,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_xlk_max_drawdown_60,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,etf_aiq_momentum_5,True,False,0.37642814191220686,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_aiq_momentum_20,True,False,0.3851473241130487,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_aiq_momentum_60,True,False,0.4052916416115454,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_aiq_volatility_20_ann,True,False,0.3851473241130487,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_aiq_volatility_60_ann,True,False,0.4052916416115454,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_aiq_max_drawdown_60,True,False,0.4052916416115454,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_botz_momentum_5,True,False,0.18069753457606735,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_botz_momentum_20,True,False,0.20565243535778713,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_botz_momentum_60,True,False,0.22399278412507517,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_botz_volatility_20_ann,True,False,0.20565243535778713,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_botz_volatility_60_ann,True,False,0.22399278412507517,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_botz_max_drawdown_60,True,False,0.22399278412507517,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_igv_momentum_5,True,False,0.282922429344558,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_igv_momentum_20,True,False,0.28502705953096813,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_igv_momentum_60,True,False,0.30517137702946484,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_igv_volatility_20_ann,True,False,0.28502705953096813,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_igv_volatility_60_ann,True,False,0.30517137702946484,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,etf_igv_max_drawdown_60,True,False,0.30517137702946484,exclude_high_missing,ETF history/inception coverage exceeds 5% anchor missingness,False,False
+ai,spy_momentum_5,True,False,0.0,exclude_duplicate_control,exact name overlap with baseline SPY control,True,False
+ai,soxx_relative_spy_return_5,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,True
+ai,spy_momentum_20,True,False,0.0,exclude_duplicate_control,exact name overlap with baseline SPY control,True,False
+ai,soxx_relative_spy_return_20,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,True
+ai,spy_momentum_60,True,False,0.0,exclude_duplicate_control,exact name overlap with baseline SPY control,True,False
+ai,soxx_relative_spy_return_60,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,True
+ai,spy_return_1,True,False,0.0,exclude_duplicate_control,one-session SPY control is formula-equivalent in intent but source differs,False,True
+ai,pool_breadth_up_1,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,pool_breadth_above_ma20,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,pool_breadth_above_ma60,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,pool_cross_sectional_dispersion_1,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,pool_equal_weight_return_1,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,False
+ai,pool_equal_weight_relative_spy_return_1,True,True,0.0,safe_candidate,strictly prior-session AI industry state with usable anchor coverage,False,True
+base_audit_only,feature_missing_count,False,False,,exclude_audit_or_metadata,missingness audit metadata; do not pass as a model feature,False,False
+base_audit_only,feature_missing_list,False,False,,exclude_audit_or_metadata,missingness audit metadata; do not pass as a model feature,False,False
+macro_audit_only,spy_session_index,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_source_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_source_value_raw,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_source_value_numeric,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_source_missing,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_value_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_value_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_value,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_first_available_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_carry_age_calendar_days,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_carry_age_spy_sessions,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,VIXCLS_reason_code,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_source_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_source_value_raw,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_source_value_numeric,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_source_missing,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_value_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_value_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_value,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_first_available_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_carry_age_calendar_days,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_carry_age_spy_sessions,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS3MO_reason_code,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_source_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_source_value_raw,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_source_value_numeric,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_source_missing,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_value_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_value_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_value,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_first_available_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_carry_age_calendar_days,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_carry_age_spy_sessions,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS2_reason_code,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_source_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_source_value_raw,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_source_value_numeric,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_source_missing,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_value_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_value_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_value,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_first_available_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_carry_age_calendar_days,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_carry_age_spy_sessions,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DGS10_reason_code,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_source_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_source_value_raw,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_source_value_numeric,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_source_missing,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_value_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_value_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_value,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_first_available_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_carry_age_calendar_days,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_carry_age_spy_sessions,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLH0A0HYM2_reason_code,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_source_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_source_value_raw,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_source_value_numeric,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_source_missing,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_value_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_value_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_value,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_first_available_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_carry_age_calendar_days,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_carry_age_spy_sessions,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,BAMLC0A0CM_reason_code,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_source_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_source_value_raw,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_source_value_numeric,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_source_missing,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_value_observation_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_value_source_row,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_value,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_first_available_date,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_carry_age_calendar_days,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_carry_age_spy_sessions,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+macro_audit_only,DTWEXBGS_reason_code,False,False,,exclude_audit_or_metadata,"raw/provenance/carry/reason metadata; retained for audit, not model input",False,False
+ai_diagnostic_only,reference_lag_sessions,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_active_member_count,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_soxx_close_obs_count_last_5,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_soxx_close_obs_count_last_20,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_soxx_close_obs_count_last_60,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_soxx_reason_code,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_xlk_close_obs_count_last_5,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_xlk_close_obs_count_last_20,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_xlk_close_obs_count_last_60,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_xlk_reason_code,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_aiq_close_obs_count_last_5,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_aiq_close_obs_count_last_20,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_aiq_close_obs_count_last_60,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_aiq_reason_code,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_botz_close_obs_count_last_5,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_botz_close_obs_count_last_20,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_botz_close_obs_count_last_60,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_botz_reason_code,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_igv_close_obs_count_last_5,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_igv_close_obs_count_last_20,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_igv_close_obs_count_last_60,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_igv_reason_code,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_valid_return_count,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_valid_ma20_count,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_valid_ma60_count,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_low_coverage_return,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_low_coverage_ma20,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_low_coverage_ma60,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_low_coverage,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,pool_reason_code,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,etf_coverage_reason_codes,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False
+ai_diagnostic_only,feature_reason_code,False,False,,exclude_audit_or_metadata,"date, coverage, count, boolean, or reason-code diagnostic; not a primary economic feature",False,False

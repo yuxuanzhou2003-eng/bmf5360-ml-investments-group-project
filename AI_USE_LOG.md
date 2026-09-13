@@ -637,3 +637,7 @@ The audit output is `data/audit/ai_daily_enhanced_inputs_v1/20260910T06504452224
 
 ## LSEG access probe limitation — 2026-09-13
 Executed probe_screenshot_lseg_session.py with credential redaction and a 40-second timeout, outputs under data/audit/screenshot_lseg_access. Initial session-only probe wrote `connected` despite SDK localhost connection-refused errors: that status is NOT evidence of usable access. Preserved the original record and strengthened the probe to require a returned CAT.N company-name request. No historical data was fetched by the initial probe. Local additions remain separate from vendor verification.
+
+
+## Screenshot additions vendor refresh 2026-09-13T03:26:06.616326+00:00
+Executed collect_screenshot_history_v2.py SHA256 7605a10cb998d71d5149fc36d8fcd4af3c00a092d064304eb77e40c6c2c13df2. Input data\audit\screenshot_additions\20260913T030723Z\additional_candidates.csv; output data\raw\screenshot_additions_v2\20260913T032531Z. Nine locally evidenced RICs requested, raw prices with explicit adjustments ['exchangeCorrection', 'manualCorrection', 'CCH', 'CRE', 'RPO', 'RTS'], daily TR.TotalReturn in vendor units, 2020-01-01 to 2025-12-31. Raw vendor responses preserved with request/status/count/hash manifest. No cleaning, imputation, deduplication, currency conversion, company exclusion or model run. Returned row counts do not establish complete coverage. Identity and corporate-action review remain required.

@@ -1,0 +1,109 @@
+{
+  "generated_at_utc": "2026-09-10T06:28:03.124775+00:00",
+  "input_hashes": {
+    "builder": {
+      "path": "build_ai_daily_macro_features_v1.py",
+      "sha256": "d98adc84ea5f6dd6ed39c7e4b2f701b1cad32c17f89b659f389823bc5ce18f59"
+    },
+    "config": {
+      "path": "ai_daily_macro_feature_v1_config.json",
+      "sha256": "f73a87b187ce7b2525a8cc9234f27442ed7b3d11d7f461d49d4b969ad986b528"
+    },
+    "model_features": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/model_features.csv",
+      "sha256": "f52e8fd8ac5e577be9af6bbf5765ff1d3ae43d5c22c34b41274e32eec5ef7fbe"
+    },
+    "prices": {
+      "path": "data/clean/v3/20260909T012417705069Z/prices.csv",
+      "sha256": "a4656aed40112abed7124045cc8b8313d49eafb96b86552bf8f1a50fdb0a5bb8"
+    },
+    "raw_etf_AIQ.OQ": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_AIQ.OQ.csv",
+      "sha256": "d909d112bbadcb0246412489985004fe3d57ae994fb4a7ec749e79fac795f260"
+    },
+    "raw_etf_AIQ.OQ.meta.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_AIQ.OQ.meta.json",
+      "sha256": "ab023f7f147dab5975c47e094c22c8882461148859df7717ac94d2a139fe21cf"
+    },
+    "raw_etf_AIQ.OQ.request.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_AIQ.OQ.request.json",
+      "sha256": "f27927c6926ab63e952bdd3fa97224bbfe28d37e35429fa5b52f1bea94d53ea1"
+    },
+    "raw_etf_BOTZ.OQ": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_BOTZ.OQ.csv",
+      "sha256": "e47b46d9dcd2ea1d58f2a0ffffb9d15aec7b2a176c979cde46528bb699965390"
+    },
+    "raw_etf_BOTZ.OQ.meta.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_BOTZ.OQ.meta.json",
+      "sha256": "002be0b0725165e366c132d7e801d5eb1b4d3f7a580d8e01faf264bb038d8a92"
+    },
+    "raw_etf_BOTZ.OQ.request.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_BOTZ.OQ.request.json",
+      "sha256": "4b660a1979237424fd5f0f337f155dccce163df6883445f30f6a8e5aaa7155ae"
+    },
+    "raw_etf_IGV.P": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_IGV.P.csv",
+      "sha256": "882d0ed76db32df37edf07cb519929711cbae5b2c553eefe7075d37e9d16b7d8"
+    },
+    "raw_etf_IGV.P.meta.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_IGV.P.meta.json",
+      "sha256": "c2c7d1d93993e191d79b5898830344420a255fd9eba4e9266a36ba1f7fe2f365"
+    },
+    "raw_etf_IGV.P.request.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_IGV.P.request.json",
+      "sha256": "8bd9ffb44f003b4efcfea0678a69f1a8b3b4ccaf437892b0f5b8683fdad5a995"
+    },
+    "raw_etf_SOXX.OQ": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_SOXX.OQ.csv",
+      "sha256": "71bf57a94de35b7e72077464a20891d5e8fbf2f53ade3bffc57f90f26fbc5db8"
+    },
+    "raw_etf_SOXX.OQ.meta.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_SOXX.OQ.meta.json",
+      "sha256": "113c28100a54c423157ca4dab9e829c0f8fa1436c2e92b6e46db54707e77a027"
+    },
+    "raw_etf_SOXX.OQ.request.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_SOXX.OQ.request.json",
+      "sha256": "719e9cd16f511e3d178d1a8cb4bb7883e72d5cb2177b5591c33bec97f7f18397"
+    },
+    "raw_etf_XLK.P": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_XLK.P.csv",
+      "sha256": "94b9109fc821fec46a80ebf00794a2e527ed91a7a1dc30c64e807d59c3c24e0a"
+    },
+    "raw_etf_XLK.P.meta.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_XLK.P.meta.json",
+      "sha256": "fce591662a271b531dfcd2210ef18c8498cd45850bf0ff07ed9e36538309e31b"
+    },
+    "raw_etf_XLK.P.request.json": {
+      "path": "data/raw/ai_factor_v1/20260909T183801359195Z/etf_prices_XLK.P.request.json",
+      "sha256": "6a22b3b52f27cb7435e818664306297d1d046d2dfc88cb86dc7e3eb71f687ec1"
+    }
+  },
+  "output_hashes": {
+    "etf_coverage": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/etf_coverage.csv",
+      "sha256": "8d6537601b4688d190ce8f69b5e04d68bac4a3b9eb6360a2868356da0680b161"
+    },
+    "feature_table": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/ai_state_features.csv",
+      "sha256": "2c8a196263ffb09351caa461942de23764191dab0ce5a7d8f4db307e4544649c"
+    },
+    "pool_coverage": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/pool_member_coverage.csv",
+      "sha256": "1ae85300efd8e4fd2acd4a727499f1697a302cfa18cba397cf08c1130b3484f5"
+    },
+    "quarantine": {
+      "path": "data/audit/ai_daily_macro_features_v1/20260910T144000000000Z/quarantine/feature_quarantine.csv",
+      "sha256": "e8dc5441f7c187a1e2803b23a58b107f3839febdd80cedd678e59e4562c9fcd8"
+    },
+    "reason_code_counts": {
+      "path": "data/audit/ai_daily_macro_features_v1/20260910T144000000000Z/reason_code_counts.csv",
+      "sha256": "2aa3d5611993f8acfe0afad125c7051e13902eb67043dd2f23c2e0ec206d90df"
+    },
+    "summary": {
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/summary.json",
+      "sha256": "2edb157ecd2c3f5615cf19f72e6394f213901d00b519d739da042fa5b5de3917"
+    }
+  },
+  "run_id": "20260910T144000000000Z",
+  "schema_version": "ai_daily_macro_feature_v1_hash_manifest"
+}

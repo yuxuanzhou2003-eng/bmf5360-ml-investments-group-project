@@ -1,0 +1,38 @@
+check_id,category,status,blocking,rows_checked,failures,details
+base_model_features_sample_id_unique,key_uniqueness,PASS,True,110829,0,duplicate_rows=0; key=['sample_id']
+base_model_features_security_date_unique,key_uniqueness,PASS,True,110829,0,"duplicate_rows=0; key=['security_id', 'formation_session']"
+base_metadata_sample_id_unique,key_uniqueness,PASS,True,110829,0,duplicate_rows=0; key=['sample_id']
+base_metadata_security_date_unique,key_uniqueness,PASS,True,110829,0,"duplicate_rows=0; key=['security_id', 'formation_session']"
+base_eligibility_sample_id_unique,key_uniqueness,PASS,True,110829,0,duplicate_rows=0; key=['sample_id']
+macro_session_unique,key_uniqueness,PASS,True,3228,0,duplicate_rows=0; key=['spy_session']
+macro_train_valid_session_unique,key_uniqueness,PASS,True,2014,0,duplicate_rows=0; key=['spy_session']
+ai_state_session_unique,key_uniqueness,PASS,True,2889,0,duplicate_rows=0; key=['formation_session']
+ai_pool_coverage_key_unique,key_uniqueness,PASS,True,110829,0,"duplicate_rows=0; key=['formation_session', 'Instrument']"
+ai_etf_coverage_key_unique,key_uniqueness,PASS,True,14445,0,"duplicate_rows=0; key=['formation_session', 'Instrument']"
+master_sample_id_sets_match,key_uniqueness,PASS,True,110829,0,"symmetric_difference_sum=0; source tables=model_features,metadata,eligibility"
+literal_security_identifier_consistency,key_uniqueness,PASS,True,221658,0,security_id_vs_Instrument_mismatches=0; no name-based mapping applied
+metadata_reference_strict_prior_spy_session,date_alignment,PASS,True,110829,0,reference_mismatches=0; no_reference_rows=0; strict prior rule
+macro_reference_strict_prior_spy_session,date_alignment,PASS,True,3228,0,reference_mismatches=0; no_reference_rows=1; strict prior rule
+ai_state_reference_strict_prior_spy_session,date_alignment,PASS,True,2889,0,reference_mismatches=0; no_reference_rows=0; strict prior rule
+pool_coverage_reference_strict_prior_spy_session,date_alignment,PASS,True,110829,0,reference_mismatches=0; no_reference_rows=0; strict prior rule
+etf_coverage_reference_strict_prior_spy_session,date_alignment,PASS,True,14445,0,reference_mismatches=0; no_reference_rows=0; strict prior rule
+ai_reference_lag_sessions_equal_one,date_alignment,PASS,True,2889,0,reference_lag_sessions must equal 1
+macro_source_observations_not_after_reference,date_alignment,PASS,True,45192,0,"future_source_date_counts={'VIXCLS_source_observation_date': 0, 'VIXCLS_value_observation_date': 0, 'DGS3MO_source_observation_date': 0, 'DGS3MO_value_observation_date': 0, 'DGS2_source_observation_date': 0, 'DGS2_value_observation_date': 0, 'DGS10_source_observation_date': 0, 'DGS10_value_observation_date': 0, 'BAMLH0A0HYM2_source_observation_date': 0, 'BAMLH0A0HYM2_value_observation_date': 0, 'BAMLC0A0CM_source_observation_date': 0, 'BAMLC0A0CM_value_observation_date': 0, 'DTWEXBGS_source_observation_date': 0, 'DTWEXBGS_value_observation_date': 0}; source/value observation dates <= reference when present"
+formation_date_has_single_split,split_separation,PASS,True,5778,0,ambiguous_model_or_ai_dates=0
+model_and_ai_split_windows,split_separation,PASS,True,113718,0,model_training_bad=0; ai_training_bad=0; model_validation_bad=0; ai_validation_bad=0; model_test_bad=0; ai_test_bad=0
+macro_train_validation_date_set_matches_development,split_separation,PASS,True,4028,0,symmetric_difference=0; macro_train_valid_test_overlap=0
+macro_train_validation_excludes_test_dates,split_separation,PASS,True,2014,0,train/validation macro subset contains no model test formation date
+full_macro_and_ai_cover_model_formation_dates,split_separation,PASS,True,5778,0,macro_missing_dates=0; ai_date_set_difference=0
+configured_feature_columns_present,feature_schema,PASS,True,90,0,missing_columns=[]
+feature_tables_have_no_target_or_future_named_columns,leakage_guard,PASS,True,97,0,"forbidden_feature_names={'base_model_features': [], 'macro_features': [], 'ai_state_features': []}"
+numeric_feature_values_are_finite_when_present,feature_schema,PASS,True,2535564,0,NA values are allowed; +/-inf is not
+primary_non_overlap_anchor_join_is_complete,anchor_integrity,PASS,True,3326,0,anchors=3326; ai_missing_anchor_dates=0; macro_missing_anchor_dates=0
+primary_non_overlap_anchor_security_date_unique,anchor_integrity,PASS,True,3326,0,anchor key is literal security_id + formation_session
+feature_name_overlap_reviewed,duplicate_controls,WARN,False,90,3,"exact_base_ai=['spy_momentum_20', 'spy_momentum_5', 'spy_momentum_60']"
+formula_equivalent_spy_controls_reviewed,duplicate_controls,WARN,False,3326,6030,"comparisons={'spy_momentum_5__spy_momentum_5': {'comparable_rows': 3326, 'nonzero_rows_at_1e-12': 519, 'max_abs_difference': 0.006671647539108996}, 'spy_momentum_20__spy_momentum_20': {'comparable_rows': 3326, 'nonzero_rows_at_1e-12': 2184, 'max_abs_difference': 0.007268594239301512}, 'spy_momentum_60__spy_momentum_60': {'comparable_rows': 3326, 'nonzero_rows_at_1e-12': 3304, 'max_abs_difference': 0.011816043756439215}, 'spy_momentum_1__spy_return_1': {'comparable_rows': 3326, 'nonzero_rows_at_1e-12': 23, 'max_abs_difference': 0.0058592213744287}}; ai_spy_return_1 uses close-derived return while baseline spy_momentum_1 uses returns input"
+macro_anchor_all_missing_features_identified,missingness,FAIL,False,86476,6,"all_missing_features=['high_yield_oas_change_20d', 'high_yield_oas_change_5d', 'high_yield_oas_level', 'investment_grade_oas_change_20d', 'investment_grade_oas_change_5d', 'investment_grade_oas_level']; exclude from development candidates"
+ai_anchor_high_missing_features_identified,missingness,FAIL,False,143018,18,"over_5pct_features=['etf_aiq_max_drawdown_60', 'etf_aiq_momentum_20', 'etf_aiq_momentum_5', 'etf_aiq_momentum_60', 'etf_aiq_volatility_20_ann', 'etf_aiq_volatility_60_ann', 'etf_botz_max_drawdown_60', 'etf_botz_momentum_20', 'etf_botz_momentum_5', 'etf_botz_momentum_60', 'etf_botz_volatility_20_ann', 'etf_botz_volatility_60_ann', 'etf_igv_max_drawdown_60', 'etf_igv_momentum_20', 'etf_igv_momentum_5', 'etf_igv_momentum_60', 'etf_igv_volatility_20_ann', 'etf_igv_volatility_60_ann']; ETF history availability is retained as NA"
+base_anchor_missingness_within_threshold,missingness,PASS,False,69846,0,over_5pct_features=[]; no new imputation applied
+membership_static_registry_limitation_disclosed,membership_selection,WARN,False,110829,86531,"registry_status_rows={'provisional_static_source': 86531, 'direct_local_pit': 24298}; registry_status_instruments={'direct_local_pit': 9, 'provisional_static_source': 40}; provisional rows are not full historical PIT evidence"
+test_target_values_not_read_by_audit,test_separation,PASS,True,0,0,"targets_test_sealed.csv is intentionally absent from read paths; no test targets, labels, returns, or model runs opened"
+audit_does_not_apply_imputation_or_row_deletion,processing_policy,PASS,True,116946,0,"read-only audit; no imputation, forward/backward fill, winsorization, deduplication, unit change, timezone change, or input row deletion"

@@ -19,7 +19,7 @@ Course project for NUS BMF5360 Machine Learning in Investments. Current delivera
 
 ## What is not in the repo
 
-Raw and cleaned LSEG market data (`data/raw`, `data/clean` except FRED macro), model-ready panels, and the sealed test targets are excluded for size and data-licensing reasons. The `.env` file with the LSEG App Key is never committed. Scripts expect the project virtual environment (`requirements-lseg.txt`, `requirements-ml.txt`) and a local LSEG Workspace session.
+Raw and cleaned LSEG market data (`data/raw`, `data/clean` except the FRED macro and the derived industry-state features) and the sealed test targets are excluded for size and data-licensing reasons. The frozen model-ready inputs of the report's primary run (`data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/`, without `targets_test_sealed.csv`) are included, so the state-model training (`run_ai_pool_daily_state_models_v1.py` with `ai_pool_daily_state_models_v1_1_config.json`) and the baseline package runner can be re-run from the repo; the portfolio backtest still needs the local cleaned prices. The `.env` file with the LSEG App Key is never committed. Scripts expect the project virtual environment (`requirements-lseg.txt`, `requirements-ml.txt`) and a local LSEG Workspace session.
 
 ## Key numbers in the report
 
