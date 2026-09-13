@@ -1,0 +1,13 @@
+{
+  "current_formal_validation_run": "20260910T133000000000Z",
+  "status": "complete_validation_only",
+  "summary": "data/backtests/ai_portfolio_v1/20260910T133000000000Z/summary.json",
+  "independent_audit": "data/audit/ai_portfolio_v1/20260910T133500000000Z/summary.json",
+  "audit_status": "PASS",
+  "audit_counts": {"pass": 13, "warn": 1, "fail": 0, "blocking_fail": 0},
+  "sealed_test_status": "not_opened",
+  "prior_runs": {
+    "20260910T113500000000Z": "preliminary implementation; independently audited and superseded by formal v1.1",
+    "20260910T125000000000Z": "formal reproducibility run before specification wording clarification; identical portfolio metrics"
+  }
+}

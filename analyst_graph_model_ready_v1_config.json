@@ -1,0 +1,117 @@
+{
+  "purpose": "Leakage-controlled model-ready layer for the corrected common-analyst graph v2. Every selected graph edge is retained and receives independently rebuilt timing, execution, features, eligibility and split-aware labels.",
+  "version": "analyst_graph_model_ready_v1",
+  "inputs": {
+    "graph_edges": "data/analyst_graph_v2/20260909T113109814872Z/edges.csv",
+    "panel_events": "data/panel_v3/20260909T035245922341Z/events.csv",
+    "returns": "data/clean/v2/returns.csv",
+    "prices": "data/clean/v3/20260909T012417705069Z/prices.csv",
+    "corrected_membership_spans": "data/audit/universe_rebuild/eligible_spans_2015_2026_corrected.csv"
+  },
+  "graph_filter": {
+    "reason_required": "ok",
+    "expected_selected_edge_rows": 111128,
+    "retain_selected_edges": true,
+    "non_ok_rows_policy": "not selected for this builder; source graph file and reason counts remain preserved and are recorded in the run summary"
+  },
+  "event_key": ["source", "announcement", "period_end"],
+  "join": {
+    "edge_to_event_validation": "many_to_one",
+    "event_key_must_be_unique": true,
+    "event_rows_with_no_match": "fail",
+    "old_panel_labels_or_execution": "never read or joined"
+  },
+  "sample_id": {
+    "formula": "sha256(source + '|' + announcement + '|' + period_end + '|' + receiver)[:24]",
+    "regenerated_from_new_edge_keys": true,
+    "must_be_unique": true
+  },
+  "benchmark": "SPY.P",
+  "entry_rule": {
+    "name": "first_market_session_strictly_after_announcement_day",
+    "sessions": "SPY sessions from returns input",
+    "announcement_day_timezone": "calendar day; timestamps are normalized without timezone conversion",
+    "liquidity_reference": "one SPY session immediately before entry_session"
+  },
+  "forward_label": {
+    "horizon_sessions": 5,
+    "target": "receiver cumulative total return minus SPY cumulative total return",
+    "future_window": "sessions entry_i+1 through entry_i+5 inclusive",
+    "label_splits": ["training", "validation"],
+    "test_split_policy": "hard seal before any target lookup; all target value columns are NaN and reason is test_target_sealed",
+    "out_of_window_policy": "target value columns are NaN and reason is out_of_window"
+  },
+  "splits": {
+    "training": ["2015-01-01", "2020-12-31"],
+    "validation": ["2021-01-01", "2022-12-31"],
+    "test": ["2023-01-01", "2026-06-30"],
+    "outside": "out_of_window",
+    "boundary_rule": "purge the whole earlier source event if entry_session or exit_session is on or after the next split start"
+  },
+  "return_features": {
+    "momentum_windows": [5, 20, 60],
+    "momentum_min_observations": "full_window",
+    "volatility_windows_and_min_observations": [[20, 15], [60, 40]],
+    "beta_idio_window": 126,
+    "beta_idio_min_observations": 100,
+    "annualization_sessions": 252
+  },
+  "liquidity_features": {
+    "window": 20,
+    "volume_and_dollar_volume_min_observations": 15,
+    "spread_min_observations": 10,
+    "rolling_end": "liquidity_reference_session"
+  },
+  "graph_features": {
+    "core": [
+      "standardized_surprise",
+      "surprise_abs",
+      "surprise_sign",
+      "jaccard_coverage",
+      "jaccard_rec_weighted",
+      "surprise_x_jaccard_coverage",
+      "surprise_x_jaccard_rec_weighted",
+      "common_brokers_log1p",
+      "graph_snapshot_age_days",
+      "event_neighbor_count",
+      "neighbor_rank_jaccard_coverage",
+      "analysts_log1p"
+    ],
+    "diagnostic_metadata_only": ["jaccard_named_only"],
+    "multiplication_signals": [
+      "standardized_surprise * jaccard_coverage",
+      "standardized_surprise * jaccard_rec_weighted"
+    ]
+  },
+  "core_features": [
+    "standardized_surprise",
+    "surprise_abs",
+    "surprise_sign",
+    "jaccard_coverage",
+    "jaccard_rec_weighted",
+    "surprise_x_jaccard_coverage",
+    "surprise_x_jaccard_rec_weighted",
+    "common_brokers_log1p",
+    "graph_snapshot_age_days",
+    "event_neighbor_count",
+    "neighbor_rank_jaccard_coverage",
+    "analysts_log1p",
+    "source_mom_20",
+    "source_vol_20_ann",
+    "source_beta_126",
+    "receiver_mom_20",
+    "receiver_vol_20_ann",
+    "receiver_beta_126",
+    "market_mom_20",
+    "market_vol_20_ann",
+    "receiver_dollar_volume_median_20_log1p",
+    "receiver_spread_median_20_bps"
+  ],
+  "forbidden_model_feature_tokens": ["residual", "trbc", "entry_", "forward_return", "label_complete", "exit_session"],
+  "missing_policy": "retain all selected graph edges and NA values; no forward fill, backward fill, zero fill, interpolation, winsorization, clipping or physical row deletion",
+  "output": {
+    "root": "data/analyst_graph_model_ready_v1",
+    "required_files": ["metadata.csv", "model_features.csv", "targets.csv", "eligibility.csv", "feature_missingness.csv", "split_counts.csv", "summary.json"],
+    "additional_files": ["execution_inputs.csv"]
+  }
+}

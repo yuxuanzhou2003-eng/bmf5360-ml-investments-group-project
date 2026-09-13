@@ -1,0 +1,26 @@
+{
+  "schema_version": "ai_pool_daily_state_models_v1_audit",
+  "run_id": "20260910T070000000000Z",
+  "checks": {
+    "primary_non_overlap_anchor_sample": true,
+    "primary_anchor_keys_unique": true,
+    "horizon_is_21_sessions": true,
+    "rf_tuning_training_only": true,
+    "rf_tuning_has_purged_folds": true,
+    "four_feature_sets_present": true,
+    "credit_spread_features_excluded": true,
+    "no_target_columns_in_features": true,
+    "validation_predictions_only": true,
+    "test_predictions_zero": true,
+    "test_metrics_zero": true,
+    "test_targets_not_opened": true,
+    "all_probabilities_finite": true,
+    "macro_key_join_complete": true,
+    "ai_state_key_join_complete": true,
+    "raw_inputs_not_modified_by_runner": true,
+    "ai_safe_feature_list_matches_audit": true
+  },
+  "test_targets_opened": false,
+  "test_predictions_written": false,
+  "raw_inputs_modified": false
+}

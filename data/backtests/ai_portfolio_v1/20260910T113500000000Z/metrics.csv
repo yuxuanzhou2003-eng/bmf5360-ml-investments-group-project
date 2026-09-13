@@ -1,0 +1,2 @@
+return_days,cumulative_net_return,annualized_return,annualized_volatility,sharpe_zero_cash,sortino_zero_cash,max_drawdown,beta_to_spy,annualized_alpha_zero_cash,total_one_way_turnover,annualized_turnover,total_spread_cost_nav,ending_nav
+483,-0.030973943800482573,-0.016281877657568167,0.09785706768829414,-0.11831452013373212,-0.17766883668323524,-0.13149988764041243,0.06358669731569518,-0.01687115471466774,8.708671868505975,4.54365488791616,0.002399284506281757,0.9690260561995174

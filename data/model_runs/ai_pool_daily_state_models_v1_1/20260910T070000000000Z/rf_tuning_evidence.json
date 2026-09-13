@@ -1,0 +1,4214 @@
+{
+  "technical_only": {
+    "selected_params": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "max_features": "sqrt"
+    },
+    "evidence": [
+      {
+        "grid_index": 0,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5467939651107968,
+            "brier": 0.24866934879982464
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.616688425696664,
+            "brier": 0.24322205872119065
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5423859649122806,
+            "brier": 0.24735525199798614
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5686227852399138,
+        "mean_brier": 0.24641555317300048
+      },
+      {
+        "grid_index": 1,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.543965110796794,
+            "brier": 0.24897623301145727
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6283032458470266,
+            "brier": 0.2424825180766414
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5352748538011696,
+            "brier": 0.24822313057338438
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5691810701483301,
+        "mean_brier": 0.24656062722049435
+      },
+      {
+        "grid_index": 2,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.531848184818482,
+            "brier": 0.24947783846012545
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6342682213118445,
+            "brier": 0.24297305253850543
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5271111111111111,
+            "brier": 0.24931918658964525
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5644091724138125,
+        "mean_brier": 0.24725669252942536
+      },
+      {
+        "grid_index": 3,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5413484205563415,
+            "brier": 0.24916589374804038
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6353711790393013,
+            "brier": 0.24138873044415046
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5283508771929825,
+            "brier": 0.249677362288126
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5683568255962084,
+        "mean_brier": 0.24674399549343895
+      },
+      {
+        "grid_index": 4,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5257425742574258,
+            "brier": 0.24979897402514054
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6297663530365103,
+            "brier": 0.24314098896780986
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5257309941520468,
+            "brier": 0.24957600663982676
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5604133071486609,
+        "mean_brier": 0.24750532321092575
+      },
+      {
+        "grid_index": 5,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5208156529938708,
+            "brier": 0.25050603075324757
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6404132715076757,
+            "brier": 0.2413764267051376
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5082105263157894,
+            "brier": 0.2519378459760879
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.556479816939112,
+        "mean_brier": 0.24794010114482434
+      },
+      {
+        "grid_index": 6,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.550990099009901,
+            "brier": 0.24947415363737552
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6077071984873723,
+            "brier": 0.2428361830022489
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5300116959064327,
+            "brier": 0.25014686638357386
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5629029978012353,
+        "mean_brier": 0.2474857343410661
+      },
+      {
+        "grid_index": 7,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5538425271098538,
+            "brier": 0.24986672847811614
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5919506595237023,
+            "brier": 0.2438102723522869
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5428304093567252,
+            "brier": 0.24892022310480835
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5628745319967604,
+        "mean_brier": 0.24753240797840378
+      },
+      {
+        "grid_index": 8,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5326732673267327,
+            "brier": 0.2502056333306686
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6247917885922658,
+            "brier": 0.2417473784407594
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5310409356725146,
+            "brier": 0.2501751441577386
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5628353305305044,
+        "mean_brier": 0.24737605197638887
+      },
+      {
+        "grid_index": 9,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5408062234794908,
+            "brier": 0.2500032902978847
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.614437491558997,
+            "brier": 0.241289468937277
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5283976608187134,
+            "brier": 0.25152488536521317
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5612137919524004,
+        "mean_brier": 0.2476058815334583
+      },
+      {
+        "grid_index": 10,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.526001885902876,
+            "brier": 0.2498432626946288
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.624634223202629,
+            "brier": 0.24289186201756596
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5229473684210526,
+            "brier": 0.2504271640307528
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5578611591755193,
+        "mean_brier": 0.24772076291431588
+      },
+      {
+        "grid_index": 11,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5222536539368223,
+            "brier": 0.25041799005805654
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6246117138612525,
+            "brier": 0.24147059457192166
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5116959064327485,
+            "brier": 0.2528036599333508
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.552853758076941,
+        "mean_brier": 0.24823074818777635
+      },
+      {
+        "grid_index": 12,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5654879773691655,
+            "brier": 0.24830765736451513
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6024850312879845,
+            "brier": 0.24211516830405386
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5464093567251462,
+            "brier": 0.24925756499321772
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5714607884607654,
+        "mean_brier": 0.24656013022059556
+      },
+      {
+        "grid_index": 13,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5584394153701084,
+            "brier": 0.25009864850664426
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5920857155719623,
+            "brier": 0.24328501764406835
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5380350877192983,
+            "brier": 0.25036305852943264
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5628534062204563,
+        "mean_brier": 0.24791557489338176
+      },
+      {
+        "grid_index": 14,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5344177274870344,
+            "brier": 0.25010138186484704
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6161031828208706,
+            "brier": 0.24217317761333446
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5286783625730994,
+            "brier": 0.2506002629722159
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5597330909603349,
+        "mean_brier": 0.24762494081679912
+      },
+      {
+        "grid_index": 15,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5388024516737389,
+            "brier": 0.25012289373131696
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6160581641381173,
+            "brier": 0.24058878525208888
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5312046783625731,
+            "brier": 0.25136576505218217
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5620217647248098,
+        "mean_brier": 0.24735914801186265
+      },
+      {
+        "grid_index": 16,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.526001885902876,
+            "brier": 0.24984326269462873
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6247017512267591,
+            "brier": 0.2428877441588601
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5233684210526316,
+            "brier": 0.2504681960350388
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.558024019394089,
+        "mean_brier": 0.2477330676295092
+      },
+      {
+        "grid_index": 17,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5222536539368223,
+            "brier": 0.25041799005805654
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6245666951784992,
+            "brier": 0.2414666567204888
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.511625730994152,
+            "brier": 0.2528074575721007
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5528153600364911,
+        "mean_brier": 0.24823070145021534
+      }
+    ],
+    "folds": [
+      {
+        "fold_id": "train_to_2017_validate_2018",
+        "validation_year": 2018,
+        "validation_start": "2018-01-03",
+        "validation_end": "2018-12-28",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2017-12-29",
+        "candidate_rows_before_purge": 1084,
+        "purged_rows": 34,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2018_validate_2019",
+        "validation_year": 2019,
+        "validation_start": "2019-01-02",
+        "validation_end": "2019-12-30",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2018-12-28",
+        "candidate_rows_before_purge": 1496,
+        "purged_rows": 35,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2019_validate_2020",
+        "validation_year": 2020,
+        "validation_start": "2020-01-02",
+        "validation_end": "2020-12-01",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2019-12-30",
+        "candidate_rows_before_purge": 1919,
+        "purged_rows": 37,
+        "purge_sessions": 21
+      }
+    ]
+  },
+  "technical_plus_macro": {
+    "selected_params": {
+      "n_estimators": 200,
+      "max_depth": 6,
+      "min_samples_leaf": 50,
+      "max_features": 0.5
+    },
+    "evidence": [
+      {
+        "grid_index": 0,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5541725601131542,
+            "brier": 0.24738403768291709
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.617116103182821,
+            "brier": 0.24467581956684153
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5236959064327485,
+            "brier": 0.2489345529620529
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5649948565762412,
+        "mean_brier": 0.24699813673727053
+      },
+      {
+        "grid_index": 1,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5407119283356907,
+            "brier": 0.24785923001229587
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6097780578940261,
+            "brier": 0.24872303402301346
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5261988304093567,
+            "brier": 0.2492377115268866
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5588962722130245,
+        "mean_brier": 0.24860665852073197
+      },
+      {
+        "grid_index": 2,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5495992456388497,
+            "brier": 0.24796836469052225
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6276729842884797,
+            "brier": 0.242801014968551
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5187134502923976,
+            "brier": 0.2498469361997382
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5653285600732424,
+        "mean_brier": 0.2468721052862705
+      },
+      {
+        "grid_index": 3,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.547925506836398,
+            "brier": 0.2482577061078385
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6381848467113852,
+            "brier": 0.24090735459246812
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5247251461988304,
+            "brier": 0.25046712020185596
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5702784999155379,
+        "mean_brier": 0.24654406030072087
+      },
+      {
+        "grid_index": 4,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5204620462046204,
+            "brier": 0.24972642483567833
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6166208976725341,
+            "brier": 0.24386926272604326
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5139181286549708,
+            "brier": 0.2500536529827692
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5503336908440418,
+        "mean_brier": 0.24788311351483028
+      },
+      {
+        "grid_index": 5,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5152876001885903,
+            "brier": 0.25115782415444904
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6320960698689957,
+            "brier": 0.2416785338130284
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5110409356725145,
+            "brier": 0.25163849903036767
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5528082019100334,
+        "mean_brier": 0.24815828566594836
+      },
+      {
+        "grid_index": 6,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5701791607732202,
+            "brier": 0.2458003145261269
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6042857785981182,
+            "brier": 0.2442462860001364
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5199766081871344,
+            "brier": 0.25032708699490813
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5648138491861576,
+        "mean_brier": 0.24679122917372384
+      },
+      {
+        "grid_index": 7,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5592644978783593,
+            "brier": 0.24600915426895267
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6040606851843515,
+            "brier": 0.24878528252440202
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5304561403508772,
+            "brier": 0.2491338948554685
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.564593774471196,
+        "mean_brier": 0.24797611054960775
+      },
+      {
+        "grid_index": 8,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5550919377652052,
+            "brier": 0.24760344828753122
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6285283392607932,
+            "brier": 0.24075615166214182
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5195321637426901,
+            "brier": 0.25093130659633117
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5677174802562295,
+        "mean_brier": 0.24643030218200143
+      },
+      {
+        "grid_index": 9,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5503064592173503,
+            "brier": 0.24830774788469395
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.638680052221672,
+            "brier": 0.23881048282860584
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5250994152046783,
+            "brier": 0.25131444115165763
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5713619755479002,
+        "mean_brier": 0.2461442239549858
+      },
+      {
+        "grid_index": 10,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.519118340405469,
+            "brier": 0.24995784568042365
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6200648269031648,
+            "brier": 0.2433105789248491
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5106198830409356,
+            "brier": 0.25083266313164954
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5499343501165231,
+        "mean_brier": 0.24803369591230742
+      },
+      {
+        "grid_index": 11,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5154997642621405,
+            "brier": 0.25120601031998
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6368117768874082,
+            "brier": 0.24067613516102349
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.510561403508772,
+            "brier": 0.25269398567671714
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5542909815527736,
+        "mean_brier": 0.2481920437192402
+      },
+      {
+        "grid_index": 12,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5686704384724186,
+            "brier": 0.24585142283902878
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6065592220771621,
+            "brier": 0.24337403179425396
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5170058479532164,
+            "brier": 0.2518264303806736
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5640785028342656,
+        "mean_brier": 0.24701729500465208
+      },
+      {
+        "grid_index": 13,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5666195190947665,
+            "brier": 0.2454266540450893
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5960023409715032,
+            "brier": 0.24945313333738206
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.535719298245614,
+            "brier": 0.24912853507046584
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5661137194372946,
+        "mean_brier": 0.24800277415097907
+      },
+      {
+        "grid_index": 14,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5541489863272042,
+            "brier": 0.2476476008684192
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6324224553189574,
+            "brier": 0.24036153554157375
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5211461988304094,
+            "brier": 0.25078695140715
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5692392134921903,
+        "mean_brier": 0.2462653626057143
+      },
+      {
+        "grid_index": 15,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5498349834983498,
+            "brier": 0.24840326413070185
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6351010669427812,
+            "brier": 0.23870776684317185
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5223859649122806,
+            "brier": 0.2517157203880157
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5691073384511373,
+        "mean_brier": 0.24627558378729644
+      },
+      {
+        "grid_index": 16,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.519118340405469,
+            "brier": 0.24995784568042365
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6200648269031648,
+            "brier": 0.2433105789248491
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5106432748538012,
+            "brier": 0.25087141274352454
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5499421473874783,
+        "mean_brier": 0.2480466124495991
+      },
+      {
+        "grid_index": 17,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5154997642621405,
+            "brier": 0.25120601031998
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6372169450321883,
+            "brier": 0.24066423397084713
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5104444444444445,
+            "brier": 0.2526409245096182
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5543870512462578,
+        "mean_brier": 0.24817038960014845
+      }
+    ],
+    "folds": [
+      {
+        "fold_id": "train_to_2017_validate_2018",
+        "validation_year": 2018,
+        "validation_start": "2018-01-03",
+        "validation_end": "2018-12-28",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2017-12-29",
+        "candidate_rows_before_purge": 1084,
+        "purged_rows": 34,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2018_validate_2019",
+        "validation_year": 2019,
+        "validation_start": "2019-01-02",
+        "validation_end": "2019-12-30",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2018-12-28",
+        "candidate_rows_before_purge": 1496,
+        "purged_rows": 35,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2019_validate_2020",
+        "validation_year": 2020,
+        "validation_start": "2020-01-02",
+        "validation_end": "2020-12-01",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2019-12-30",
+        "candidate_rows_before_purge": 1919,
+        "purged_rows": 37,
+        "purge_sessions": 21
+      }
+    ]
+  },
+  "technical_plus_ai_state": {
+    "selected_params": {
+      "n_estimators": 200,
+      "max_depth": 6,
+      "min_samples_leaf": 20,
+      "max_features": 0.5
+    },
+    "evidence": [
+      {
+        "grid_index": 0,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5669024045261669,
+            "brier": 0.24638371125919975
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6165308603070274,
+            "brier": 0.2414725150463898
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5268304093567252,
+            "brier": 0.2498017456114231
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.57008789139664,
+        "mean_brier": 0.2458859906390042
+      },
+      {
+        "grid_index": 1,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5656529938708156,
+            "brier": 0.24710499367811675
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6107009408904696,
+            "brier": 0.2426709638343578
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5379649122807018,
+            "brier": 0.24932822148369718
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5714396156806623,
+        "mean_brier": 0.24636805966539058
+      },
+      {
+        "grid_index": 2,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.562942008486563,
+            "brier": 0.24734717686268293
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6191419439067212,
+            "brier": 0.24110953293818485
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5242339181286549,
+            "brier": 0.25042999530167515
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5687726235073131,
+        "mean_brier": 0.24629556836751432
+      },
+      {
+        "grid_index": 3,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5687883074021689,
+            "brier": 0.24695427480162005
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6021473911673345,
+            "brier": 0.24245772410883848
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5301988304093567,
+            "brier": 0.2505358920759972
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5670448429929533,
+        "mean_brier": 0.2466492969954852
+      },
+      {
+        "grid_index": 4,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5697076850542198,
+            "brier": 0.2476478281704094
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6197271867825147,
+            "brier": 0.24144811219888912
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5275321637426901,
+            "brier": 0.2500443585678498
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5723223451931415,
+        "mean_brier": 0.24638009964571608
+      },
+      {
+        "grid_index": 5,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5598302687411598,
+            "brier": 0.24844320675477552
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6012695268536442,
+            "brier": 0.24256845181920536
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5244912280701755,
+            "brier": 0.25121340056380487
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5618636745549931,
+        "mean_brier": 0.24740835304592856
+      },
+      {
+        "grid_index": 6,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5666195190947666,
+            "brier": 0.24765745292946026
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6084274974114257,
+            "brier": 0.2404880125368377
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5356023391812866,
+            "brier": 0.25016556255214883
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5702164518958263,
+        "mean_brier": 0.24610367600614894
+      },
+      {
+        "grid_index": 7,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5689297501178688,
+            "brier": 0.2477680354675466
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6012019988295143,
+            "brier": 0.2429630064414343
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5512280701754386,
+            "brier": 0.24992960480934584
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5737866063742739,
+        "mean_brier": 0.24688688223944225
+      },
+      {
+        "grid_index": 8,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5637670909948138,
+            "brier": 0.24814297316202272
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.609372889749246,
+            "brier": 0.24072548887608788
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5304093567251462,
+            "brier": 0.2512863555088719
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.567849779156402,
+        "mean_brier": 0.24671827251566084
+      },
+      {
+        "grid_index": 9,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5609146628948608,
+            "brier": 0.24800852864327597
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.603610498356818,
+            "brier": 0.241176662302806
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5399766081871346,
+            "brier": 0.25037954562144826
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5681672564796045,
+        "mean_brier": 0.2465215788558434
+      },
+      {
+        "grid_index": 10,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.567067421027817,
+            "brier": 0.2479205945864341
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6159005987484806,
+            "brier": 0.24100922268945718
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5289122807017543,
+            "brier": 0.2503551696455016
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5706267668260173,
+        "mean_brier": 0.24642832897379763
+      },
+      {
+        "grid_index": 11,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5583922677982083,
+            "brier": 0.24844890103470088
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6023949939224778,
+            "brier": 0.24209747677494206
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5298245614035088,
+            "brier": 0.2510459347180322
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5635372743747316,
+        "mean_brier": 0.24719743750922504
+      },
+      {
+        "grid_index": 12,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5623998114097124,
+            "brier": 0.2489879050538856
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5839598433349841,
+            "brier": 0.2421838186353862
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5411929824561403,
+            "brier": 0.25034485767239656
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5625175457336123,
+        "mean_brier": 0.2471721937872228
+      },
+      {
+        "grid_index": 13,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5639321074964639,
+            "brier": 0.24890763813768102
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5891369918516184,
+            "brier": 0.2442908880346954
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5539181286549708,
+            "brier": 0.24863187993447144
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5689957426676844,
+        "mean_brier": 0.24727680203561597
+      },
+      {
+        "grid_index": 14,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5616218764733616,
+            "brier": 0.24831708198678012
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6103407914284428,
+            "brier": 0.24055531289327517
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5298713450292398,
+            "brier": 0.2509802356668822
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.567278004310348,
+        "mean_brier": 0.24661754351564583
+      },
+      {
+        "grid_index": 15,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5603724658180104,
+            "brier": 0.24820072494724263
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5962274343852698,
+            "brier": 0.24215816614516614
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5402807017543859,
+            "brier": 0.25076117166155637
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5656268673192221,
+        "mean_brier": 0.24704002091798838
+      },
+      {
+        "grid_index": 16,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.567067421027817,
+            "brier": 0.2479205945864341
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6158780894071041,
+            "brier": 0.24100715891144442
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5273684210526316,
+            "brier": 0.2504321328644531
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5701046438291842,
+        "mean_brier": 0.24645329545411054
+      },
+      {
+        "grid_index": 17,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5583922677982083,
+            "brier": 0.24844890103470088
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6023949939224778,
+            "brier": 0.2420974767749421
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5295906432748538,
+            "brier": 0.25112072766609783
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.56345930166518,
+        "mean_brier": 0.2472223684919136
+      }
+    ],
+    "folds": [
+      {
+        "fold_id": "train_to_2017_validate_2018",
+        "validation_year": 2018,
+        "validation_start": "2018-01-03",
+        "validation_end": "2018-12-28",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2017-12-29",
+        "candidate_rows_before_purge": 1084,
+        "purged_rows": 34,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2018_validate_2019",
+        "validation_year": 2019,
+        "validation_start": "2019-01-02",
+        "validation_end": "2019-12-30",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2018-12-28",
+        "candidate_rows_before_purge": 1496,
+        "purged_rows": 35,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2019_validate_2020",
+        "validation_year": 2020,
+        "validation_start": "2020-01-02",
+        "validation_end": "2020-12-01",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2019-12-30",
+        "candidate_rows_before_purge": 1919,
+        "purged_rows": 37,
+        "purge_sessions": 21
+      }
+    ]
+  },
+  "full_state": {
+    "selected_params": {
+      "n_estimators": 200,
+      "max_depth": null,
+      "min_samples_leaf": 50,
+      "max_features": "sqrt"
+    },
+    "evidence": [
+      {
+        "grid_index": 0,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5582979726544083,
+            "brier": 0.24750689935410278
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6334578850222843,
+            "brier": 0.24148949343648635
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5255672514619882,
+            "brier": 0.24870936824716794
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5724410363795602,
+        "mean_brier": 0.24590192034591904
+      },
+      {
+        "grid_index": 1,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5471475719000471,
+            "brier": 0.24790592954094354
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6121865574213299,
+            "brier": 0.24652785204014974
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5429005847953216,
+            "brier": 0.24791158603252617
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5674115713722329,
+        "mean_brier": 0.24744845587120648
+      },
+      {
+        "grid_index": 2,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5570485619990571,
+            "brier": 0.2478584068196722
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6312294602259938,
+            "brier": 0.2415958199614214
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5229239766081871,
+            "brier": 0.24956521283812608
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.570400666277746,
+        "mean_brier": 0.24633981320640655
+      },
+      {
+        "grid_index": 3,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5624469589816123,
+            "brier": 0.2479978214331104
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6231486066717689,
+            "brier": 0.2414292620562187
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5304093567251462,
+            "brier": 0.2502012535949808
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5720016407928424,
+        "mean_brier": 0.2465427790281033
+      },
+      {
+        "grid_index": 4,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5646157472890146,
+            "brier": 0.24815114762278068
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6251406833836042,
+            "brier": 0.24160431336440466
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5294152046783626,
+            "brier": 0.24896064895759387
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5730572117836604,
+        "mean_brier": 0.2462387033149264
+      },
+      {
+        "grid_index": 5,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 3,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.555940594059406,
+            "brier": 0.2492008548075984
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6196821680997614,
+            "brier": 0.24163158280904778
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5176374269005848,
+            "brier": 0.2520744483810578
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5644200630199174,
+        "mean_brier": 0.2476356286659013
+      },
+      {
+        "grid_index": 6,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5656529938708157,
+            "brier": 0.24688344064560416
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6280106244091298,
+            "brier": 0.24021943720664565
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5247719298245614,
+            "brier": 0.25104462056590965
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.572811849368169,
+        "mean_brier": 0.24604916613938652
+      },
+      {
+        "grid_index": 7,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5576379066478077,
+            "brier": 0.24801260167313904
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6183090982757844,
+            "brier": 0.24369019058170432
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5524444444444444,
+            "brier": 0.24797929177211164
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5761304831226788,
+        "mean_brier": 0.24656069467565167
+      },
+      {
+        "grid_index": 8,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5639321074964638,
+            "brier": 0.2479819368798999
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6367217395219016,
+            "brier": 0.23974559092856057
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5287719298245614,
+            "brier": 0.2498713920050877
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5764752589476423,
+        "mean_brier": 0.24586630660451606
+      },
+      {
+        "grid_index": 9,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5506129184347006,
+            "brier": 0.24941798886042202
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.616350785576014,
+            "brier": 0.23974247999561818
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5381520467836257,
+            "brier": 0.25047120248116217
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5683719169314467,
+        "mean_brier": 0.24654389044573413
+      },
+      {
+        "grid_index": 10,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5622347949080622,
+            "brier": 0.24824934512297492
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6249493539819025,
+            "brier": 0.2410522354600065
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.527953216374269,
+            "brier": 0.24940572508869766
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5717124550880778,
+        "mean_brier": 0.24623576855722637
+      },
+      {
+        "grid_index": 11,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": 6,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5574728901461574,
+            "brier": 0.2492290093375105
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.619367037320488,
+            "brier": 0.24072206099285762
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5175438596491229,
+            "brier": 0.2523755346004117
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5647945957052561,
+        "mean_brier": 0.24744220164359323
+      },
+      {
+        "grid_index": 12,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5593823668081094,
+            "brier": 0.24747260027615336
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6247467699095124,
+            "brier": 0.240069197058164
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5371695906432749,
+            "brier": 0.2496883462325814
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5737662424536322,
+        "mean_brier": 0.24574338118896624
+      },
+      {
+        "grid_index": 13,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 20,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5511079679396511,
+            "brier": 0.24932174128072543
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6111286183766264,
+            "brier": 0.24371213271156378
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5616140350877192,
+            "brier": 0.24719039708695764
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5746168738013322,
+        "mean_brier": 0.24674142369308227
+      },
+      {
+        "grid_index": 14,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5625648279113625,
+            "brier": 0.24810977603246523
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.640660874262819,
+            "brier": 0.23927044005013054
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5278362573099415,
+            "brier": 0.24966807506155567
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5770206531613744,
+        "mean_brier": 0.24568276371471712
+      },
+      {
+        "grid_index": 15,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 50,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.553064592173503,
+            "brier": 0.24933309891002506
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6223157610408319,
+            "brier": 0.23921092055638454
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5345497076023391,
+            "brier": 0.25124062048623313
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5699766869388913,
+        "mean_brier": 0.24659487998421423
+      },
+      {
+        "grid_index": 16,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": "sqrt"
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5622347949080622,
+            "brier": 0.24824934512297492
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6249493539819025,
+            "brier": 0.24105223546000654
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5284912280701755,
+            "brier": 0.24951346809331218
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5718917923200467,
+        "mean_brier": 0.2462716828920979
+      },
+      {
+        "grid_index": 17,
+        "params": {
+          "n_estimators": 200,
+          "max_depth": null,
+          "min_samples_leaf": 100,
+          "max_features": 0.5
+        },
+        "folds": [
+          {
+            "fold_id": "train_to_2017_validate_2018",
+            "validation_year": 2018,
+            "fit_rows": 1050,
+            "validation_rows": 412,
+            "candidate_rows_before_purge": 1084,
+            "purged_rows": 34,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2018-01-03",
+            "last_fit_exit": "2017-12-29",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5574728901461574,
+            "brier": 0.2492290093375105
+          },
+          {
+            "fold_id": "train_to_2018_validate_2019",
+            "validation_year": 2019,
+            "fit_rows": 1461,
+            "validation_rows": 423,
+            "candidate_rows_before_purge": 1496,
+            "purged_rows": 35,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2019-01-02",
+            "last_fit_exit": "2018-12-28",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.6197947148066447,
+            "brier": 0.24070294558641445
+          },
+          {
+            "fold_id": "train_to_2019_validate_2020",
+            "validation_year": 2020,
+            "fit_rows": 1882,
+            "validation_rows": 415,
+            "candidate_rows_before_purge": 1919,
+            "purged_rows": 37,
+            "purge_rule": "fit rows require exit_session < validation_start",
+            "validation_start": "2020-01-02",
+            "last_fit_exit": "2019-12-30",
+            "all_missing_training_columns": [],
+            "roc_auc": 0.5182222222222221,
+            "brier": 0.25229073281171893
+          }
+        ],
+        "fold_count": 3,
+        "mean_roc_auc": 0.5651632757250081,
+        "mean_brier": 0.24740756257854798
+      }
+    ],
+    "folds": [
+      {
+        "fold_id": "train_to_2017_validate_2018",
+        "validation_year": 2018,
+        "validation_start": "2018-01-03",
+        "validation_end": "2018-12-28",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2017-12-29",
+        "candidate_rows_before_purge": 1084,
+        "purged_rows": 34,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2018_validate_2019",
+        "validation_year": 2019,
+        "validation_start": "2019-01-02",
+        "validation_end": "2019-12-30",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2018-12-28",
+        "candidate_rows_before_purge": 1496,
+        "purged_rows": 35,
+        "purge_sessions": 21
+      },
+      {
+        "fold_id": "train_to_2019_validate_2020",
+        "validation_year": 2020,
+        "validation_start": "2020-01-02",
+        "validation_end": "2020-12-01",
+        "purge_rule": "fit rows require exit_session < validation_start",
+        "last_fit_exit": "2019-12-30",
+        "candidate_rows_before_purge": 1919,
+        "purged_rows": 37,
+        "purge_sessions": 21
+      }
+    ]
+  }
+}

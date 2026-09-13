@@ -1,0 +1,566 @@
+{
+  "schema_version": "ai_pool_daily_state_models_v1",
+  "run_id": "20260910T070105846190Z",
+  "generated_at_utc": "2026-09-10T07:01:06.383462+00:00",
+  "status": "complete_training_validation_only",
+  "inputs": {
+    "model_ready": {
+      "run_id": "20260910T052100000000Z",
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z"
+    },
+    "macro": {
+      "run_id": "20260910T062700000000Z",
+      "path": "data/clean/daily_macro_v1/20260910T062700000000Z"
+    },
+    "ai_state": {
+      "run_id": "20260910T144000000000Z",
+      "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z"
+    },
+    "ai_state_safe_feature_audit": {
+      "run_id": "20260910T065044522242Z",
+      "path": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/summary.json",
+      "feature_list_name": "safe_feature_lists.ai_recommended_incremental",
+      "feature_count": 21
+    },
+    "files": {
+      "model_features": {
+        "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/model_features.csv",
+        "sha256": "f52e8fd8ac5e577be9af6bbf5765ff1d3ae43d5c22c34b41274e32eec5ef7fbe"
+      },
+      "eligibility": {
+        "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/eligibility.csv",
+        "sha256": "b8e27820152f1b9b3a74f7a0f6f5b4f38289270ad000a8d9c4bb5fc2c17c2da2"
+      },
+      "targets_dev": {
+        "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/targets_dev.csv",
+        "sha256": "9b1446bcdb1c5c9504f277d9db54768c47a026de5659cc9d72ec5f1834051b11"
+      },
+      "model_ready_summary": {
+        "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/summary.json",
+        "sha256": "5e46bc160f40b1a36aa6cb6087d67a00aebe4c12397eeca6cb89f2981c17f8d7"
+      },
+      "macro_features_train_valid": {
+        "path": "data/clean/daily_macro_v1/20260910T062700000000Z/macro_features_train_valid.csv",
+        "sha256": "dafec1f6d237ba4c2dd226c8139ef4c81cd447135f7a8d318b9f3cfc1b9076a3"
+      },
+      "macro_summary": {
+        "path": "data/clean/daily_macro_v1/20260910T062700000000Z/clean_summary.json",
+        "sha256": "6b891bab7e01a11af50bd23dc961e490675bef4a86b73f2b5bea32d9d85cf8a0"
+      },
+      "ai_state_features": {
+        "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/ai_state_features.csv",
+        "sha256": "2c8a196263ffb09351caa461942de23764191dab0ce5a7d8f4db307e4544649c"
+      },
+      "ai_state_summary": {
+        "path": "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/summary.json",
+        "sha256": "2edb157ecd2c3f5615cf19f72e6394f213901d00b519d739da042fa5b5de3917"
+      },
+      "config": {
+        "path": "ai_pool_daily_state_models_v1_1_config.json",
+        "sha256": "d0b92845f6297e2fb2ef4cfeaf8c0c4881b7e80ab3511f47c812ee0398de9177"
+      },
+      "runner": {
+        "path": "run_ai_pool_daily_state_models_v1.py",
+        "sha256": "dcc38b4a51b3fb17c48c3e5bbc71d2e2b916e20be3484bed21d66e318d635ee3"
+      },
+      "ai_state_safe_feature_audit": {
+        "path": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/summary.json",
+        "sha256": "1130e2668a0433e2c69924b75df5be1c5efe2f0c6c1445172eaf17454edbd744"
+      }
+    },
+    "sealed_test_targets": {
+      "path": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/targets_test_sealed.csv",
+      "opened": false,
+      "sha256": null
+    }
+  },
+  "outputs": {
+    "path": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z",
+    "model_paths": {
+      "technical_only_logistic": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_only_logistic.joblib",
+      "technical_only_random_forest": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_only_random_forest.joblib",
+      "technical_plus_macro_logistic": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_macro_logistic.joblib",
+      "technical_plus_macro_random_forest": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_macro_random_forest.joblib",
+      "technical_plus_ai_state_logistic": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_ai_state_logistic.joblib",
+      "technical_plus_ai_state_random_forest": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_ai_state_random_forest.joblib",
+      "full_state_logistic": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/full_state_logistic.joblib",
+      "full_state_random_forest": "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/full_state_random_forest.joblib"
+    },
+    "output_hashes": {
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/validation_predictions.csv": "56f8d772c7106b6c6048e2ce6ddc3a7b6aba53b2fc94ce5a0cea5faffa5ac7f4",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/validation_metrics.csv": "7bdda04eafdfa95ae03f4e825a29119339d309ad12785dd59bd3c953d092b623",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/feature_importance.csv": "c80782003588a6ac23ddbe7b5b5dcdf1ade37a3f477baf7a13af0ef4c8367b64",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/feature_sets.json": "1ffbdb60efc6b3fa0e5c2c0e11b08795a1ede4b105e4015738a0e0213c6e80cb",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/rf_tuning_evidence.json": "b9f0ea5149b328df81aa3b7f7cc4a6506c88580f12bbd23fc040a0ca411070ef",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_only_logistic.joblib": "0f3398b478c7b0a93af58a80803953a8a22afad4bac2e9436d13cab5073c753b",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_only_random_forest.joblib": "e2108ee2c467dc127c6c316863b99454036c97563bf30798d916f74ac9db57d9",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_macro_logistic.joblib": "97ce56e29d32e8e096d4e355ce94a13111a029beee5a47ce54b9e30d437cd342",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_macro_random_forest.joblib": "68c829d3deb0ff319e603ad83f92e6512404c655de370c93af7a1734675a81fe",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_ai_state_logistic.joblib": "1b01ae211fdc49936923d6f9ab957b7986cbc36e36ff9854450b0e1d6652ee3a",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/technical_plus_ai_state_random_forest.joblib": "bbce35735ebbb1489c1befe035a027de057d15794eea9ee09cd17e705aa41aba",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/full_state_logistic.joblib": "7993b3b2ea6317329937c6a134426afde77e7d2ed1996212df5fbf9ae23d1aed",
+      "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070105846190Z/models/full_state_random_forest.joblib": "f8c24f897d8a67e0583bf381313addd04d37003e6ecd9695e967c9a66ade318d"
+    }
+  },
+  "feature_sets": {
+    "technical_only": [
+      "momentum_1",
+      "momentum_5",
+      "momentum_20",
+      "momentum_60",
+      "volatility_20_ann",
+      "volatility_60_ann",
+      "volume_median_20_log1p",
+      "volume_median_60_log1p",
+      "dollar_volume_median_20_log1p",
+      "dollar_volume_median_60_log1p",
+      "spread_median_20_bps",
+      "spread_median_60_bps",
+      "beta_126",
+      "idio_vol_126_ann",
+      "beta_obs_126",
+      "spy_momentum_1",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_volatility_20_ann",
+      "spy_volatility_60_ann"
+    ],
+    "technical_plus_macro": [
+      "momentum_1",
+      "momentum_5",
+      "momentum_20",
+      "momentum_60",
+      "volatility_20_ann",
+      "volatility_60_ann",
+      "volume_median_20_log1p",
+      "volume_median_60_log1p",
+      "dollar_volume_median_20_log1p",
+      "dollar_volume_median_60_log1p",
+      "spread_median_20_bps",
+      "spread_median_60_bps",
+      "beta_126",
+      "idio_vol_126_ann",
+      "beta_obs_126",
+      "spy_momentum_1",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_volatility_20_ann",
+      "spy_volatility_60_ann",
+      "vix_level",
+      "vix_change_1d",
+      "vix_change_5d",
+      "vix_change_20d",
+      "vix_percentile_252d",
+      "dgs3mo_level",
+      "dgs3mo_change_5d",
+      "dgs3mo_change_20d",
+      "dgs2_level",
+      "dgs2_change_5d",
+      "dgs2_change_20d",
+      "dgs10_level",
+      "dgs10_change_5d",
+      "dgs10_change_20d",
+      "broad_dollar_level",
+      "broad_dollar_change_5d",
+      "broad_dollar_change_20d",
+      "broad_dollar_change_60d",
+      "term_spread_10y_2y",
+      "term_spread_10y_3m"
+    ],
+    "technical_plus_ai_state": [
+      "momentum_1",
+      "momentum_5",
+      "momentum_20",
+      "momentum_60",
+      "volatility_20_ann",
+      "volatility_60_ann",
+      "volume_median_20_log1p",
+      "volume_median_60_log1p",
+      "dollar_volume_median_20_log1p",
+      "dollar_volume_median_60_log1p",
+      "spread_median_20_bps",
+      "spread_median_60_bps",
+      "beta_126",
+      "idio_vol_126_ann",
+      "beta_obs_126",
+      "spy_momentum_1",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_volatility_20_ann",
+      "spy_volatility_60_ann",
+      "etf_soxx_momentum_5",
+      "etf_soxx_momentum_20",
+      "etf_soxx_momentum_60",
+      "etf_soxx_volatility_20_ann",
+      "etf_soxx_volatility_60_ann",
+      "etf_soxx_max_drawdown_60",
+      "etf_xlk_momentum_5",
+      "etf_xlk_momentum_20",
+      "etf_xlk_momentum_60",
+      "etf_xlk_volatility_20_ann",
+      "etf_xlk_volatility_60_ann",
+      "etf_xlk_max_drawdown_60",
+      "soxx_relative_spy_return_5",
+      "soxx_relative_spy_return_20",
+      "soxx_relative_spy_return_60",
+      "pool_breadth_up_1",
+      "pool_breadth_above_ma20",
+      "pool_breadth_above_ma60",
+      "pool_cross_sectional_dispersion_1",
+      "pool_equal_weight_return_1",
+      "pool_equal_weight_relative_spy_return_1"
+    ],
+    "full_state": [
+      "momentum_1",
+      "momentum_5",
+      "momentum_20",
+      "momentum_60",
+      "volatility_20_ann",
+      "volatility_60_ann",
+      "volume_median_20_log1p",
+      "volume_median_60_log1p",
+      "dollar_volume_median_20_log1p",
+      "dollar_volume_median_60_log1p",
+      "spread_median_20_bps",
+      "spread_median_60_bps",
+      "beta_126",
+      "idio_vol_126_ann",
+      "beta_obs_126",
+      "spy_momentum_1",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_volatility_20_ann",
+      "spy_volatility_60_ann",
+      "vix_level",
+      "vix_change_1d",
+      "vix_change_5d",
+      "vix_change_20d",
+      "vix_percentile_252d",
+      "dgs3mo_level",
+      "dgs3mo_change_5d",
+      "dgs3mo_change_20d",
+      "dgs2_level",
+      "dgs2_change_5d",
+      "dgs2_change_20d",
+      "dgs10_level",
+      "dgs10_change_5d",
+      "dgs10_change_20d",
+      "broad_dollar_level",
+      "broad_dollar_change_5d",
+      "broad_dollar_change_20d",
+      "broad_dollar_change_60d",
+      "term_spread_10y_2y",
+      "term_spread_10y_3m",
+      "etf_soxx_momentum_5",
+      "etf_soxx_momentum_20",
+      "etf_soxx_momentum_60",
+      "etf_soxx_volatility_20_ann",
+      "etf_soxx_volatility_60_ann",
+      "etf_soxx_max_drawdown_60",
+      "etf_xlk_momentum_5",
+      "etf_xlk_momentum_20",
+      "etf_xlk_momentum_60",
+      "etf_xlk_volatility_20_ann",
+      "etf_xlk_volatility_60_ann",
+      "etf_xlk_max_drawdown_60",
+      "soxx_relative_spy_return_5",
+      "soxx_relative_spy_return_20",
+      "soxx_relative_spy_return_60",
+      "pool_breadth_up_1",
+      "pool_breadth_above_ma20",
+      "pool_breadth_above_ma60",
+      "pool_cross_sectional_dispersion_1",
+      "pool_equal_weight_return_1",
+      "pool_equal_weight_relative_spy_return_1"
+    ]
+  },
+  "feature_alias_exclusions": {
+    "technical_duplicate_columns_dropped_from_ai_state": [],
+    "numeric_alias_columns_dropped_from_ai_state": [],
+    "declared_ai_state_feature_count": 21,
+    "effective_ai_state_feature_count": 21,
+    "upstream_safe_list_exclusions": [
+      "etf_aiq_momentum_5",
+      "etf_aiq_momentum_20",
+      "etf_aiq_momentum_60",
+      "etf_aiq_volatility_20_ann",
+      "etf_aiq_volatility_60_ann",
+      "etf_aiq_max_drawdown_60",
+      "etf_botz_momentum_5",
+      "etf_botz_momentum_20",
+      "etf_botz_momentum_60",
+      "etf_botz_volatility_20_ann",
+      "etf_botz_volatility_60_ann",
+      "etf_botz_max_drawdown_60",
+      "etf_igv_momentum_5",
+      "etf_igv_momentum_20",
+      "etf_igv_momentum_60",
+      "etf_igv_volatility_20_ann",
+      "etf_igv_volatility_60_ann",
+      "etf_igv_max_drawdown_60",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_return_1"
+    ],
+    "stable_deduplication": "technical columns are retained first; AI-state duplicates are omitted before merge"
+  },
+  "ai_state_safe_feature_audit": {
+    "run_id": "20260910T065044522242Z",
+    "path": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/summary.json",
+    "feature_list_name": "safe_feature_lists.ai_recommended_incremental",
+    "feature_count": 21
+  },
+  "excluded_credit_spread_features": [
+    "high_yield_oas_change_20d",
+    "high_yield_oas_change_5d",
+    "high_yield_oas_level",
+    "investment_grade_oas_change_20d",
+    "investment_grade_oas_change_5d",
+    "investment_grade_oas_level"
+  ],
+  "sampling": {
+    "primary": "non_overlap_selected",
+    "horizon_sessions": 21,
+    "description": "Use model-ready non_overlap_selected anchors only; no random splitting. Each expanding training fold includes only rows with exit_session strictly before that fold's validation_start, which purges every H21 label window that could overlap validation; final validation is scored after fitting on all primary training anchors."
+  },
+  "preprocessing": {
+    "description": "SimpleImputer(strategy=median, add_indicator=True, keep_empty_features=True) is fit separately on each training fold and on final primary training anchors; StandardScaler is fit on training only for Logistic. All-missing training columns retain an explicit missing indicator and sklearn empty-column fallback; no source row or value is modified.",
+    "structural_missingness": {
+      "aiq": {
+        "features": [],
+        "by_feature": {}
+      },
+      "botz": {
+        "features": [],
+        "by_feature": {}
+      },
+      "igv": {
+        "features": [],
+        "by_feature": {}
+      }
+    },
+    "winsorization": false,
+    "forward_fill": false,
+    "zero_fill": false,
+    "interpolation": false
+  },
+  "counts": {
+    "model_ready_master_rows": 110829,
+    "model_ready_master_instruments": 49,
+    "model_ready_training_rows": 49948,
+    "model_ready_validation_rows": 21671,
+    "model_ready_test_rows": 39210,
+    "development_target_rows_loaded": 71619,
+    "primary_training_rows": 2334,
+    "primary_validation_rows": 992,
+    "primary_training_instruments": 39,
+    "primary_validation_instruments": 44,
+    "primary_training_sessions": 444,
+    "primary_validation_sessions": 89,
+    "validation_prediction_rows": 992,
+    "test_prediction_rows": 0,
+    "test_metric_rows": 0,
+    "rows_physically_deleted": 0
+  },
+  "validation_metrics": {
+    "technical_only/logistic": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.5394626108380393,
+      "pr_auc": 0.5420980474543661,
+      "brier": 0.2510953427100779,
+      "directional_accuracy_at_0_5": 0.5161290322580645,
+      "pooled_rank_ic": 0.1403233206646585,
+      "pooled_rank_ic_label": 0.06834447446055046,
+      "mean_daily_rank_ic": 0.07760013051635535,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": 0.006152054921156936
+    },
+    "technical_only/random_forest": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.5090723552346453,
+      "pr_auc": 0.5323721138985386,
+      "brier": 0.25124454107693467,
+      "directional_accuracy_at_0_5": 0.5080645161290323,
+      "pooled_rank_ic": 0.057773678632495114,
+      "pooled_rank_ic_label": 0.015712223227601952,
+      "mean_daily_rank_ic": 0.04612937433722163,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": 0.0013295112798440516
+    },
+    "technical_plus_macro/logistic": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.5615590709322795,
+      "pr_auc": 0.552404099003158,
+      "brier": 0.25082448744883884,
+      "directional_accuracy_at_0_5": 0.5645161290322581,
+      "pooled_rank_ic": 0.17390621676365922,
+      "pooled_rank_ic_label": 0.10661287385199862,
+      "mean_daily_rank_ic": 0.08580634635777795,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": 0.005244181160997269
+    },
+    "technical_plus_macro/random_forest": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.5080031061077299,
+      "pr_auc": 0.525774785620713,
+      "brier": 0.2525436541023731,
+      "directional_accuracy_at_0_5": 0.5050403225806451,
+      "pooled_rank_ic": 0.06403897626145298,
+      "pooled_rank_ic_label": 0.013860412916663428,
+      "mean_daily_rank_ic": 0.042621747287707,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": -0.00204229037677398
+    },
+    "technical_plus_ai_state/logistic": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.5799395853915363,
+      "pr_auc": 0.5745134788208872,
+      "brier": 0.24763212667261283,
+      "directional_accuracy_at_0_5": 0.5453629032258065,
+      "pooled_rank_ic": 0.18667493357771844,
+      "pooled_rank_ic_label": 0.13844570433014713,
+      "mean_daily_rank_ic": 0.08893058161350846,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": 0.007385812834129305
+    },
+    "technical_plus_ai_state/random_forest": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.526737326551936,
+      "pr_auc": 0.5261509309034869,
+      "brier": 0.250674440373509,
+      "directional_accuracy_at_0_5": 0.5332661290322581,
+      "pooled_rank_ic": 0.0697939431690595,
+      "pooled_rank_ic_label": 0.046305819429228866,
+      "mean_daily_rank_ic": 0.0055632596459743965,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": -0.0024128923118012595
+    },
+    "full_state/logistic": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.5819927063386552,
+      "pr_auc": 0.545570754708588,
+      "brier": 0.2699851982989222,
+      "directional_accuracy_at_0_5": 0.5564516129032258,
+      "pooled_rank_ic": 0.1858652145697596,
+      "pooled_rank_ic_label": 0.14200146177130285,
+      "mean_daily_rank_ic": 0.09295211681213802,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": 0.007032392072225977
+    },
+    "full_state/random_forest": {
+      "rows": 992,
+      "instruments": 44,
+      "formation_sessions": 89,
+      "positive_label_rate": 0.5070564516129032,
+      "roc_auc": 0.5397939560998021,
+      "pr_auc": 0.5391687656687374,
+      "brier": 0.24978445763839285,
+      "directional_accuracy_at_0_5": 0.5443548387096774,
+      "pooled_rank_ic": 0.09785116192480683,
+      "pooled_rank_ic_label": 0.06891832463562383,
+      "mean_daily_rank_ic": 0.02227355172148995,
+      "daily_rank_ic_groups": 23,
+      "mean_daily_top_minus_bottom_spread": -0.0009464032253864107
+    }
+  },
+  "rf_tuning": {
+    "technical_only": {
+      "selected_params": {
+        "n_estimators": 200,
+        "max_depth": 3,
+        "min_samples_leaf": 20,
+        "max_features": "sqrt"
+      },
+      "fold_count": 3,
+      "candidate_count": 18
+    },
+    "technical_plus_macro": {
+      "selected_params": {
+        "n_estimators": 200,
+        "max_depth": null,
+        "min_samples_leaf": 20,
+        "max_features": "sqrt"
+      },
+      "fold_count": 3,
+      "candidate_count": 18
+    },
+    "technical_plus_ai_state": {
+      "selected_params": {
+        "n_estimators": 200,
+        "max_depth": 3,
+        "min_samples_leaf": 100,
+        "max_features": "sqrt"
+      },
+      "fold_count": 3,
+      "candidate_count": 18
+    },
+    "full_state": {
+      "selected_params": {
+        "n_estimators": 200,
+        "max_depth": 3,
+        "min_samples_leaf": 50,
+        "max_features": 0.5
+      },
+      "fold_count": 3,
+      "candidate_count": 18
+    }
+  },
+  "checks": {
+    "primary_non_overlap_anchor_sample": true,
+    "primary_anchor_keys_unique": true,
+    "horizon_is_21_sessions": true,
+    "rf_tuning_training_only": true,
+    "rf_tuning_has_purged_folds": true,
+    "four_feature_sets_present": true,
+    "credit_spread_features_excluded": true,
+    "no_target_columns_in_features": true,
+    "validation_predictions_only": true,
+    "test_predictions_zero": true,
+    "test_metrics_zero": true,
+    "test_targets_not_opened": true,
+    "all_probabilities_finite": true,
+    "macro_key_join_complete": true,
+    "ai_state_key_join_complete": true,
+    "raw_inputs_not_modified_by_runner": true,
+    "ai_safe_feature_list_matches_audit": true
+  },
+  "test_policy": "Do not open, parse, aggregate, score, rank or predict sealed test targets. Save validation predictions only.",
+  "source_run_status": {
+    "model_ready": "partial_model_ready_daily_controls_only",
+    "macro": "built_with_credit_spread_training_coverage_unavailable",
+    "ai_state": "complete_clean_ai_industry_state",
+    "ai_state_safe_feature_audit": "PASS"
+  },
+  "limitations": [
+    "The coverage-safe AI incremental list is taken exactly from the independently verified input audit; AIQ/BOTZ/IGV structural features, duplicate SPY momentum columns, and spy_return_1 alias are excluded upstream.",
+    "Validation metrics are development comparisons; no test target, prediction, ranking, metric, portfolio or performance claim is produced.",
+    "AIQ/BOTZ/IGV pre-listing structural missingness is handled in model pipelines but remains a model assumption; it does not alter input rows.",
+    "Credit-spread six-column macro features are excluded because train/validation coverage is unavailable in the selected macro run."
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": "bmf5360_baseline_package_v1",
+  "package_version": "1.0.0",
+  "purpose": "Training/validation-only comparison of technical-only and technical-plus-macro daily H21 Logistic and Random Forest baselines.",
+  "source_runner": "run_ai_pool_daily_state_models_v1.py",
+  "source_runner_sha256": "dcc38b4a51b3fb17c48c3e5bbc71d2e2b916e20be3484bed21d66e318d635ee3",
+  "source_config": "ai_pool_daily_state_models_v1_1_config.json",
+  "source_config_sha256": "d0b92845f6297e2fb2ef4cfeaf8c0c4881b7e80ab3511f47c812ee0398de9177",
+  "source_audited_run_id": "20260910T070000000000Z",
+  "model_ready_run_id": "20260910T052100000000Z",
+  "macro_run_id": "20260910T062700000000Z",
+  "horizon_sessions": 21,
+  "training_years": [2015, 2016, 2017, 2018, 2019, 2020],
+  "validation_years": [2021, 2022],
+  "paths": {
+    "model_ready_root": "data/model_ready_ai_pool_daily_v1",
+    "macro_root": "data/clean/daily_macro_v1",
+    "output_root": "data/model_runs/bmf5360_baseline_package",
+    "sealed_test_targets_name": "targets_test_sealed.csv"
+  },
+  "requirements_path": "deliverables/BMF5360_Baseline_Package/code/requirements.txt",
+  "technical_features": [
+    "momentum_1", "momentum_5", "momentum_20", "momentum_60",
+    "volatility_20_ann", "volatility_60_ann",
+    "volume_median_20_log1p", "volume_median_60_log1p",
+    "dollar_volume_median_20_log1p", "dollar_volume_median_60_log1p",
+    "spread_median_20_bps", "spread_median_60_bps",
+    "beta_126", "idio_vol_126_ann", "beta_obs_126",
+    "spy_momentum_1", "spy_momentum_5", "spy_momentum_20", "spy_momentum_60",
+    "spy_volatility_20_ann", "spy_volatility_60_ann"
+  ],
+  "macro_features": [
+    "vix_level", "vix_change_1d", "vix_change_5d", "vix_change_20d", "vix_percentile_252d",
+    "dgs3mo_level", "dgs3mo_change_5d", "dgs3mo_change_20d",
+    "dgs2_level", "dgs2_change_5d", "dgs2_change_20d",
+    "dgs10_level", "dgs10_change_5d", "dgs10_change_20d",
+    "broad_dollar_level", "broad_dollar_change_5d", "broad_dollar_change_20d", "broad_dollar_change_60d",
+    "term_spread_10y_2y", "term_spread_10y_3m"
+  ],
+  "excluded_credit_spread_features": [
+    "high_yield_oas_level", "high_yield_oas_change_5d", "high_yield_oas_change_20d",
+    "investment_grade_oas_level", "investment_grade_oas_change_5d", "investment_grade_oas_change_20d"
+  ],
+  "preprocessing": {
+    "imputer": "sklearn SimpleImputer(strategy=median, add_indicator=True, keep_empty_features=True)",
+    "fit_scope": "each RF tuning fold and final training anchors only; StandardScaler is training-only for Logistic",
+    "winsorization": false,
+    "forward_fill": false,
+    "zero_fill": false,
+    "interpolation": false,
+    "raw_input_mutation": false
+  },
+  "logistic": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 2000,
+    "solver": "lbfgs",
+    "random_state": 5360
+  },
+  "random_forest_tuning_grid": [
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 20, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 20, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 50, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 50, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 100, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 100, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 20, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 20, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 50, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 50, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 100, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 100, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 20, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 20, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 50, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 50, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 100, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 100, "max_features": 0.5}
+  ],
+  "random_forest_fixed": {
+    "class_weight": "balanced",
+    "random_state": 5360,
+    "n_jobs": -1
+  },
+  "tuning": {
+    "fold_validation_years": [2018, 2019, 2020],
+    "metric": "roc_auc",
+    "tie_break": "mean roc_auc descending, mean brier ascending, grid order",
+    "purge_sessions": 21
+  },
+  "test_policy": "Do not open, parse, aggregate, score, rank or predict sealed test targets. Save validation predictions only."
+}

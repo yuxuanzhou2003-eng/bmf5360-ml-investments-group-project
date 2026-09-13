@@ -1,0 +1,17 @@
+{
+  "test_targets_not_opened": true,
+  "validation_only": true,
+  "daily_inference_rows_21671": true,
+  "formation_rows_49_each": true,
+  "formation_spacing_21": true,
+  "ranking_uses_f_minus_1_only": true,
+  "formation_execution_gate_separate": true,
+  "no_unresolved_nav": true,
+  "probabilities_finite": true,
+  "scheduled_turnover_cap": true,
+  "constructed_name_cap": true,
+  "constructed_group_cap": true,
+  "initial_cost_in_risk_metric_sample": true,
+  "raw_inputs_unchanged": true,
+  "no_second_split_adjustment": true
+}

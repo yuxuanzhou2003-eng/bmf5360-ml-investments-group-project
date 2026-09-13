@@ -1,0 +1,46 @@
+# --- 敏感信息 ---
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+credentials.json
+secrets.json
+lseg-data.config.json
+
+# --- OS / IDE ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/settings.json
+.idea/
+*.swp
+*~
+
+# --- Python / Node ---
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+*.log
+*.zip
+*.bak_*
+*.ndjson
+~$*
+
+# --- 数据：默认全部忽略，只放行提案用到的小体积派生结果 ---
+data/*
+!data/model_runs/
+data/model_runs/*
+!data/model_runs/ai_pool_daily_state_models_v1_1/
+!data/model_runs/baseline_v1/
+!data/backtests/
+!data/audit/
+data/audit/*
+!data/audit/ai_pool_daily_state_models_v1_1/
+!data/audit/ai_portfolio_v1/
+!data/audit/ai_pool_expansion_v1/
+!data/audit/baseline_v1/
+!data/clean/
+data/clean/*
+!data/clean/daily_macro_v1/

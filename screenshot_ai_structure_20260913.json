@@ -1,0 +1,198 @@
+{
+  "source_image": "C:/Users/Yuxuan/AppData/Local/Temp/codex-clipboard-d47137f4-9cfc-450f-8ffc-d3b9a37408d5.jpg",
+  "source_scope": "Manual transcription of the visible enterprise-map screenshot. Names and ticker strings are unverified image text, not verified listing facts. The top 'Owners / Operators' heading has no visible companies. The seven displayed columns below it are retained as the primary categories.",
+  "groups": [
+    {
+      "name": "Semi Production",
+      "subgroups": [
+        {"name": "IC Design", "companies": [
+          {"name": "Broadcom", "ticker_raw": "AVGO", "confidence": "high", "notes": ""},
+          {"name": "AMD", "ticker_raw": "AMD", "confidence": "high", "notes": ""},
+          {"name": "Qualcomm", "ticker_raw": "QCOM", "confidence": "high", "notes": ""},
+          {"name": "Marvell", "ticker_raw": "MRVL", "confidence": "high", "notes": ""},
+          {"name": "MediaTek", "ticker_raw": "2454 TT", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "OSAT", "companies": [
+          {"name": "ASE Technology", "ticker_raw": "ASX", "confidence": "high", "notes": ""},
+          {"name": "KYEC", "ticker_raw": "2449 TT", "confidence": "medium", "notes": "Ticker digits are slightly blurred in the image."},
+          {"name": "Amkor Tech", "ticker_raw": "AMKR", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "Foundry", "companies": [
+          {"name": "TSMC", "ticker_raw": "TSM", "confidence": "high", "notes": ""},
+          {"name": "UMC", "ticker_raw": "UMC", "confidence": "high", "notes": ""},
+          {"name": "Samsung Elect", "ticker_raw": "005930 KS", "confidence": "high", "notes": ""},
+          {"name": "VIS", "ticker_raw": "5347 TT", "confidence": "high", "notes": ""},
+          {"name": "SMIC", "ticker_raw": "981 HK", "confidence": "high", "notes": ""},
+          {"name": "PSMC", "ticker_raw": "6770 TT", "confidence": "medium", "notes": "Ticker is slightly blurred."}
+        ]},
+        {"name": "IDM [qualifier unclear]", "notes": "Root visually corrected IDM; small parenthetical text remains uncertain.", "companies": [
+          {"name": "Intel", "ticker_raw": "INTC", "confidence": "high", "notes": ""},
+          {"name": "Infineon", "ticker_raw": "IFX GY", "confidence": "medium", "notes": "Root visual correction: draft incorrectly transcribed Advantest; no external issuer lookup performed."},
+          {"name": "STMicro", "ticker_raw": "STM", "confidence": "medium", "notes": "Root visual reading of previously unreadable row; verify with original workbook."},
+          {"name": "Renesas", "ticker_raw": "6723 JP", "confidence": "high", "notes": ""}
+        ]}
+      ]
+    },
+    {
+      "name": "Processor",
+      "subgroups": [
+        {"name": "GPU", "companies": [
+          {"name": "Nvidia", "ticker_raw": "NVDA", "confidence": "high", "notes": ""},
+          {"name": "AMD", "ticker_raw": "AMD", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "CPU", "companies": [
+          {"name": "Intel", "ticker_raw": "INTC", "confidence": "high", "notes": ""},
+          {"name": "AMD", "ticker_raw": "AMD", "confidence": "high", "notes": ""},
+          {"name": "Marvell", "ticker_raw": "MRVL", "confidence": "high", "notes": ""}
+        ]}
+      ]
+    },
+    {
+      "name": "Server Components",
+      "subgroups": [
+        {"name": "Power Supply", "companies": [
+          {"name": "Delta Electronics", "ticker_raw": "2308 TT", "confidence": "high", "notes": ""},
+          {"name": "Lite-On", "ticker_raw": "2301 TT", "confidence": "high", "notes": ""},
+          {"name": "Cosel", "ticker_raw": "6905 JP", "confidence": "high", "notes": ""},
+          {"name": "Sanken Electric", "ticker_raw": "6707 JP", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "Passive Component", "companies": [
+          {"name": "Yageo", "ticker_raw": "2327 TT", "confidence": "high", "notes": ""},
+          {"name": "Taiyo Yuden", "ticker_raw": "6976 JP", "confidence": "high", "notes": ""},
+          {"name": "Murata", "ticker_raw": "6981 JP", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "Thermal Solution", "companies": [
+          {"name": "AVC", "ticker_raw": "3017 TT", "confidence": "high", "notes": ""},
+          {"name": "Sanyo Denki", "ticker_raw": "6516 JP", "confidence": "high", "notes": ""},
+          {"name": "Sunon", "ticker_raw": "Private", "confidence": "medium", "notes": "Image says Private; draft ticker 2421 TT was unsupported and removed. This image listing-status claim is not externally verified."},
+          {"name": "Auras Tech", "ticker_raw": "3324 TT", "confidence": "medium", "notes": "Final Thermal Solution row was omitted in draft; root added from image."}
+        ]},
+        {"name": "PCB / IC Substrates", "companies": [
+          {"name": "Unimicron", "ticker_raw": "3037 TT", "confidence": "high", "notes": ""},
+          {"name": "Ibiden", "ticker_raw": "4062 JP", "confidence": "high", "notes": ""},
+          {"name": "Nan Ya PCB", "ticker_raw": "8046 TT", "confidence": "medium", "notes": "Root visual reading; verify company and code with original workbook."},
+          {"name": "Zhen Ding Tech", "ticker_raw": "4958 TT", "confidence": "high", "notes": ""},
+          {"name": "Kinsus Interconnect", "ticker_raw": "3189 TT", "confidence": "high", "notes": ""}
+        ]}
+      ]
+    },
+    {
+      "name": "Server",
+      "subgroups": [
+        {"name": "Server Brands", "companies": [
+          {"name": "Nvidia", "ticker_raw": "NVDA", "confidence": "high", "notes": ""},
+          {"name": "Dell", "ticker_raw": "DELL", "confidence": "high", "notes": ""},
+          {"name": "HPE", "ticker_raw": "HPE", "confidence": "high", "notes": ""},
+          {"name": "Lenovo", "ticker_raw": "0992 HK", "confidence": "high", "notes": ""},
+          {"name": "Inspur", "ticker_raw": "000977 CH", "confidence": "high", "notes": ""},
+          {"name": "Super Micro", "ticker_raw": "SMCI", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "ODM / EMS", "companies": [
+          {"name": "Wistron", "ticker_raw": "3231 TT", "confidence": "high", "notes": ""},
+          {"name": "Pegatron", "ticker_raw": "4938 TT", "confidence": "high", "notes": ""},
+          {"name": "Foxconn / Hon Hai", "ticker_raw": "2317 TT", "confidence": "high", "notes": ""},
+          {"name": "Quanta Computer", "ticker_raw": "2382 TT", "confidence": "high", "notes": ""},
+          {"name": "Compal Electronics", "ticker_raw": "2324 TT", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "DCI (Routing / Optical)", "companies": [
+          {"name": "Cisco", "ticker_raw": "CSCO", "confidence": "high", "notes": "Physically shown in the Server column."},
+          {"name": "Ciena", "ticker_raw": "CIEN", "confidence": "high", "notes": "Physically shown in the Server column."}
+        ]},
+        {"name": "Memory / Storage", "companies": [
+          {"name": "Micron Technology", "ticker_raw": "MU", "confidence": "high", "notes": "Physically shown in the Server column."},
+          {"name": "Western Digital", "ticker_raw": "WDC", "confidence": "high", "notes": "Physically shown in the Server column."},
+          {"name": "SK hynix", "ticker_raw": "000660 KS", "confidence": "high", "notes": "Physically shown in the Server column."},
+          {"name": "Pure Storage", "ticker_raw": "PSTG", "confidence": "high", "notes": "Physically shown in the Server column."},
+          {"name": "Seagate Tech", "ticker_raw": "STX", "confidence": "high", "notes": "Physically shown in the Server column."}
+        ]}
+      ]
+    },
+    {
+      "name": "Network",
+      "subgroups": [
+        {"name": "InfiniBand", "companies": [
+          {"name": "Nvidia", "ticker_raw": "NVDA", "confidence": "high", "notes": "Root confirmed visible InfiniBand subheader."}
+        ]},
+        {"name": "Ethernet", "companies": [
+          {"name": "Nvidia", "ticker_raw": "NVDA", "confidence": "high", "notes": ""},
+          {"name": "Arista Networks", "ticker_raw": "ANET", "confidence": "high", "notes": ""},
+          {"name": "Accton Tech", "ticker_raw": "2345 TT", "confidence": "high", "notes": ""},
+          {"name": "Broadcom", "ticker_raw": "AVGO", "confidence": "high", "notes": ""},
+          {"name": "HPE", "ticker_raw": "HPE", "confidence": "high", "notes": ""}
+        ]}
+      ]
+    },
+    {
+      "name": "Internal Power / Cooling",
+      "subgroups": [
+        {"name": "Liquid Cooling", "companies": [
+          {"name": "Vertiv", "ticker_raw": "VRT", "confidence": "high", "notes": ""},
+          {"name": "Schneider Electric", "ticker_raw": "SU FP", "confidence": "high", "notes": ""},
+          {"name": "Carrier Global", "ticker_raw": "CARR", "confidence": "high", "notes": ""},
+          {"name": "Daikin Ind", "ticker_raw": "6367 JP", "confidence": "high", "notes": ""},
+          {"name": "Envicool", "ticker_raw": "002837 CH", "confidence": "high", "notes": ""},
+          {"name": "AVC", "ticker_raw": "3017 TT", "confidence": "high", "notes": ""},
+          {"name": "Aura [uncertain]", "ticker_raw": "Private", "confidence": "low", "notes": "Private text visible; company name blurred. Do not merge with Auras Tech without original workbook evidence."}
+        ]},
+        {"name": "Power Electronics", "companies": [
+          {"name": "Siemens", "ticker_raw": "SIE GY", "confidence": "high", "notes": ""},
+          {"name": "Legrand", "ticker_raw": "LR FP", "confidence": "high", "notes": ""},
+          {"name": "Emerson Electric", "ticker_raw": "EMR", "confidence": "high", "notes": ""},
+          {"name": "Honeywell", "ticker_raw": "HON", "confidence": "high", "notes": ""},
+          {"name": "Schneider Electric", "ticker_raw": "SU FP", "confidence": "high", "notes": ""},
+          {"name": "Fuji Electric", "ticker_raw": "6504 JP", "confidence": "high", "notes": ""},
+          {"name": "Trane Tech", "ticker_raw": "TT", "confidence": "high", "notes": ""},
+          {"name": "Ametek", "ticker_raw": "AME", "confidence": "high", "notes": ""},
+          {"name": "Eaton", "ticker_raw": "ETN", "confidence": "high", "notes": ""},
+          {"name": "Vertiv", "ticker_raw": "VRT", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "Uninterruptible Power Supply", "companies": [
+          {"name": "Vertiv", "ticker_raw": "VRT", "confidence": "high", "notes": ""},
+          {"name": "Schneider Electric", "ticker_raw": "SU FP", "confidence": "high", "notes": ""},
+          {"name": "ABB", "ticker_raw": "ABBN SW", "confidence": "medium", "notes": "Root corrected raw symbol spacing; not an LSEG mapping."},
+          {"name": "Legrand", "ticker_raw": "LR FP", "confidence": "high", "notes": ""},
+          {"name": "Eaton", "ticker_raw": "ETN", "confidence": "high", "notes": ""}
+        ]}
+      ]
+    },
+    {
+      "name": "Power Supply",
+      "subgroups": [
+        {"name": "Grid + Onsite Renewable Storage", "companies": [
+          {"name": "AES Corp", "ticker_raw": "AES", "confidence": "high", "notes": ""},
+          {"name": "GE Vernova", "ticker_raw": "GEV", "confidence": "high", "notes": ""},
+          {"name": "Gulf Energy Dev", "ticker_raw": "GULF TB", "confidence": "high", "notes": ""},
+          {"name": "Orsted", "ticker_raw": "ORSTED DC", "confidence": "high", "notes": ""},
+          {"name": "Reliance Ind", "ticker_raw": "RELIANCE IN", "confidence": "high", "notes": ""},
+          {"name": "RWE", "ticker_raw": "RWE GY", "confidence": "high", "notes": ""},
+          {"name": "Ameresco", "ticker_raw": "AMRC", "confidence": "high", "notes": ""},
+          {"name": "Axia [uncertain]", "ticker_raw": "Private", "confidence": "low", "notes": "Root reading differs from draft Aqua; original workbook needed. Private label is unverified source text."}
+        ]},
+        {"name": "Generators & Grid Connection", "companies": [
+          {"name": "Caterpillar", "ticker_raw": "CAT", "confidence": "high", "notes": ""},
+          {"name": "Cummins", "ticker_raw": "CMI", "confidence": "high", "notes": ""},
+          {"name": "Generac", "ticker_raw": "GNRC", "confidence": "high", "notes": ""},
+          {"name": "Rolls-Royce", "ticker_raw": "RR LN", "confidence": "high", "notes": ""},
+          {"name": "BorgWarner", "ticker_raw": "BWA", "confidence": "high", "notes": ""}
+        ]},
+        {"name": "Grid Infrastructure", "companies": [
+          {"name": "Siemens Energy", "ticker_raw": "ENR GY", "confidence": "high", "notes": ""},
+          {"name": "GE Vernova", "ticker_raw": "GEV", "confidence": "high", "notes": ""},
+          {"name": "Vinci", "ticker_raw": "DG FP", "confidence": "high", "notes": ""},
+          {"name": "Ameresco", "ticker_raw": "AMRC", "confidence": "high", "notes": ""},
+          {"name": "LS Corp", "ticker_raw": "006260 KS", "confidence": "medium", "notes": "Root visual reading of previously unreadable row; verify original source."},
+          {"name": "ABB", "ticker_raw": "ABBN SW", "confidence": "medium", "notes": "Root corrected raw symbol spacing; not an LSEG mapping."},
+          {"name": "Tokyo Gas", "ticker_raw": "9531 JP", "confidence": "high", "notes": ""},
+          {"name": "PTT", "ticker_raw": "PTT TB", "confidence": "high", "notes": ""}
+        ]}
+      ]
+    }
+  ],
+  "unreadable_or_cropped": [
+    "Owners / Operators is a visible top heading, but no owner/operator companies are visible.",
+    "A lower semiconductor equipment/services header is cropped; no companies are visible beneath it, exact heading needs source verification.",
+    "The 'Cabling' header is cropped at the bottom of the Server column; no companies are visible beneath it.",
+    "Small qualifier after IDM and the Private-labelled Aura/Axia company spellings remain uncertain.",
+    "All codes and Private labels are image transcriptions, not verified listing facts; verify against original workbook and identifier source."
+  ]
+}

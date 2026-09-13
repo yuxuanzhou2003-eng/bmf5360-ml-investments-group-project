@@ -1,0 +1,134 @@
+{
+  "schema_version": "ai_pool_membership_pit_v1",
+  "config_version": "1.1.0",
+  "status": "active",
+  "specification": "AI_POOL_SPEC.md",
+  "specification_version": "1.1",
+  "description": "Point-in-time AI industry pool membership from Orig raw segment names and Orig original announcement dates, with the preregistered AI industry broad v1.1 taxonomy. This stage creates no labels, future returns, predictions, or portfolio results.",
+  "input": {
+    "raw_root": "data/raw/ai_factor_v1",
+    "raw_run_id": "20260909T183801359195Z",
+    "raw_run_path": "data/raw/ai_factor_v1/20260909T183801359195Z",
+    "membership_spans": "data/audit/universe_rebuild/eligible_spans_2015_2026_corrected.csv",
+    "families": {
+      "segments": {
+        "prefix": "segments_fy0_",
+        "raw_family_id": "business_segments_fy0",
+        "reporting_state": "Orig",
+        "required_header": ["Instrument", "Segment Code", "Segment Name", "Financial Period Absolute", "Date", "Standardized Revenue - Business Segment"]
+      },
+      "announcement_dates": {
+        "prefix": "is_dates_",
+        "raw_family_id": "income_statement_dates",
+        "reporting_state": "Orig",
+        "required_header": ["Instrument", "Income Statement Orig Announce Date", "Income Statement Last Update Date", "Income Statement Period End Date"]
+      },
+      "revenue_reference": {
+        "prefix": "f_tot_revenue_",
+        "raw_family_id": "f_tot_revenue",
+        "reporting_state": "Orig",
+        "required_header": ["Instrument", "Revenue from Business Activities - Total", "Date", "Financial Period Absolute"]
+      }
+    },
+    "identity_policy": "Use literal Instrument/ric values only. Names are evidence text and are never used to infer, normalize, replace, or merge a RIC.",
+    "forbidden_inputs": ["targets", "future returns", "future_return", "labels", "model outputs", "model_outputs", "portfolio", "current TRBC", "trbc"]
+  },
+  "missing_value_policy": {
+    "empty_string_is_na": true,
+    "whitespace_only_is_na": true,
+    "provider_tokens_are_na": ["NA", "N/A", "N.A.", "NULL", "null", "NaN", "nan", "NAN", "NOT AVAILABLE", "NOT APPLICABLE", "NM", "-", "--", "—"],
+    "text_zero_is_observation": true,
+    "numeric_zero_is_observation": true,
+    "unparseable_numeric_to_na": true,
+    "unparseable_date_to_na": true,
+    "no_imputation": true,
+    "no_forward_fill": true,
+    "no_backward_fill": true,
+    "no_winsorization": true
+  },
+  "formation": {
+    "formation_date_source": "Income Statement Orig Announce Date",
+    "formation_date_rule": "formation_date equals the parsed original announcement calendar date; day-level availability is inclusive because the source has no announcement time",
+    "cutoff_rule": "original_announcement_date <= formation_date",
+    "strict_trade_entry": "The next valid SPY trading session remains a downstream event-layer decision; no market calendar or prices are read here.",
+    "period_join_key": ["Instrument", "period_end"],
+    "observation_key": ["Instrument", "formation_date"],
+    "no_period_end_as_publication_date": true
+  },
+  "taxonomy": {
+    "version": "AI_POOL_SPEC_v1.1",
+    "precedence": "core_ai_then_ai_industry_broad_then_ai_ecosystem_then_ambiguous",
+    "core_ai": ["AI", "artificial intelligence", "generative AI", "machine learning", "deep learning", "neural", "AI accelerator", "GPU", "graphics processor", "tensor", "inference", "data-center compute", "high-performance AI computing"],
+    "word_boundary_terms": ["AI"],
+    "word_boundary_regex": "\\bAI\\b",
+    "ai_industry_broad": {
+      "compute_accelerator": ["GPU", "AI accelerator", "accelerated computing", "tensor", "inference chip", "data-center processor"],
+      "hbm_ai_memory": ["HBM", "high bandwidth memory", "memory for AI", "AI memory", "data-center memory", "SSD/NAND for data center"],
+      "ai_server_network_data_center": ["AI server", "AI networking", "data center", "data-center infrastructure", "high-performance computing", "accelerated server"],
+      "cloud_software_platform": ["AI software platform", "machine-learning platform", "generative AI platform", "intelligent cloud", "AI services"],
+      "robotics_autonomy": ["robotics", "autonomous driving", "autonomous systems", "industrial AI"],
+      "power_cooling_equipment": ["data-center power", "data-center cooling", "liquid cooling", "AI power systems", "data-center equipment"]
+    },
+    "ai_ecosystem": ["data center", "cloud infrastructure", "intelligent cloud", "AI server", "accelerated computing", "AI networking", "robotics", "autonomous driving", "AI software platform"],
+    "generic_terms_only_are_not_members": ["software", "cloud", "semiconductor", "memory", "storage", "NAND", "flash"],
+    "matching": "case-insensitive literal phrase containment in historical Segment Name only, except word_boundary_terms use independent word boundaries; no revenue or return performance inference",
+    "generic_combination_policy": "generic terms alone are ambiguous; only the explicit preregistered broad phrases qualify, including memory/storage categories",
+    "taxonomy_change_policy": "new terms require a new frozen taxonomy version and a new audit"
+  },
+  "comparison": {
+    "baseline_specification_version": "1.0",
+    "baseline_run_id": "20260910T023221976393Z",
+    "baseline_membership_path": "data/clean/ai_pool_v1/20260910T023221976393Z/ai_pool_membership_pit.csv",
+    "baseline_membership_sha256": "d07e5696ce9c49f66b09dc18ac27473d185c5e19a417b96b5445b56f4f36d468",
+    "baseline_summary_path": "data/clean/ai_pool_v1/20260910T023221976393Z/ai_pool_summary.json",
+    "baseline_summary_sha256": "c64c4a2c59b75255300a2337a69ebc701982f1d46e9ea85be296375de4906db1",
+    "comparison_rule": "compare eligible literal RIC union where membership_status=member; report new, retained overlap, and baseline-only RICs"
+  },
+  "reconciliation": {
+    "reference_family": "revenue_reference",
+    "total_candidate_rule": "Segment Code and Segment Name are both missing after clean normalization",
+    "compare_rule": "If exactly one null-total candidate has a finite value, compare it with reference revenue; otherwise compare the sum of non-total finite segment values with reference revenue.",
+    "absolute_tolerance": 0.01,
+    "relative_tolerance": 0.000001,
+    "gap_reason_code": "SEGMENT_RECONCILIATION_GAP",
+    "ambiguous_on_gap": true,
+    "ambiguous_on_multiple_total": true,
+    "no_forced_reconciliation": true
+  },
+  "membership_status": {
+    "core_label": "core_ai",
+    "broad_label": "ai_industry_broad",
+    "ecosystem_label": "ai_ecosystem",
+    "unknown_label": "membership_unknown",
+    "ambiguous_label": "ambiguous",
+    "unknown_without_announcement_is_not_non_ai": true,
+    "delisted_policy": "retain delisted RIC observations and annotate coverage; delisted status is never an exclusion reason",
+    "pool_eligibility": "Only status=member with pool_label core_ai, ai_industry_broad, or ai_ecosystem is eligible; unknown and ambiguous remain in audit output."
+  },
+  "output": {
+    "clean_root": "data/clean/ai_pool_v1",
+    "audit_root": "data/audit/ai_pool_v1",
+    "membership_file": "ai_pool_membership_pit.csv",
+    "audit_file": "ai_pool_membership_audit.csv",
+    "summary_file": "ai_pool_summary.json",
+    "gate_file": "gate_report.json",
+    "dry_run_file": "dry_run_stats.json"
+  },
+  "execution": {
+    "modes": ["--dry-run", "--execute"],
+    "dry_run_writes_membership_tables": false,
+    "execute_writes_membership_tables": true,
+    "run_id_policy": "new UTC directory on each invocation unless --run-id explicitly resumes the same input hash and script/config hashes",
+    "raw_immutable": true,
+    "network_requests": false,
+    "lseg_import": false,
+    "limit_semantics": "maximum number of raw request CSV files read in one invocation; 0 means all",
+    "partial_execute_status": "partial_not_model_ready"
+  },
+  "non_actions": [
+    "No future returns, labels, predictions, model outputs, portfolios, or performance are read or generated.",
+    "No current company name or current TRBC field is used to backfill historical membership.",
+    "No RIC is inferred from name, ticker text, suffix, or issuer guess.",
+    "No imputation, forward fill, backward fill, winsorization, silent deduplication, or forced segment reconciliation is performed."
+  ]
+}

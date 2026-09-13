@@ -1,0 +1,50 @@
+{
+  "schema": "ai_portfolio_validation_audit_v1",
+  "audit_run_id": "20260910T122000000000Z",
+  "source_run_id": "20260910T113500000000Z",
+  "generated_at_utc": "2026-09-10T11:38:48.964313+00:00",
+  "status": "PASS",
+  "counts": {
+    "checks": 14,
+    "pass": 12,
+    "warn": 2,
+    "fail": 0,
+    "blocking_fail": 0
+  },
+  "source_hashes": {
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/daily_inference.csv": "7043bff91b01b89f7fe3f8d0a762a7c73356645ae88bbb6b669d8afb43361eed",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/eligibility.csv": "9b2dedfca21dfca61abe1610016a4faeb68f72fa2745ecd510c2c73286063ea7",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/portfolio_targets.csv": "726529946055c19ba2604cf0c473a378a01e7beced7267de2abd3b7856ffca59",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/trades.csv": "d7ebfcfb30e4360a94e169251710687a46635b77574ac8cde0889f040ac60cd5",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/holdings_daily.csv": "c4c4cb48798268c4aa2ce9ca853a6e73cdf389134dafb7b13656a206f3f739f9",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/nav_daily.csv": "3a4eb88a0d79417e3f687a62cf16efbbb059b9c825d3b326bd1ef8445e896bf6",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/metrics.csv": "30bf1435c00cf4ca745075aa713555b86d3395fb502b0e3a98ff3d9395a0ce3e",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/audit.json": "d47a107898edb0e6f6f314867406daedefa85316eba8134e012b4bdb4855adf0",
+    "data/backtests/ai_portfolio_v1/20260910T113500000000Z/summary.json": "ae166296e3789971ca17ceff6293b4992e1c689d9404f8805d595ac84db5591a"
+  },
+  "validator": {
+    "validate_ai_portfolio_validation_v1.py": "9f7747ad2b4e217ac57dcda832a43b8a606603ac7f584936166a6633f913d453"
+  },
+  "warnings": [
+    {
+      "check": "initial_formation_cost_in_risk_metrics",
+      "detail": "The preliminary cumulative NAV includes initial formation cost. If the first row is excluded from the daily return sample, Sharpe and volatility omit that cost event; the official run should include and disclose it.",
+      "value": {
+        "initial_spread_cost": 0.0001094821650418,
+        "first_row_in_return_sample": false
+      }
+    },
+    {
+      "check": "realised_weights_after_drift_and_turnover_cap",
+      "detail": "Target caps are construction limits. Drift and the turnover cap can leave realised weights temporarily above them; disclose the maxima.",
+      "value": {
+        "max_name_weight": 0.1277991157986266,
+        "max_group_weight": 0.3233161057167155
+      }
+    }
+  ],
+  "limitations": [
+    "This audit verifies the validation-only implementation; it does not evaluate the sealed test period.",
+    "The preliminary runner used a same-day execution eligibility flag inside MODEL_GATE; the audit measures whether it changed this run."
+  ]
+}

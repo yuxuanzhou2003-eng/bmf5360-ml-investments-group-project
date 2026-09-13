@@ -1,0 +1,42 @@
+{
+  "schema": "ai_portfolio_validation_audit_v1",
+  "audit_run_id": "20260910T130000000000Z",
+  "source_run_id": "20260910T125000000000Z",
+  "generated_at_utc": "2026-09-10T11:47:09.157516+00:00",
+  "status": "PASS",
+  "counts": {
+    "checks": 14,
+    "pass": 13,
+    "warn": 1,
+    "fail": 0,
+    "blocking_fail": 0
+  },
+  "source_hashes": {
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/daily_inference.csv": "8adfc402c9d62ff8ddaedcbb0a26194c1d9c3555c7051a735d04e6b032bacdb8",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/eligibility.csv": "005a77205d64639b529dd06cbd7e3d5b95a5e040e780b69b25e5785792a8d75a",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/portfolio_targets.csv": "7070e339d397f27ac63eb167055a87f39803c9ec6e8ab0acce192736a903e06a",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/trades.csv": "dcf00efb65da50f7a003d89731948778d9eb7469af9339dbf8905627a10fe3b6",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/holdings_daily.csv": "13884d2ff6e328bba97377cac0a5be6543cf940540866c26615a8948f3783a4b",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/nav_daily.csv": "9772bdf10ba75301b5522e9de7bfe6b301a09f83466e3eb68652f55eb90b726a",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/metrics.csv": "f4c47a980ea8e84ab886b9e820431596c35c6a4c74d543d275d1649d3c6d2afd",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/audit.json": "8578593cb2a310e3037ca3fbe309135543c4def51ec1d0a9233e0f51faf493e4",
+    "data/backtests/ai_portfolio_v1/20260910T125000000000Z/summary.json": "30c0b59b5a910b6dc10e01b34266f7c81ad7ccf703e383286b156c55c74095a9"
+  },
+  "validator": {
+    "validate_ai_portfolio_validation_v1.py": "dc5bfbb8da3d96edeb677b2f26bb9c21e8bdc80293c194c448a7d0460fa6207b"
+  },
+  "warnings": [
+    {
+      "check": "realised_weights_after_drift_and_turnover_cap",
+      "detail": "Target caps are construction limits. Drift and the turnover cap can leave realised weights temporarily above them; disclose the maxima.",
+      "value": {
+        "max_name_weight": 0.1277991157986267,
+        "max_group_weight": 0.3233161057167157
+      }
+    }
+  ],
+  "limitations": [
+    "This audit verifies the validation-only implementation; it does not evaluate the sealed test period.",
+    "The preliminary runner used a same-day execution eligibility flag inside MODEL_GATE; the audit measures whether it changed this run."
+  ]
+}

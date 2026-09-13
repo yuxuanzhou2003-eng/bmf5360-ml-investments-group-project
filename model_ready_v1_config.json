@@ -1,0 +1,34 @@
+{
+  "purpose": "Leakage-controlled historical feature, eligibility and event-level split layer built from the frozen v3 master panel; no model fitted.",
+  "panel_run_id": "20260909T035245922341Z",
+  "clean_v3_run_id": "20260909T012417705069Z",
+  "benchmark": "SPY.P",
+  "reference_rule": "all rolling features end at liquidity_reference_session, which is one benchmark session before entry_session",
+  "splits": {
+    "training": ["2015-01-01", "2020-12-31"],
+    "validation": ["2021-01-01", "2022-12-31"],
+    "test": ["2023-01-01", "2026-06-30"]
+  },
+  "boundary_rule": "purge an entire source event from the earlier split if entry_session or exit_session is on or after the next split start",
+  "return_features": {
+    "momentum_windows": [5, 20, 60],
+    "momentum_min_observations": "full_window",
+    "volatility_windows_and_min_observations": [[20, 15], [60, 40]],
+    "beta_idio_window": 126,
+    "beta_idio_min_observations": 100,
+    "annualization_sessions": 252
+  },
+  "liquidity_features": {
+    "window": 20,
+    "volume_and_dollar_volume_min_observations": 15,
+    "spread_min_observations": 10
+  },
+  "execution_eligibility": {
+    "requires_receiver_index_membership_at_entry": true,
+    "requires_exact_entry_price_row": true,
+    "requires_entry_close": true,
+    "does_not_require_future_label": true
+  },
+  "missing_policy": "retain all rows and NA values; no fill, interpolation, winsorization, clipping or row deletion",
+  "preprocessing_status": "not fitted; scaling, imputation and winsorization remain pending and must be learned on training only"
+}

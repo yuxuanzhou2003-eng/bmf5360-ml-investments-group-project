@@ -1,0 +1,268 @@
+{
+  "schema_version": "ai_factor_cleaning_v1",
+  "config_version": "0.1.0",
+  "description": "Auditable raw-to-clean conversion for the AI factor input collection. This config never authorizes target, label, future-return, model-output, or current-TRBC reads.",
+  "input": {
+    "raw_root": "data/raw/ai_factor_v1",
+    "raw_run_id": "20260909T183801359195Z",
+    "raw_run_path": "data/raw/ai_factor_v1/20260909T183801359195Z",
+    "membership_spans": "data/audit/universe_rebuild/eligible_spans_2015_2026_corrected.csv",
+    "raw_file_contract": {
+      "require_csv_meta_and_request_sidecars": true,
+      "require_metadata_csv_sha256": true,
+      "require_request_file_sha256": true,
+      "require_same_run_id": true,
+      "unexpected_csv_policy": "fail_plan_and_execute"
+    },
+    "identity_policy": "Use literal Instrument/ric values from raw responses and corrected spans. Do not infer, normalize, replace, merge, or map RICs from names or ticker guesses.",
+    "forbidden_input_tokens": [
+      "target",
+      "future_return",
+      "future_returns",
+      "label",
+      "labels",
+      "model_output",
+      "model_outputs",
+      "trbc"
+    ]
+  },
+  "output": {
+    "clean_root": "data/clean/ai_factor_v1",
+    "audit_root": "data/audit/ai_factor_v1",
+    "quarantine_subdirectory": "quarantine",
+    "staging_subdirectory": "_staging",
+    "plan_name": "clean_plan.json",
+    "manifest_name": "clean_manifest.json",
+    "tables": [
+      "fundamental_observations.csv",
+      "segment_observations.csv",
+      "etf_prices.csv",
+      "asset_returns.csv",
+      "market_cap_monthly.csv",
+      "ai_market_proxies.csv",
+      "membership_snapshots.csv",
+      "identity_map.csv",
+      "quarantine/quarantine.csv",
+      "missingness_summary.csv",
+      "clean_summary.json",
+      "gate_report.json"
+    ]
+  },
+  "missing_value_policy": {
+    "empty_string_is_na": true,
+    "whitespace_only_is_na": true,
+    "provider_tokens_are_na": [
+      "NA",
+      "N/A",
+      "N.A.",
+      "NULL",
+      "null",
+      "NaN",
+      "nan",
+      "NAN",
+      "NOT AVAILABLE",
+      "NOT APPLICABLE",
+      "NM",
+      "-",
+      "--",
+      "—"
+    ],
+    "text_zero_is_observation": true,
+    "numeric_zero_is_observation": true,
+    "missing_values_are_not_zero": true,
+    "unparseable_numeric_to_na": true,
+    "unparseable_date_to_na": true,
+    "no_imputation": true,
+    "no_forward_fill": true,
+    "no_backward_fill": true,
+    "no_winsorization": true
+  },
+  "fundamental": {
+    "join_keys": [
+      "Instrument",
+      "period_end"
+    ],
+    "period_end_source": "raw Date for financial value families; Income Statement Period End Date for income_statement_dates",
+    "period_label_source": "Financial Period Absolute",
+    "reporting_state_required": "Orig",
+    "families": {
+      "legacy_rd": {
+        "prefix": "rd_",
+        "value_column": "Research And Development",
+        "output_name": "rd_value",
+        "role": "research_and_development"
+      },
+      "legacy_revenue": {
+        "prefix": "revenue_",
+        "value_column": "Revenue",
+        "output_name": "revenue_value",
+        "role": "revenue_legacy"
+      },
+      "f_tot_revenue": {
+        "prefix": "f_tot_revenue_",
+        "value_column": "Revenue from Business Activities - Total",
+        "output_name": "control_total_revenue_value",
+        "role": "control_revenue"
+      },
+      "f_tot_assets": {
+        "prefix": "f_tot_assets_",
+        "value_column": "Total Assets",
+        "output_name": "assets_value",
+        "role": "control_assets"
+      },
+      "f_com_eq_tot": {
+        "prefix": "f_com_eq_tot_",
+        "value_column": "Common Equity - Total",
+        "output_name": "equity_value",
+        "role": "control_equity"
+      },
+      "f_gross_prof_ind_prop_tot": {
+        "prefix": "f_gross_prof_ind_prop_tot_",
+        "value_column": "Gross Profit - Industrials/Property - Total",
+        "output_name": "gross_profit_value",
+        "role": "control_gross_profit"
+      },
+      "f_net_cash_flow_op": {
+        "prefix": "f_net_cash_flow_op_",
+        "value_column": "Net Cash Flow from Operating Activities",
+        "output_name": "operating_cash_flow_value",
+        "role": "control_operating_cash_flow"
+      },
+      "f_debt_tot": {
+        "prefix": "f_debt_tot_",
+        "value_column": "Debt - Total",
+        "output_name": "debt_value",
+        "role": "control_debt"
+      },
+      "income_statement_dates": {
+        "prefix": "is_dates_",
+        "announcement_column": "Income Statement Orig Announce Date",
+        "last_update_column": "Income Statement Last Update Date",
+        "period_end_column": "Income Statement Period End Date",
+        "role": "orig_announcement_dates"
+      }
+    },
+    "controls_count": 6,
+    "raw_family_policy": "Only raw A-D families collected with ReportingState=Orig are accepted. No current TRBC or revised/current family is read.",
+    "duplicate_policy": "Retain every same-key row. Identical and conflicting duplicate keys receive explicit reason codes; conflicts are copied to quarantine and are never silently selected.",
+    "ratio_policy": {
+      "name": "rd_intensity",
+      "formula": "R&D / Revenue",
+      "requires": [
+        "unique_key_without_duplicate_conflict",
+        "same_period_end",
+        "revenue_positive",
+        "finite_numeric_values",
+        "unit_semantics_verified",
+        "currency_semantics_verified"
+      ],
+      "unit_semantics_verified": false,
+      "currency_semantics_verified": false,
+      "blocked_reason": "RATIO_UNIT_CURRENCY_UNVERIFIED"
+    }
+  },
+  "segments": {
+    "prefix": "segments_fy0_",
+    "join_keys": [
+      "Instrument",
+      "period_end"
+    ],
+    "segment_code_column": "Segment Code",
+    "segment_name_column": "Segment Name",
+    "value_column": "Standardized Revenue - Business Segment",
+    "total_candidate_rule": "segment code and segment name are both missing after clean normalization",
+    "retain_all_raw_rows": true,
+    "reconciliation_tolerance_absolute": 0.01,
+    "reconciliation_tolerance_relative": 0.000001,
+    "classification": {
+      "status": "unfrozen",
+      "default_dictionary": null,
+      "fixed_dictionary_optional": true,
+      "dictionary_schema": {
+        "version": "string",
+        "core": "array[string]",
+        "broad": "array[string]",
+        "precedence": "core_then_broad"
+      },
+      "no_implicit_default_classification": true
+    }
+  },
+  "market_cap": {
+    "prefix": "market_cap_monthly_",
+    "value_column": "Company Market Capitalization",
+    "date_column": "Date",
+    "join_keys": [
+      "Instrument",
+      "Date"
+    ],
+    "reporting_state_sent": false,
+    "reporting_state_exception": "CompanyMarketCapitalization is a monthly market-data family; Orig is intentionally omitted and this metadata exception is preserved.",
+    "semantics_status": "unverified",
+    "unit_currency_conversion": false,
+    "duplicate_policy": "Retain all same Instrument+Date rows; conflicting rows are quarantined with provenance."
+  },
+  "etf": {
+    "prefix": "etf_prices_",
+    "price_fields": [
+      "TRDPRC_1",
+      "OPEN_PRC",
+      "HIGH_1",
+      "LOW_1",
+      "ACVOL_UNS",
+      "BID",
+      "ASK",
+      "TRNOVR_UNS"
+    ],
+    "configured_instruments": [
+      "SOXX.OQ",
+      "XLK.P",
+      "BOTZ.OQ",
+      "AIQ.OQ",
+      "IGV.P"
+    ],
+    "optional_reconciliation_instruments": [
+      "SPY.P"
+    ],
+    "adjustments": [
+      "exchangeCorrection",
+      "manualCorrection",
+      "CCH",
+      "CRE",
+      "RPO",
+      "RTS"
+    ],
+    "return_name": "price_return",
+    "return_formula": "P_t / P_t_minus_1 - 1",
+    "return_requires": [
+      "date_parses",
+      "current_price_positive",
+      "prior_observation_exists",
+      "prior_price_positive",
+      "unique_instrument_date_keys"
+    ],
+    "never_call_total_return": true,
+    "missing_observation_reason": "ETF_NO_OBSERVATION"
+  },
+  "membership": {
+    "literal_ric_column": "ric",
+    "delisted_column": "delisted_ric",
+    "keep_delisted_rows": true,
+    "do_not_guess_identity_from_name": true,
+    "snapshot_representation": "one corrected interval row per literal RIC; no daily expansion and no current-TRBC backfill"
+  },
+  "execution": {
+    "limit_semantics": "maximum number of unprocessed raw request CSV files staged in one --execute invocation; membership spans are staged once and do not consume the request-file limit",
+    "partial_outputs_allowed": true,
+    "partial_status": "partial_not_model_ready",
+    "atomic_writes": true,
+    "resume_requires": [
+      "same plan_sha256",
+      "same config_sha256",
+      "same script_sha256",
+      "same raw CSV hashes",
+      "same membership spans hash"
+    ],
+    "no_network": true,
+    "no_lseg_import": true
+  }
+}

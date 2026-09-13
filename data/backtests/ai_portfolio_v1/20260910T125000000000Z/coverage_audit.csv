@@ -1,0 +1,6 @@
+scope,rows,instruments,missing_or_excluded,reason
+daily_inference,21671,44,0,PREDICTION_UNAVAILABLE
+formation_registry,1127,49,148,reason-coded in eligibility.csv
+formation_execution,1127,49,139,execution gate; evaluated after ranking
+skipped_formations,23,49,4,"{""SELECTED_COUNT_LT_5"": 4}"
+daily_nav,484,41,0,no unresolved marks

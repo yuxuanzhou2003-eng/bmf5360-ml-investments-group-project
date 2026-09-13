@@ -1,0 +1,84 @@
+{
+  "schema_version": "ai_pool_baseline_model_ready_v1",
+  "purpose": "Point-in-time AI-pool monthly model-ready layer for controls-only Logistic and Random Forest baselines; development targets are limited to training and validation and test targets are sealed.",
+  "membership": {
+    "run_id": "20260910T023221976393Z",
+    "path": "data/clean/ai_pool_v1/20260910T023221976393Z/ai_pool_membership_pit.csv",
+    "as_of_policy": "For each formation session, use the latest known membership record with formation_date <= formation_session. Keep only membership_status=member and membership_eligible=true whose corrected member_from/member_to interval contains the formation session. Later ambiguous and unknown records are not carried forward as members.",
+    "unknown_policy": "Retain unknown and ambiguous states in membership_snapshot_audit.csv with reason codes; do not treat them as non-AI in the source membership table and do not include them in the active pool.",
+    "identifier_policy": "Use literal Instrument/RIC as security_id; no name-based mapping or issuer merge."
+  },
+  "inputs": {
+    "returns": "data/clean/v2/returns.csv",
+    "prices": "data/clean/v3/20260909T012417705069Z/prices.csv",
+    "fundamentals": "data/clean/ai_factor_v1/20260910T024500000000Z/fundamental_observations.csv",
+    "market_cap": "data/clean/ai_factor_v1/20260910T024500000000Z/market_cap_monthly.csv",
+    "benchmark": "SPY.P"
+  },
+  "formation": {
+    "calendar": "last SPY trading session of each calendar month",
+    "cutoff": "formation-session close; all rolling controls end at the immediately preceding SPY session",
+    "entry": "first SPY session strictly after formation_session",
+    "holding_sessions": 21,
+    "label_return_window": "sessions entry_session+1 through exit_session inclusive"
+  },
+  "splits": {
+    "training": ["2015-01-01", "2020-12-31"],
+    "validation": ["2021-01-01", "2022-12-31"],
+    "test": ["2023-01-01", "2026-06-30"],
+    "outside": "out_of_window",
+    "boundary_rule": "Purge the whole earlier formation month when entry_session or exit_session is on or after the next split start."
+  },
+  "control_features": {
+    "price_market_controls": [
+      "size_log_market_cap",
+      "momentum_1",
+      "momentum_5",
+      "momentum_20",
+      "momentum_60",
+      "momentum_252",
+      "volatility_20_ann",
+      "volatility_60_ann",
+      "beta_126",
+      "idio_vol_126_ann",
+      "beta_obs_126",
+      "volume_median_20_log1p",
+      "dollar_volume_median_20_log1p",
+      "spread_median_20_bps",
+      "spy_momentum_1",
+      "spy_momentum_5",
+      "spy_momentum_20",
+      "spy_momentum_60",
+      "spy_volatility_20_ann",
+      "spy_volatility_60_ann"
+    ],
+    "fundamental_controls": [
+      "book_to_market",
+      "profitability_gross_profit_to_assets",
+      "investment_asset_growth",
+      "leverage_debt_to_assets",
+      "operating_cash_flow_to_assets",
+      "revenue_growth"
+    ],
+    "core_feature_gate": [
+      "momentum_20",
+      "volatility_20_ann",
+      "beta_126",
+      "dollar_volume_median_20_log1p",
+      "spread_median_20_bps",
+      "spy_momentum_20",
+      "spy_volatility_20_ann"
+    ],
+    "fundamental_max_staleness_days": 450,
+    "fundamental_semantics_policy": "Keep candidate ratios and raw provenance, but mark all fundamental and market-cap controls as exploratory because the clean inputs have unit/currency/market-cap semantics_status=UNVERIFIED. Do not claim the formal fundamental-control gate passed."
+  },
+  "missing_policy": {
+    "master_layer": "Retain all active AI-pool security-month rows and NA values; no zero fill, forward fill, backward fill, interpolation, winsorization, or physical row deletion.",
+    "model_layer": "Median imputation with missing indicators for both models, fit on training rows only and applied unchanged to validation."
+  },
+  "test_policy": "Do not read, aggregate, write, score, rank, or predict any test-period future return. Test rows may retain schedule and eligibility metadata, but target values are absent and test_target_sealed is recorded.",
+  "model_policy": {
+    "logistic": {"class_weight": "balanced", "C": 1.0, "max_iter": 2000, "solver": "lbfgs"},
+    "random_forest": {"n_estimators": 500, "max_depth": 4, "min_samples_leaf": 100, "max_features": "sqrt", "class_weight": "balanced", "random_state": 5360, "n_jobs": -1}
+  }
+}

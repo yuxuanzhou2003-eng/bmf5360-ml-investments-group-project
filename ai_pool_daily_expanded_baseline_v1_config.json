@@ -1,0 +1,61 @@
+{
+  "schema_version": "ai_pool_daily_baseline_v1",
+  "purpose": "Exploratory static-candidate expanded daily controls-only Logistic and Random Forest baseline. Historical active dates use the external registry member_from/member_to spans; AI-role evidence is not a complete point-in-time history and validation is not an unbiased full-PIT backtest.",
+  "model_ready_run_id": "20260910T060000000000Z",
+  "membership_source_mode": "exploratory_static_candidate",
+  "candidate_registry_path": "data/audit/ai_pool_expansion_v1/20260910T045000Z/candidate_registry.csv",
+  "candidate_registry_expected_rows": 49,
+  "candidate_registry_direct_local_pit_expected": 9,
+  "candidate_registry_provisional_static_source_expected": 40,
+  "target": "y",
+  "continuous_rank_target": "forward_excess_return",
+  "horizon_sessions": 21,
+  "features": [
+    "momentum_1", "momentum_5", "momentum_20", "momentum_60",
+    "volatility_20_ann", "volatility_60_ann",
+    "volume_median_20_log1p", "volume_median_60_log1p",
+    "dollar_volume_median_20_log1p", "dollar_volume_median_60_log1p",
+    "spread_median_20_bps", "spread_median_60_bps",
+    "beta_126", "idio_vol_126_ann", "beta_obs_126",
+    "spy_momentum_1", "spy_momentum_5", "spy_momentum_20", "spy_momentum_60",
+    "spy_volatility_20_ann", "spy_volatility_60_ann"
+  ],
+  "validation_metrics": [
+    "roc_auc", "pr_auc", "brier", "directional_accuracy",
+    "pooled_rank_ic", "mean_daily_rank_ic", "mean_daily_top_minus_bottom_spread"
+  ],
+  "portfolio_diagnostic": {
+    "side_fraction": 0.2,
+    "minimum_side_size_registered": 10,
+    "tie_break": "sample_id ascending after probability descending/ascending"
+  },
+  "preprocessing": {
+    "imputer": "median",
+    "add_missing_indicator": true,
+    "fit_scope": "selected training anchors only",
+    "winsorization": false,
+    "forward_fill": false,
+    "zero_fill": false
+  },
+  "logistic": {
+    "class_weight": "balanced",
+    "C": 1.0,
+    "max_iter": 2000,
+    "solver": "lbfgs",
+    "random_state": 5360
+  },
+  "random_forest": {
+    "n_estimators": 500,
+    "max_depth": 4,
+    "min_samples_leaf": 100,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 5360,
+    "n_jobs": -1
+  },
+  "walk_forward": {
+    "policy": "Fit once on selected training anchors through 2020-12-31, then score validation anchors in chronological date order without random mixing or validation-label refit; compare all daily date-purge and conservative non-overlap anchor modes.",
+    "boundary_embargo_sessions": 21
+  },
+  "test_policy": "Do not read, aggregate, score, rank, predict, or inspect any test-period future return. Save validation predictions only; the model-ready test manifest remains schedule-only."
+}

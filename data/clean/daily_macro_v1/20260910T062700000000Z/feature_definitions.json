@@ -1,0 +1,204 @@
+{
+  "schema": "daily_macro_features_v1",
+  "lag_rule": "for SPY session t, as-of reference_spy_session=t-1; source dates must be <= reference_spy_session",
+  "carry_rule": "carry the latest valid source observation forward only after its observation date; provider raw missing tokens remain NA and are separately flagged",
+  "change_rule": "simple difference in source native units over prior SPY sessions; no percent conversion",
+  "percentile_rule": "VIX 252-session rolling percentile rank including the current lagged value; requires 252 observations",
+  "feature_columns": [
+    "vix_level",
+    "vix_change_1d",
+    "vix_change_5d",
+    "vix_change_20d",
+    "vix_percentile_252d",
+    "dgs3mo_level",
+    "dgs3mo_change_5d",
+    "dgs3mo_change_20d",
+    "dgs2_level",
+    "dgs2_change_5d",
+    "dgs2_change_20d",
+    "dgs10_level",
+    "dgs10_change_5d",
+    "dgs10_change_20d",
+    "high_yield_oas_level",
+    "high_yield_oas_change_5d",
+    "high_yield_oas_change_20d",
+    "investment_grade_oas_level",
+    "investment_grade_oas_change_5d",
+    "investment_grade_oas_change_20d",
+    "broad_dollar_level",
+    "broad_dollar_change_5d",
+    "broad_dollar_change_20d",
+    "broad_dollar_change_60d",
+    "term_spread_10y_2y",
+    "term_spread_10y_3m"
+  ],
+  "recommended_train_validation_feature_columns": [
+    "vix_level",
+    "vix_change_1d",
+    "vix_change_5d",
+    "vix_change_20d",
+    "vix_percentile_252d",
+    "dgs3mo_level",
+    "dgs3mo_change_5d",
+    "dgs3mo_change_20d",
+    "dgs2_level",
+    "dgs2_change_5d",
+    "dgs2_change_20d",
+    "dgs10_level",
+    "dgs10_change_5d",
+    "dgs10_change_20d",
+    "broad_dollar_level",
+    "broad_dollar_change_5d",
+    "broad_dollar_change_20d",
+    "broad_dollar_change_60d",
+    "term_spread_10y_2y",
+    "term_spread_10y_3m"
+  ],
+  "credit_spread_feature_columns_excluded_from_current_train_validation": [
+    "high_yield_oas_level",
+    "high_yield_oas_change_5d",
+    "high_yield_oas_change_20d",
+    "investment_grade_oas_level",
+    "investment_grade_oas_change_5d",
+    "investment_grade_oas_change_20d"
+  ],
+  "credit_spread_exclusion_reason": "TRAINING_COVERAGE_UNAVAILABLE: BAMLH0A0HYM2 and BAMLC0A0CM first valid source observation is 2023-09-11, after the 2015-2020 training and 2021-2022 validation windows",
+  "definitions": {
+    "vix_level": {
+      "source_series": "VIXCLS",
+      "operation": "lagged carried level",
+      "units": "source native units"
+    },
+    "vix_change_1d": {
+      "source_series": "VIXCLS",
+      "operation": "current lagged carried level minus 1 SPY sessions prior",
+      "units": "source native units"
+    },
+    "vix_change_5d": {
+      "source_series": "VIXCLS",
+      "operation": "current lagged carried level minus 5 SPY sessions prior",
+      "units": "source native units"
+    },
+    "vix_change_20d": {
+      "source_series": "VIXCLS",
+      "operation": "current lagged carried level minus 20 SPY sessions prior",
+      "units": "source native units"
+    },
+    "vix_percentile_252d": {
+      "source_series": "VIXCLS",
+      "operation": "252-session rolling percentile rank including current lagged value",
+      "units": "0-1 rank"
+    },
+    "dgs3mo_level": {
+      "source_series": "DGS3MO",
+      "operation": "lagged carried level",
+      "units": "source native units"
+    },
+    "dgs3mo_change_5d": {
+      "source_series": "DGS3MO",
+      "operation": "current lagged carried level minus 5 SPY sessions prior",
+      "units": "source native units"
+    },
+    "dgs3mo_change_20d": {
+      "source_series": "DGS3MO",
+      "operation": "current lagged carried level minus 20 SPY sessions prior",
+      "units": "source native units"
+    },
+    "dgs2_level": {
+      "source_series": "DGS2",
+      "operation": "lagged carried level",
+      "units": "source native units"
+    },
+    "dgs2_change_5d": {
+      "source_series": "DGS2",
+      "operation": "current lagged carried level minus 5 SPY sessions prior",
+      "units": "source native units"
+    },
+    "dgs2_change_20d": {
+      "source_series": "DGS2",
+      "operation": "current lagged carried level minus 20 SPY sessions prior",
+      "units": "source native units"
+    },
+    "dgs10_level": {
+      "source_series": "DGS10",
+      "operation": "lagged carried level",
+      "units": "source native units"
+    },
+    "dgs10_change_5d": {
+      "source_series": "DGS10",
+      "operation": "current lagged carried level minus 5 SPY sessions prior",
+      "units": "source native units"
+    },
+    "dgs10_change_20d": {
+      "source_series": "DGS10",
+      "operation": "current lagged carried level minus 20 SPY sessions prior",
+      "units": "source native units"
+    },
+    "high_yield_oas_level": {
+      "source_series": "BAMLH0A0HYM2",
+      "operation": "lagged carried level",
+      "units": "source native units"
+    },
+    "high_yield_oas_change_5d": {
+      "source_series": "BAMLH0A0HYM2",
+      "operation": "current lagged carried level minus 5 SPY sessions prior",
+      "units": "source native units"
+    },
+    "high_yield_oas_change_20d": {
+      "source_series": "BAMLH0A0HYM2",
+      "operation": "current lagged carried level minus 20 SPY sessions prior",
+      "units": "source native units"
+    },
+    "investment_grade_oas_level": {
+      "source_series": "BAMLC0A0CM",
+      "operation": "lagged carried level",
+      "units": "source native units"
+    },
+    "investment_grade_oas_change_5d": {
+      "source_series": "BAMLC0A0CM",
+      "operation": "current lagged carried level minus 5 SPY sessions prior",
+      "units": "source native units"
+    },
+    "investment_grade_oas_change_20d": {
+      "source_series": "BAMLC0A0CM",
+      "operation": "current lagged carried level minus 20 SPY sessions prior",
+      "units": "source native units"
+    },
+    "broad_dollar_level": {
+      "source_series": "DTWEXBGS",
+      "operation": "lagged carried level",
+      "units": "source native units"
+    },
+    "broad_dollar_change_5d": {
+      "source_series": "DTWEXBGS",
+      "operation": "current lagged carried level minus 5 SPY sessions prior",
+      "units": "source native units"
+    },
+    "broad_dollar_change_20d": {
+      "source_series": "DTWEXBGS",
+      "operation": "current lagged carried level minus 20 SPY sessions prior",
+      "units": "source native units"
+    },
+    "broad_dollar_change_60d": {
+      "source_series": "DTWEXBGS",
+      "operation": "current lagged carried level minus 60 SPY sessions prior",
+      "units": "source native units"
+    },
+    "term_spread_10y_2y": {
+      "source_series": [
+        "DGS10",
+        "DGS2"
+      ],
+      "operation": "DGS10_value - DGS2_value",
+      "units": "percentage points"
+    },
+    "term_spread_10y_3m": {
+      "source_series": [
+        "DGS10",
+        "DGS3MO"
+      ],
+      "operation": "DGS10_value - DGS3MO_value",
+      "units": "percentage points"
+    }
+  }
+}

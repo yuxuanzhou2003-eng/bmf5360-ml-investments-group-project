@@ -1,0 +1,128 @@
+{
+  "purpose": "Leakage-controlled analyst-network model comparison for the broad-S&P event-sleeve mechanism using one frozen model-ready run. Only eligible training rows are used for fitting and only eligible validation rows are scored; the sealed test split is never predicted or scored.",
+  "scope_note": "This runner validates the broad-S&P event-sleeve mechanism and is not the final AI-universe model. A later point-in-time AI-universe validation is required.",
+  "version": "analyst_model_v1",
+  "model_ready_run_id": "20260909T125156092817Z",
+  "model_ready_root": "data/analyst_graph_model_ready_v1/20260909T125156092817Z",
+  "target": "forward_benchmark_excess",
+  "event_key": ["source", "announcement", "period_end"],
+  "splits": {
+    "training": ["2015-01-01", "2020-12-31"],
+    "validation": ["2021-01-01", "2022-12-31"],
+    "test": ["2023-01-01", "2026-06-30"]
+  },
+  "internal_training_folds": [
+    {"name": "validate_2018", "train_end": "2017-12-31", "validation_start": "2018-01-01", "validation_end": "2018-12-31"},
+    {"name": "validate_2019", "train_end": "2018-12-31", "validation_start": "2019-01-01", "validation_end": "2019-12-31"},
+    {"name": "validate_2020", "train_end": "2019-12-31", "validation_start": "2020-01-01", "validation_end": "2020-12-31"}
+  ],
+  "expected_supervised_model_eligible_rows": {
+    "training": 55763,
+    "validation": 19764,
+    "test": 0
+  },
+  "models": [
+    "training_weighted_mean",
+    "simple_rec_weighted_signal",
+    "receiver_only_ridge",
+    "context_ridge",
+    "analyst_ridge",
+    "analyst_hgb",
+    "two_stage_ridge"
+  ],
+  "network_family_nominees": ["analyst_ridge", "analyst_hgb", "two_stage_ridge"],
+  "confirmatory_validation_models": ["network_family_nominee", "context_ridge"],
+  "feature_rules": {
+    "all_52": "all model_features.csv columns except sample_id; the frozen run must contain exactly 52 numeric feature columns",
+    "simple_rec_weighted_signal": {
+      "columns": ["standardized_surprise", "jaccard_rec_weighted"],
+      "formula": "standardized_surprise * jaccard_rec_weighted",
+      "precomputed_equivalent_column": "surprise_x_jaccard_rec_weighted"
+    },
+    "receiver_only_ridge": {
+      "include_prefixes": ["receiver_", "market_"],
+      "exclude": "all other columns"
+    },
+    "context_ridge": {
+      "include_prefixes": ["receiver_", "source_", "market_"],
+      "include_exact": ["standardized_surprise", "surprise_abs", "surprise_sign", "analysts_log1p"],
+      "exclude_relationship_fields": ["jaccard_coverage", "jaccard_rec_weighted", "surprise_x_jaccard_coverage", "surprise_x_jaccard_rec_weighted", "common_brokers", "common_brokers_log1p", "common_rated_brokers", "common_rated_brokers_log1p", "graph_snapshot_age_days", "event_neighbor_count", "neighbor_rank_jaccard_coverage", "neighbor_rank_jaccard_rec_weighted"]
+    },
+    "analyst_ridge": "all_52",
+    "analyst_hgb": "all_52",
+    "two_stage_ridge": {
+      "event_model": {
+        "purpose": "predict the actual mean target of each training event",
+        "include_prefixes": ["source_", "market_"],
+        "include_exact": ["standardized_surprise", "surprise_abs", "surprise_sign", "analysts_log1p"],
+        "exclude_receiver_and_relationship_fields": true
+      },
+      "within_event_residual_model": {
+        "purpose": "predict target minus the actual training-event mean",
+        "include_prefixes": ["receiver_"],
+        "include_exact": ["jaccard_coverage", "jaccard_rec_weighted", "surprise_x_jaccard_coverage", "surprise_x_jaccard_rec_weighted", "common_brokers", "common_brokers_log1p", "common_rated_brokers", "common_rated_brokers_log1p", "graph_snapshot_age_days", "event_neighbor_count", "neighbor_rank_jaccard_coverage", "neighbor_rank_jaccard_rec_weighted"],
+        "exclude_event_level_fields": ["standardized_surprise", "surprise_abs", "surprise_sign", "analysts_log1p", "source_*", "market_*"]
+      }
+    }
+  },
+  "hyperparameters": {
+    "ridge_alphas": [0.01, 0.1, 1.0, 10.0, 100.0],
+    "hist_gradient_boosting_grid": {
+      "learning_rate": [0.03, 0.05],
+      "max_leaf_nodes": [7, 15, 31],
+      "l2_regularization": [1.0, 10.0],
+      "max_iter": 200,
+      "min_samples_leaf": 50
+    },
+    "two_stage_ridge_grid": "cartesian product of ridge_alphas for event_alpha and residual_alpha"
+  },
+  "preprocessing": {
+    "imputer": "SimpleImputer(strategy=median) fitted separately inside each training fold and again on full eligible training data for final models",
+    "ridge": "StandardScaler after the training-fold median imputer",
+    "hist_gradient_boosting": "median imputer; no scaling",
+    "missing_values": "target missingness is never imputed; feature missingness is handled only by the declared training-fitted median imputer",
+    "outliers": "no winsorization, clipping, forward fill, backward fill, interpolation or zero fill"
+  },
+  "weights": {
+    "rule": "equal total weight per eligible source event within every row-level fit or scoring sample",
+    "row_weight_formula": "1 / number of eligible rows in the same event",
+    "event_model": "one row per event, therefore unit weight per event"
+  },
+  "selection": {
+    "hyperparameter_order": ["mean_event_spearman_descending", "mean_event_weighted_mse_ascending", "params_lexicographic_ascending"],
+    "network_family_order": ["mean_event_spearman_descending", "mean_event_weighted_mse_ascending", "model_name_lexicographic_ascending"],
+    "network_family_scope": "nominate exactly one of analyst_ridge, analyst_hgb and two_stage_ridge from training-only rolling CV",
+    "validation_roles": {
+      "confirmatory": "the CV nominee and context_ridge",
+      "exploratory": "training_weighted_mean, simple_rec_weighted_signal, receiver_only_ridge and non-nominee model families"
+    }
+  },
+  "evaluation": {
+    "event_spearman_minimum_rows": 3,
+    "event_spearman_requires_nonconstant_target_and_prediction": true,
+    "cv_scope": "training split only with 2018/2019/2020 rolling training-only folds; each fold trains only before its validation year and purges rows with exit_session on or after the fold validation start",
+    "validation_scope": "eligible validation rows announced in 2021-01-01..2022-12-31",
+    "event_weighted_metrics": ["event_weighted_mse", "event_weighted_rmse", "event_weighted_mae", "event_weighted_direction_accuracy", "weighted_r2"],
+    "rank_metrics": ["pooled_spearman", "mean_event_spearman", "event_spearman_groups"]
+  },
+  "bootstrap": {
+    "comparison": "network-family nominee minus context_ridge",
+    "block": "announcement calendar month",
+    "replications": 2000,
+    "seed": 5360,
+    "confidence_level": 0.95,
+    "statistic": "mean paired event Spearman delta across complete nominee/context event pairs; sample announcement-month blocks with replacement"
+  },
+  "test_policy": {
+    "target": "test target value columns must be NaN and are checked only for the seal; no non-empty test target may be used",
+    "prediction": "do not fit, score or predict any test row",
+    "output": "validation_predictions.csv contains validation rows only and has no test prediction column"
+  },
+  "output": {
+    "root": "data/model_runs/analyst_v1",
+    "files": ["cv_results.csv", "cv_candidate_summary.csv", "validation_metrics.csv", "validation_predictions.csv", "per_event_ic.csv", "bootstrap_delta_mean_event_ic.csv", "bootstrap_summary.json", "selected_hyperparameters.json", "feature_sets.json", "eligibility_audit.csv", "summary.json"],
+    "models_directory": "models",
+    "model_files": "one joblib artifact per declared model, including a transparent specification artifact for the deterministic signal and training mean"
+  },
+  "random_state": 5360
+}

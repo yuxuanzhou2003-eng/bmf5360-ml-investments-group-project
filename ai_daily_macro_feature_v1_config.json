@@ -1,0 +1,77 @@
+{
+  "schema_version": "ai_daily_macro_feature_v1",
+  "config_version": "1.0.0",
+  "purpose": "Build pre-formation AI industry state features from fixed ETF prices and the 49-RIC expanded daily model-ready membership grid. This stage does not read targets, labels, future returns, or model runs.",
+  "scope": "ai_industry_state_only",
+  "inputs": {
+    "model_features": "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/model_features.csv",
+    "prices": "data/clean/v3/20260909T012417705069Z/prices.csv",
+    "benchmark": "SPY.P",
+    "raw_etf_root": "data/raw/ai_factor_v1/20260909T183801359195Z",
+    "raw_etf_files": {
+      "SOXX.OQ": "etf_prices_SOXX.OQ.csv",
+      "XLK.P": "etf_prices_XLK.P.csv",
+      "AIQ.OQ": "etf_prices_AIQ.OQ.csv",
+      "BOTZ.OQ": "etf_prices_BOTZ.OQ.csv",
+      "IGV.P": "etf_prices_IGV.P.csv"
+    },
+    "raw_etf_sidecars": true,
+    "expected_pool_instruments": 49
+  },
+  "formation": {
+    "formation_date_column": "formation_session",
+    "reference_rule": "strictly_previous_spy_session",
+    "minimum_lag_sessions": 1,
+    "date_semantics": "date_only; no timezone conversion"
+  },
+  "etf": {
+    "momentum_windows_sessions": [5, 20, 60],
+    "volatility_windows_returns": [20, 60],
+    "volatility_annualization_factor": 252,
+    "drawdown_window_prices": 60,
+    "momentum_formula": "P_ref / P_ref_minus_w - 1, requiring all w+1 consecutive SPY-session closes",
+    "volatility_formula": "sample_std(ddof=1) of w consecutive one-session price returns ending at reference_session times sqrt(252)",
+    "drawdown_formula": "minimum of price/running_peak - 1 within the trailing 60 consecutive SPY-session closes ending at reference_session",
+    "ticker_labels": {
+      "SOXX.OQ": "soxx",
+      "XLK.P": "xlk",
+      "AIQ.OQ": "aiq",
+      "BOTZ.OQ": "botz",
+      "IGV.P": "igv"
+    }
+  },
+  "pool": {
+    "one_session_return": "P_ref / P_previous_spy_session - 1; no stale-price carry",
+    "moving_average_windows_sessions": [20, 60],
+    "moving_average_formula": "simple mean of consecutive SPY-session closes through reference_session",
+    "breadth_up_rule": "strictly positive one-session return; zero is a genuine observation and is not up",
+    "dispersion_formula": "sample_std(ddof=1) of valid active-member one-session returns",
+    "equal_weight_relative_spy_formula": "mean(valid active-member one-session returns) - SPY one-session return",
+    "low_coverage_threshold": 20,
+    "active_membership_source": "49-RIC expanded model_features rows by formation_session",
+    "coverage_denominator": "metric-specific valid active-member count"
+  },
+  "missing_value_policy": {
+    "empty_or_unparseable": "NA",
+    "missing_is_not_zero": true,
+    "zero_is_observation": true,
+    "no_imputation": true,
+    "no_forward_fill": true,
+    "no_backward_fill": true,
+    "no_interpolation": true,
+    "no_winsorization": true,
+    "no_silent_deduplication": true,
+    "physical_source_row_deletion": false
+  },
+  "outputs": {
+    "clean_root": "data/clean/ai_daily_macro_features_v1",
+    "audit_root": "data/audit/ai_daily_macro_features_v1",
+    "feature_table": "ai_state_features.csv",
+    "pool_coverage": "pool_member_coverage.csv",
+    "etf_coverage": "etf_coverage.csv",
+    "reason_code_counts": "reason_code_counts.csv",
+    "quarantine": "quarantine/feature_quarantine.csv",
+    "summary": "summary.json",
+    "hashes": "hashes.json"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": "ai_infrastructure_timing_panel_v2_ai_era",
+  "purpose": "AI-era development-only timing panel and separately sealed 2026 schedule.",
+  "candidate_registry_path": "data/audit/ai_pool_expansion_v1/20260910T045000Z/candidate_registry.csv",
+  "returns_path": "data/clean/v2/returns.csv",
+  "macro_path": "data/clean/daily_macro_v1/20260910T062700000000Z/macro_features.csv",
+  "development_start_date": "2021-01-01",
+  "development_end_date": "2025-12-31",
+  "test_start_date": "2026-01-01",
+  "test_end_date": "2026-06-30",
+  "train_end": "2023-12-31",
+  "validation_start": "2024-01-01",
+  "validation_end": "2025-12-31",
+  "benchmark_ric": "SPY.P",
+  "core_roles": ["gpu_accelerator", "ai_semiconductor", "memory_hbm_storage", "server_network", "cloud_software", "data_center_power_cooling"],
+  "excluded_roles": ["robotics_autonomy"],
+  "sleeve_weighting": "equal_weight_across_roles_then_equal_weight_among_same_day_valid_member_returns",
+  "missing_return_policy": "do_not_impute; reweight within sleeve only when at least one valid member return exists; mark basket unavailable when any sleeve is unavailable",
+  "horizon_sessions": 5,
+  "features": ["ai_excess_momentum_5", "ai_excess_momentum_20", "ai_excess_momentum_60", "ai_volatility_20_ann", "ai_max_drawdown_60", "ai_breadth_positive_5", "ai_breadth_positive_20", "ai_breadth_positive_60", "ai_cross_sectional_dispersion_1", "spy_momentum_20", "spy_volatility_20_ann", "vix_level", "vix_change_5d", "term_spread_10y_2y", "broad_dollar_change_20d"],
+  "test_policy": "The builder may retain 2026 formation-session schedule, basket state and contemporaneous features only. It must not construct, read, aggregate, write, hash, score or predict 2026 future returns or labels."
+}

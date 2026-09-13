@@ -1,0 +1,16 @@
+{
+  "simple_network": {},
+  "receiver_ridge": {
+    "alpha": 0.01
+  },
+  "network_ridge": {
+    "alpha": 100.0
+  },
+  "network_hgb": {
+    "learning_rate": 0.03,
+    "max_leaf_nodes": 7,
+    "l2_regularization": 10.0,
+    "max_iter": 200,
+    "min_samples_leaf": 50
+  }
+}

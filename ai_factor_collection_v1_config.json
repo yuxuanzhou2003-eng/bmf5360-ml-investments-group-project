@@ -1,0 +1,327 @@
+{
+  "schema_version": "ai_factor_collection_v1",
+  "config_version": "1.0.0",
+  "description": "Raw, versioned LSEG collection plan for AI-factor fundamental inputs and fixed ETF price/volume inputs.",
+  "input": {
+    "universe_spans": "data/audit/universe_rebuild/eligible_spans_2015_2026_corrected.csv",
+    "required_columns": [
+      "ric",
+      "name",
+      "delisted_ric",
+      "member_from",
+      "member_to",
+      "member_days",
+      "fetch_start",
+      "fetch_end"
+    ],
+    "ric_policy": "Use the literal ric value from the corrected spans file. Do not infer, normalize, replace, merge, or map identity from name, ticker text, suffixes, or issuer guesses.",
+    "membership_policy": "Request every row in the corrected spans file, including delisted_ric rows. A delisted flag records historical coverage status and never removes a security from the requested universe.",
+    "expected_span_status_fields": [
+      "span_status",
+      "membership_status",
+      "delisted_ric",
+      "member_from",
+      "member_to",
+      "fetch_start",
+      "fetch_end"
+    ]
+  },
+  "windows": {
+    "fundamental": {
+      "start": "2013-01-01",
+      "end": "2026-06-30",
+      "parameters": {
+        "SDate": "2013-01-01",
+        "EDate": "2026-06-30",
+        "Frq": "FY",
+        "ReportingState": "Orig"
+      }
+    },
+    "etf_history": {
+      "start": "2013-11-01",
+      "end": "2026-06-30",
+      "interval": "1D"
+    }
+  },
+  "session": {
+    "name": "desktop.workspace",
+    "credential_env_key": "LSEG_APP_KEY",
+    "credential_source": "repository-local .env only; credentials are never placed in requests or artifacts"
+  },
+  "batching": {
+    "stock_batch_size": 25,
+    "etf_batch_size": 1,
+    "etf_independent_requests": true,
+    "stock_order": "input spans file order",
+    "request_order": "config family order, then stock batch order, then ETF order"
+  },
+  "timeouts_seconds": {
+    "fundamental": 90,
+    "etf_history": 90,
+    "session_open": 90
+  },
+  "fundamental_requests": [
+    {
+      "family_id": "legacy_rd",
+      "group": "A_legacy_rd_revenue",
+      "method": "get_data",
+      "request_id_prefix": "rd",
+      "fields": [
+        "TR.ResearchAndDevelopment",
+        "TR.ResearchAndDevelopment.date",
+        "TR.ResearchAndDevelopment.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "legacy_revenue",
+      "group": "A_legacy_rd_revenue",
+      "method": "get_data",
+      "request_id_prefix": "revenue",
+      "fields": [
+        "TR.Revenue",
+        "TR.Revenue.date",
+        "TR.Revenue.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "f_tot_revenue",
+      "group": "B_f_controls",
+      "method": "get_data",
+      "request_id_prefix": "f_tot_revenue",
+      "fields": [
+        "TR.F.TotRevenue",
+        "TR.F.TotRevenue.date",
+        "TR.F.TotRevenue.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "f_tot_assets",
+      "group": "B_f_controls",
+      "method": "get_data",
+      "request_id_prefix": "f_tot_assets",
+      "fields": [
+        "TR.F.TotAssets",
+        "TR.F.TotAssets.date",
+        "TR.F.TotAssets.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "f_com_eq_tot",
+      "group": "B_f_controls",
+      "method": "get_data",
+      "request_id_prefix": "f_com_eq_tot",
+      "fields": [
+        "TR.F.ComEqTot",
+        "TR.F.ComEqTot.date",
+        "TR.F.ComEqTot.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "f_gross_prof_ind_prop_tot",
+      "group": "B_f_controls",
+      "method": "get_data",
+      "request_id_prefix": "f_gross_prof_ind_prop_tot",
+      "fields": [
+        "TR.F.GrossProfIndPropTot",
+        "TR.F.GrossProfIndPropTot.date",
+        "TR.F.GrossProfIndPropTot.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "f_net_cash_flow_op",
+      "group": "B_f_controls",
+      "method": "get_data",
+      "request_id_prefix": "f_net_cash_flow_op",
+      "fields": [
+        "TR.F.NetCashFlowOp",
+        "TR.F.NetCashFlowOp.date",
+        "TR.F.NetCashFlowOp.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "f_debt_tot",
+      "group": "B_f_controls",
+      "method": "get_data",
+      "request_id_prefix": "f_debt_tot",
+      "fields": [
+        "TR.F.DebtTot",
+        "TR.F.DebtTot.date",
+        "TR.F.DebtTot.fperiod"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "value_date_fperiod",
+      "independent_request": true
+    },
+    {
+      "family_id": "income_statement_dates",
+      "group": "C_income_statement_dates",
+      "method": "get_data",
+      "request_id_prefix": "is_dates",
+      "fields": [
+        "TR.ISOriginalAnnouncementDate",
+        "TR.ISStatementLastUpdatedDate",
+        "TR.ISPeriodEndDate"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "announcement_update_period_end_dates",
+      "independent_request": true
+    },
+    {
+      "family_id": "business_segments_fy0",
+      "group": "D_business_segments",
+      "method": "get_data",
+      "request_id_prefix": "segments_fy0",
+      "fields": [
+        "TR.F.BUSTotRevBizActiv(Period=FY0).segmentCode",
+        "TR.F.BUSTotRevBizActiv(Period=FY0).segmentName",
+        "TR.F.BUSTotRevBizActiv(Period=FY0).fperiod",
+        "TR.F.BUSTotRevBizActiv(Period=FY0).date",
+        "TR.F.BUSTotRevBizActiv(Period=FY0)"
+      ],
+      "parameters_from": "windows.fundamental.parameters",
+      "field_role": "official_business_segment_value_date_fperiod",
+      "field_period": "FY0",
+      "independent_request": true
+    },
+    {
+      "family_id": "market_capitalization_monthly",
+      "group": "E_market_capitalization",
+      "method": "get_data",
+      "request_id_prefix": "market_cap_monthly",
+      "fields": [
+        "TR.CompanyMarketCapitalization",
+        "TR.CompanyMarketCapitalization.date"
+      ],
+      "parameters": {
+        "SDate": "2013-01-01",
+        "EDate": "2026-06-30",
+        "Frq": "M"
+      },
+      "field_role": "monthly_value_date",
+      "reporting_state_exception": true,
+      "exception_rationale": "CompanyMarketCapitalization is a monthly market-data series rather than a reporting-statement fundamental. ReportingState=Orig is therefore intentionally omitted, matching the monthly v2/v3 probe request and avoiding an inapplicable reporting-vintage parameter.",
+      "independent_request": true
+    }
+  ],
+  "etf_history": {
+    "family_id": "etf_daily_price_volume",
+    "group": "F_etf_daily_price_volume",
+    "method": "get_history",
+    "request_id_prefix": "etf_prices",
+    "universe": [
+      "SOXX.OQ",
+      "XLK.P",
+      "BOTZ.OQ",
+      "AIQ.OQ",
+      "IGV.P"
+    ],
+    "fields": [
+      "TRDPRC_1",
+      "OPEN_PRC",
+      "HIGH_1",
+      "LOW_1",
+      "ACVOL_UNS",
+      "BID",
+      "ASK",
+      "TRNOVR_UNS"
+    ],
+    "interval": "1D",
+    "adjustments": [
+      "exchangeCorrection",
+      "manualCorrection",
+      "CCH",
+      "CRE",
+      "RPO",
+      "RTS"
+    ],
+    "independent_request": true,
+    "optional_reconciliation_universe": [
+      "SPY.P"
+    ],
+    "optional_reconciliation_rule": "SPY.P is excluded by default and may be requested only with an explicit --include-spy flag; it is an accounting/reconciliation input, never an AI basket component in this collector."
+  },
+  "output": {
+    "raw_root": "data/raw/ai_factor_v1",
+    "fundamental_csv_pattern": "<request_id>.csv",
+    "etf_csv_pattern": "<request_id>.csv",
+    "request_pattern": "<request_id>.request.json",
+    "metadata_pattern": "<request_id>.meta.json",
+    "error_pattern": "<request_id>.attempt_<n>.error.json and <request_id>.error.json",
+    "plan_name": "plan.json",
+    "manifest_name": "collector_manifest.json",
+    "summary_name": "summary.json"
+  },
+  "raw_response_policy": {
+    "direct_vendor_serialization": true,
+    "cleaning": false,
+    "blank_replacement": false,
+    "missing_value_imputation": false,
+    "winsorization": false,
+    "deduplication": false,
+    "row_deletion": false,
+    "row_filtering": false,
+    "date_parsing_or_conversion_in_raw": false,
+    "timezone_conversion_in_raw": false,
+    "unit_or_currency_conversion": false,
+    "factor_ratio_or_score_generation": false,
+    "return_or_label_generation": false,
+    "test_future_return_or_label_read": false
+  },
+  "execution_policy": {
+    "reporting_state_rule": "ReportingState=Orig is used for reporting-statement fundamental families A-D. It is not sent for the monthly market-data family E.",
+    "parameter_exceptions": {
+      "market_capitalization_monthly": {
+        "reporting_state_sent": false,
+        "rationale": "CompanyMarketCapitalization is a monthly market-data series, not a reporting fundamental; the v2/v3 monthly probe used Frq=M without ReportingState, so no inapplicable Orig parameter is added."
+      }
+    },
+    "raw_stage_boundary": "The collector only retrieves feature inputs; it never creates or reads future returns or labels, including during the test window."
+  },
+  "test_seal_policy": {
+    "test_window": "2023-01-01 through 2026-06-30 remains sealed for future returns and labels",
+    "collector_reads": [
+      "corrected membership spans only"
+    ],
+    "collector_does_not_read": [
+      "future returns",
+      "future returns labels",
+      "test target tables",
+      "event labels",
+      "model outputs"
+    ],
+    "statement": "Basic fundamentals and ETF history are feature inputs. This collector creates no returns, labels, scores, portfolios, or model-ready tables."
+  },
+  "failure_policy": {
+    "redact_credentials": true,
+    "preserve_error_sidecars": true,
+    "preserve_failed_rows": true,
+    "retry_behavior": "A failed request is retained and may be retried on a later explicit --execute; no failed response is presented as successful.",
+    "reuse_requires": [
+      "exact request JSON and canonical request SHA-256",
+      "request file physical-byte SHA-256 matches the plan and metadata request_file_sha256",
+      "metadata request SHA-256 and CSV SHA-256",
+      "CSV SHA-256 recomputation and metadata presence"
+    ]
+  }
+}

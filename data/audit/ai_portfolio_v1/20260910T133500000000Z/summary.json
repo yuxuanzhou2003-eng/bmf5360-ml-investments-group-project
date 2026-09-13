@@ -1,0 +1,42 @@
+{
+  "schema": "ai_portfolio_validation_audit_v1",
+  "audit_run_id": "20260910T133500000000Z",
+  "source_run_id": "20260910T133000000000Z",
+  "generated_at_utc": "2026-09-10T11:49:45.337328+00:00",
+  "status": "PASS",
+  "counts": {
+    "checks": 14,
+    "pass": 13,
+    "warn": 1,
+    "fail": 0,
+    "blocking_fail": 0
+  },
+  "source_hashes": {
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/daily_inference.csv": "8adfc402c9d62ff8ddaedcbb0a26194c1d9c3555c7051a735d04e6b032bacdb8",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/eligibility.csv": "e76d1570cde36ab98d22320bea169d50664915a7311f1ec69ceed2467f457751",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/portfolio_targets.csv": "7070e339d397f27ac63eb167055a87f39803c9ec6e8ab0acce192736a903e06a",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/trades.csv": "dcf00efb65da50f7a003d89731948778d9eb7469af9339dbf8905627a10fe3b6",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/holdings_daily.csv": "a64e33a81d23a275d30734d8db6c04515bcb2042145dc96895ea4d5508782216",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/nav_daily.csv": "00c1dd3d59e15af374682ea33f1b05130f0ac762b5a03242d280671866e83a2d",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/metrics.csv": "f4c47a980ea8e84ab886b9e820431596c35c6a4c74d543d275d1649d3c6d2afd",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/audit.json": "8578593cb2a310e3037ca3fbe309135543c4def51ec1d0a9233e0f51faf493e4",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/summary.json": "4d6e2e340460a7283873fdeb5ab34fafbf24c151891613d7a97ba06424c92173"
+  },
+  "validator": {
+    "validate_ai_portfolio_validation_v1.py": "c70bbcdcce43fa665d5edbc9dd9943b2d3d3c727999aa33380fa3c3fd8a5e187"
+  },
+  "warnings": [
+    {
+      "check": "realised_weights_after_drift_and_turnover_cap",
+      "detail": "Target caps are construction limits. Drift and the turnover cap can leave realised weights temporarily above them; disclose the maxima.",
+      "value": {
+        "max_name_weight": 0.1277991157986267,
+        "max_group_weight": 0.3233161057167157
+      }
+    }
+  ],
+  "limitations": [
+    "This audit verifies the validation-only implementation; it does not evaluate the sealed test period.",
+    "The formal runner separates F-1 ranking from formation-close execution checks."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "daily_macro_feature_build_v1",
+  "run_id": "20260910T062611739370Z",
+  "built_at_utc": "2026-09-10T06:26:13.814819+00:00",
+  "raw_collection_run_id": "20260910T061957615542Z",
+  "raw_collection_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z",
+  "spy_benchmark_path": "data\\raw\\universe_v3\\20260909T012417705069Z\\prices_benchmark_000.csv",
+  "input_sha256": {
+    "raw_manifest": "c9ef4383fcd1b12938916fe074462e1ab4db336e310e13fcf437f6f78bcf91cd",
+    "spy_benchmark": "e0664cd5e3991a029daf384cedc9cb229a9872e23e4dbc7d27512c35fe262de6",
+    "raw_VIXCLS": "7b98d3b52a49477fcb98c7a3e89ca68b4d23f29c9a53a4265184c0659b5f5ce5",
+    "raw_DGS3MO": "6976e7129c350ca320eb1960338402275c61176598b5c68fbc77008e510443b9",
+    "raw_DGS2": "01edd2d7aab6135cd7156f5994d16f678f397e01697985ef29a4ac87310e9885",
+    "raw_DGS10": "8cc69dfbbee7f3e62091ce9f262345a45374e6eb30c529833ca03369a5994481",
+    "raw_BAMLH0A0HYM2": "a4801255e026d7bba23bc8bdeb3610e74c8d238385b3938ac2ed96ff39882787",
+    "raw_BAMLC0A0CM": "b4abbc240f0689d515ad6eebaa2519e7b340fbb964e17996886e30c39204eb2a",
+    "raw_DTWEXBGS": "f33c3890b8eff1122c648481b49dcaf8c7687a3c003f7107da0ec844c112c24d"
+  },
+  "training_window": [
+    "2015-01-01",
+    "2020-12-31"
+  ],
+  "validation_window": [
+    "2021-01-01",
+    "2022-12-31"
+  ],
+  "test_target_policy": "no test target or model result was read",
+  "missingness_policy": "no imputation; provider missing raw tokens retained; carried aligned value only from prior valid observation",
+  "units_policy": "retain source native units; DGS/OAS levels and changes are percentage points as supplied by FRED; dollar/VIX values retain source units"
+}

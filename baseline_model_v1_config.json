@@ -1,0 +1,24 @@
+{
+  "purpose": "Training/validation-only baseline comparison; test predictions and test metrics are forbidden in this run.",
+  "model_ready_run_id": "20260909T064151673764Z",
+  "target": "forward_benchmark_excess",
+  "sample_weight": "equal total weight per eligible source event within each fit or scoring sample",
+  "internal_training_folds": [
+    {"name": "validate_2018", "train_end": "2017-12-31", "validation_start": "2018-01-01", "validation_end": "2018-12-31"},
+    {"name": "validate_2019", "train_end": "2018-12-31", "validation_start": "2019-01-01", "validation_end": "2019-12-31"},
+    {"name": "validate_2020", "train_end": "2019-12-31", "validation_start": "2020-01-01", "validation_end": "2020-12-31"}
+  ],
+  "hyperparameter_selection_metric": "mean_internal_event_weighted_mse_min",
+  "validation_family_ranking_metric": "mean_event_spearman_max",
+  "ridge_alphas": [0.01, 0.1, 1.0, 10.0, 100.0],
+  "hist_gradient_boosting_grid": {
+    "learning_rate": [0.03, 0.05],
+    "max_leaf_nodes": [7, 15, 31],
+    "l2_regularization": [1.0, 10.0],
+    "max_iter": 200,
+    "min_samples_leaf": 50
+  },
+  "preprocessing": "median imputation fitted inside each training fold; StandardScaler for ridge only; no winsorization",
+  "random_state": 5360,
+  "test_policy": "Do not score, rank, predict, or inspect test-period targets in this run."
+}

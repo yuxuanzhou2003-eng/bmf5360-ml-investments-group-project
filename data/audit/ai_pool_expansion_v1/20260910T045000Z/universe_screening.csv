@@ -1,0 +1,782 @@
+﻿ric,universe_name,delisted_ric,member_from,member_to,screen_status,primary_group,reason_code
+A.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AA.N,Alcoa Corp,False,2016-11-01,2016-11-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AABA.OQ^J19,Altaba,True,2015-01-01,2017-06-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AAL.OQ,American Airline,False,2015-03-23,2024-09-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AAP.N,Advance Auto,False,2015-07-09,2023-08-24,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AAPL.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ABBV.N,AbbVie,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ABMD.OQ^L22,Abiomed,True,2018-05-31,2022-12-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ABNB.OQ,Airbnb,False,2023-09-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ABT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ACGL.OQ,Arch Capital Grp,False,2022-11-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ACN.N,Accenture,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ADBE.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ADI.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,ai_semiconductor,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ADM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ADNT.N,Adient,False,2016-10-31,2016-10-31,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ADP.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ADSK.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ADT.N^E16,ADT Security,True,2015-01-01,2016-05-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AEE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AEP.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AES.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AET.N^K18,Aetna,True,2015-01-01,2018-12-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AFL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AGN.N^C15,Allerg,True,2015-01-01,2015-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AGN.N^E20,Allergan,True,2015-01-01,2020-05-11,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AIG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AIRC.N^F24,Apartment Income,True,2020-12-15,2020-12-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AIV.N,Aimco,False,2015-01-01,2020-12-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AIZ.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AJG.N,Arthur J. Gallag,False,2016-05-31,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AKAM.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ALB.N,Albemarle,False,2016-07-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ALGN.OQ,Align Technology,False,2017-06-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ALK.N,Alaska Air Group,False,2016-05-13,2023-12-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ALL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ALLE.N,Allegion,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ALTR.OQ^L15,Altera,True,2015-01-01,2015-12-28,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ALXN.OQ^G21,Alexion Pharmas,True,2015-01-01,2021-07-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMAT.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMCR.N,Amcr,False,2019-06-07,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMD.OQ,AMD,False,2017-03-20,2026-09-07,selected_design_candidate,gpu_accelerator,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+AME.N,Ametek,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMG.N,Affiliated Mngrs,False,2015-01-01,2019-12-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMGN.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMT.N,,False,2015-01-01,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+AMTM.N,Amentum Hldgs,False,2024-09-30,2024-12-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AMZN.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+AN.N,AutoNation,False,2015-01-01,2017-08-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ANDV.N^J18,Andeavor US,True,2015-01-01,2018-09-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ANET.N,Arista Networks,False,2018-08-28,2026-09-07,selected_design_candidate,server_network,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ANSS.OQ^G25,Ansys Inc,True,2017-06-19,2025-07-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AON.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AOS.N,A O Smith,False,2017-07-26,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+APA.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+APC.N^H19,Anadarko Petrol,True,2015-01-01,2019-08-08,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+APD.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+APH.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+APO.N,Apollo Global,False,2024-12-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+APP.OQ,Applovin,False,2025-09-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+APTV.N,APTIV,False,2015-01-01,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ARE.N,Alexandria Rl EE,False,2017-03-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ARES.N,Ares Management,False,2025-12-11,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ARG.N^E16,Airgas,True,2015-01-01,2016-05-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ASIX.N,AdvanSix,False,2016-10-03,2016-10-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ATI.N,ATI,False,2015-01-01,2015-07-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ATO.N,Atmos Energy,False,2019-02-15,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ATVI.OQ^J23,Activision,True,2015-08-31,2023-10-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AVB.N^H26,Avalonbay US,True,2015-01-01,2026-08-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AVGO.OQ,Broadcom,False,2015-01-01,2026-09-07,selected_design_candidate,gpu_accelerator,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+AVP.N^A20,Avon Prdcts,True,2015-01-01,2015-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AVY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AWK.N,American Water,False,2016-03-04,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AXON.OQ,Axon Enterprise,False,2023-05-04,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AXP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AYI.N,Acuity,False,2016-05-03,2018-06-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+AZO.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BA.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BAC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BALL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BAX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BBBY.OQ^E23,20230930-DK,True,2015-01-01,2017-07-25,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BBWI.N,Bath & Body,False,2015-01-01,2024-09-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BBY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BCR.N^L17,CR Bard,True,2015-01-01,2018-01-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BDX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BEN.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BFH.N,Bread Fincl Hldg,False,2015-01-01,2020-06-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BFb.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BG.N,Bunge Global SA,False,2023-03-15,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BHF.OQ,Brighthouse,False,2017-08-07,2019-04-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BIIB.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BIO.N,Bio Rad,False,2020-06-22,2024-09-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BIVV.OQ^C18,Bioverativ,True,2017-02-02,2017-02-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BKNG.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BKR.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BLDR.N,Builders FrstSrc,False,2023-12-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BLK.N,BlackRock,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BMY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BNY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BR.N,Broadridge,False,2018-06-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BRCM.OQ^B16,Broadcom Co,True,2015-01-01,2016-01-31,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BRKb.N,Berkshire,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BRO.N,Brown & Brown,False,2021-09-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BSX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BWA.N,Borgwarner,False,2015-01-01,2025-03-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BX.N,Blackstone DE,False,2023-09-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BXLT.N^F16,Baxalta,True,2015-07-01,2016-06-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+BXP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+C.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CA.OQ^K18,CA,True,2015-01-01,2018-11-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CAG.N,Conagra Brands,False,2015-01-01,2026-06-29,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CAH.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CAM.N^D16,Cameron Intl,True,2015-01-01,2016-04-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CARR.N,Carrier Global,False,2020-04-03,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+CARS.N,Cars.com,False,2017-06-01,2017-06-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CASY.OQ,Caseys General,False,2026-04-09,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CAT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CB.N,Chubb Ltd CH,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CB.N^A16,Chubb NJ,True,2015-01-01,2016-01-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CBOE.Z,Cboe Glo Markets,False,2017-03-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CBRE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CCEP.OQ,Coca-Cola UK,False,2015-01-01,2016-05-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CCI.N,Crown Castle,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CCL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CDNS.OQ,Cadence Design,False,2017-09-18,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+CDW.OQ,CDW Corp,False,2019-09-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CE.N,Celanese US DE,False,2018-12-24,2025-03-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CEG.OQ,Constellation PA,False,2022-02-02,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CELG.OQ^K19,Celgene,True,2015-01-01,2019-11-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CERN.OQ^F22,Cerner,True,2015-01-01,2022-06-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CF.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CFG.N,Citizns Fncl,False,2016-02-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CFN.N^C15,Carefusion,True,2015-01-01,2015-03-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CHD.N,Church & Dwight,False,2015-12-29,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CHK.N^F20,Expand Energy,True,2015-01-01,2018-03-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CHRW.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CHTR.OQ,Charter Commns,False,2016-09-08,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CHX.OQ^G25,ChampionX,True,2018-05-09,2018-05-09,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CI.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CIEN.N,Ciena,False,2026-02-09,2026-09-07,selected_design_candidate,server_network,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+CINF.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CLX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CMA.N^B26,Comerica,True,2015-01-01,2024-06-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CMCSA.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CMCSK.OQ^L15,Comcast,True,2015-09-21,2015-12-13,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CME.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CMG.N,Chipotle Mexican,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CMI.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CMS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CNC.N,Centene,False,2016-03-30,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CNDT.OQ,Conduent,False,2017-01-03,2017-01-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CNP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CNX.N,CNX Resources,False,2015-01-01,2016-03-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COF.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COHR.N,Coherent PA,False,2026-03-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COIN.OQ,Coinbase Glo,False,2025-05-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COL.N^K18,Rockwell Collins,True,2015-01-01,2018-12-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COO.OQ,Cooper,False,2016-09-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COST.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COTY.N,Coty,False,2016-10-03,2020-09-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+COV.N^A15,Covidien,True,2015-01-01,2015-01-26,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CPAY.N,Corpay,False,2018-06-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CPB.OQ,Campbell's Co,False,2015-01-01,2026-06-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CPGX.N^G16,Columbia Inc,True,2015-07-02,2016-07-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CPRI.N,Capri Holdings,False,2015-01-01,2020-05-11,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CPRT.OQ,Copart,False,2018-07-02,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CPT.N,Camden Property,False,2022-04-04,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CRH.N,CRH,False,2025-12-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CRL.N,Charles River Lb,False,2021-05-14,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CRM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CRWD.OQ,CrowdStrike Hldg,False,2024-06-24,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CSCO.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,server_network,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+CSGP.OQ,Costar Grp,False,2022-09-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CSRA.N^D18,CSRA,True,2015-11-30,2018-04-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CSX.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CTAS.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CTLT.N^L24,Catalent,True,2020-09-21,2024-12-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CTRA.N^E26,Coterra Energy,True,2015-01-01,2026-05-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CTSH.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CTVA.N,Corteva,False,2019-06-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CTXS.OQ^J22,Citrix Systems,True,2015-01-01,2022-10-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CVC.N^F16,Cablevision syst,True,2015-01-01,2016-06-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CVET.OQ^J22,Covetrus,True,2019-02-08,2019-02-10,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CVNA.N,Carvana,False,2025-12-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CVS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CVX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CXO.N^A21,Concho Resources,True,2016-02-22,2021-01-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+CZR.OQ,Caesars Entertai,False,2021-03-22,2025-09-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+D.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DAL.N,Delta Air,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DASH.OQ,DoorDash,False,2025-03-24,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DAY.N^B26,Dayforce,True,2021-09-20,2026-02-08,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DD.N,Dupont De,False,2017-09-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DD.N^I17,EIDP,True,2015-01-01,2017-08-31,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DDOG.OQ,Datadog NV,False,2025-07-09,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DECK.N,Deckers Outdoor,False,2024-03-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DELL.N,Dell Tech TX,False,2016-09-07,2026-09-07,selected_design_candidate,server_network,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+DFS.N^E25,Discover Fincl,True,2015-01-01,2025-05-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DG.N,Dollar General,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DGX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DHI.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DHR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DINO.N,HF Sinclair,False,2018-06-18,2021-06-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DIS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DISCK.OQ^D22,Warner Bros Dis,True,2015-01-01,2022-04-10,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DISH.OQ^A24,DISH Network,True,2017-03-13,2023-06-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DLPH.N^J20,Phinia Holdings,True,2017-12-05,2017-12-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DLR.N,Digital Realty,False,2016-05-18,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+DLTR.OQ,Dollar Tree,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DNB.N^B19,Dun & Bradstreet,True,2015-01-01,2017-04-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DNR.N^G20,Denbury,True,2015-01-01,2015-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DO.N^D20,Diamond Offshore,True,2015-01-01,2016-10-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DOC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DOV.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DOW.N,Dow,False,2019-04-02,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DOW.N^I17,Dow Chem,True,2015-01-01,2017-08-31,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DPZ.OQ,Dominos Pizza,False,2020-05-12,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DRE.N^J22,Duke Realty,True,2017-07-26,2022-10-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DRI.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DTE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DTM.N,DT Midstream,False,2021-07-01,2021-07-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DTV.OQ^G15,DIRCTV,True,2015-01-01,2015-07-28,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DUK.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DVA.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DVN.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DXC.N,DXC Tech,False,2015-01-01,2023-10-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+DXCM.OQ,Dexcom,False,2020-05-12,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EA.OQ^H26,Electronic Arts,True,2015-01-01,2026-08-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EBAY.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ECHO.OQ,EchoStar,False,2026-03-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ECL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ED.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EFX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EG.N,"Everest Group,",False,2017-06-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EIX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ELV.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EMBC.OQ,Embecta,False,2022-04-01,2022-04-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EMC.N^I16,EMC US,True,2015-01-01,2016-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EME.N,EMCOR Grp,False,2025-09-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EMN.N,Eastman Chemical,False,2015-01-01,2025-11-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EMR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ENDP.OQ^H22,Endo Intl,True,2015-01-27,2017-03-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ENPH.OQ,Enphase Energy,False,2021-01-07,2025-09-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EOG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EPAM.N,EPAM,False,2021-12-14,2026-06-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EQIX.OQ,Equinix,False,2015-03-23,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+EQT.N,EQT Corp,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ERIE.OQ,Erie Indemnity,False,2024-09-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ES.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ESRX.OQ^L18,Evernorth Health,True,2015-01-01,2018-12-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ESS.N,Essex Prpty Tr,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ETFC.OQ^J20,E*TRADE Financl,True,2015-01-01,2020-10-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ETN.N,,False,2015-01-01,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ETR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ETSY.N,ETSY,False,2020-09-21,2024-09-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EVHC.N^J18,Envision Hlthcr,True,2016-12-02,2018-10-10,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EVRG.OQ,Evergy,False,2018-06-05,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EW.N,Edwards Lifesci,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EXC.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EXE.OQ,Expand Energy,False,2025-03-24,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EXPD.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EXPE.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+EXR.N,Extra Space Strg,False,2016-01-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+F.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FANG.OQ,Diamondback,False,2018-12-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FAST.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FBIN.N,Fortune Brand,False,2016-06-24,2022-12-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FCPT.N,Four Corners,False,2015-11-10,2015-11-10,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FCX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FDO.N^G15,Family Dlr,True,2015-01-01,2015-07-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FDS.N,Factset Rsrch,False,2021-12-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FDX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FDXF.N,FedEx Frght Hldg,False,2026-06-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FERG.N,Ferguson Entps,False,2026-08-05,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FFIV.OQ,F5,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FICO.N,Fair Isaac,False,2023-03-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FIS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FISV.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FITB.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FIX.N,Comfort Sys,False,2025-12-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FL.N^I25,Foot Locker,True,2016-04-04,2019-08-08,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FLEX.OQ,Flex Ltd,False,2026-06-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FLIR.OQ^E21,FLIR System,True,2015-01-01,2021-05-13,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FLR.N,Fluor,False,2015-01-01,2019-06-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FLS.N,Flowserve,False,2015-01-01,2021-03-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FMC.N,FMC,False,2015-01-01,2025-03-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FOSL.OQ,Fossil Group,False,2015-01-01,2016-01-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FOX.OQ,Fox,False,2019-03-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FOXA.OQ,Fox,False,2019-03-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FRC.N^E23,Frst Rep Bk,True,2019-01-02,2023-05-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FRT.N,Federal Rlty Inv,False,2016-02-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FSLR.OQ,First Solar,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FTI.N,TechnipFMC,False,2017-01-17,2021-02-11,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FTI.N^A17,FMC Technologies,True,2015-01-01,2017-01-16,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FTNT.OQ,Fortinet,False,2018-10-11,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FTR.OQ^D20,Frontier Comm,True,2015-01-01,2017-03-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FTRE.OQ,Fortrea Holdings,False,2023-07-03,2023-07-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+FTV.N,Fortive,False,2016-07-05,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GAP.N,Gap,False,2015-01-01,2022-02-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GAS.N^G16,Southern Gas,True,2015-01-01,2016-06-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GD.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GDDY.N,GoDaddy,False,2024-06-24,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GEHC.OQ,GE Healthcare,False,2023-01-04,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GEN.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GEV.N,GE Vernova,False,2024-04-02,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GGP.N^H18,GCP Retail,True,2015-01-01,2018-08-27,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GILD.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GIS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GLW.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GM.N,GM,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GMCR.OQ^C16,Keurig Green,True,2015-01-01,2016-03-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GME.N,GameStop,False,2015-01-01,2016-04-24,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GNRC.N,Generac Hldg,False,2021-03-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GNW.N,Genworth Fincl,False,2015-01-01,2015-11-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GOOG.OQ,Alphabet,False,2015-01-01,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+GOOGL.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GPC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GPN.N,Global Payments,False,2016-04-25,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GRMN.N,Garmin,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GT.OQ,Goodyear Tire,False,2015-01-01,2019-02-26,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GTX.N^I20,Garrett Motion,True,2018-10-01,2018-10-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+GWW.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HAL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HAR.N^C17,HARMAN,True,2015-01-01,2017-03-12,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HAS.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HBAN.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HBI.N^L25,Hanesbrands,True,2015-03-23,2021-12-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HCA.N,HCA Healthcare,False,2015-01-27,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HCBK.OQ^K15,Hudson City Bcp,True,2015-01-01,2015-11-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HD.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HES.N^G25,Hess,True,2015-01-01,2025-07-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HIG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HII.N,Huntington US,False,2018-01-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HLT.N,Hilton Wrldwide,False,2017-06-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HOG.N,Harley Davidson,False,2015-01-01,2020-06-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HOLX.OQ^D26,Hologic,True,2016-03-30,2026-04-08,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HON.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+HONA.OQ,Honeywell Arspce,False,2026-06-29,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HOOD.OQ,Robinhood,False,2025-09-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HOT.N^I16,Starwood Hotls,True,2015-01-01,2016-09-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HP.N,Helmerich,False,2015-01-01,2020-05-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HPE.N,HPE,False,2015-11-02,2026-09-07,selected_design_candidate,server_network,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+HPQ.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HRB.N,H&R Block,False,2015-01-01,2020-09-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HRL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HSIC.OQ,Henry Schein,False,2015-03-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HSP.N^I15,Hospira,True,2015-01-01,2015-09-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HST.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HSY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HUBB.N,Hubbell,False,2023-10-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HUM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+HWM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IBKR.OQ,Intractive Brk,False,2025-08-28,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IBM.N,,False,2015-01-01,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ICE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IDXX.OQ,"IDEXX Labs, Inc.",False,2017-01-05,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IEX.N,IDEX,False,2019-08-09,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IFF.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IILGV.OQ^E16,ILG,True,2016-05-13,2016-05-15,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ILMN.OQ,Illumina,False,2015-11-19,2024-06-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+INCY.OQ,Incyte,False,2017-02-28,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+INFO.N^B22,IHS Markit,True,2017-06-02,2022-03-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+INTC.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,gpu_accelerator,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+INTU.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+INVH.N,Invitation Homes,False,2022-09-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IPG.N^K25,Interpublic Grp,True,2015-01-01,2025-11-27,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IPGP.OQ,IPG Photonics,False,2018-03-07,2022-06-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IQV.N,IQVIA Holdings,False,2017-08-29,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IR.N,Ingersoll Ran,False,2020-02-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IRM.N,,False,2015-01-01,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ISRG.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+IT.N,Gartner,False,2017-04-05,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ITW.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+IVZ.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+J.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JBGS.N,JBG Smith,False,2017-07-18,2017-07-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JBHT.OQ,J.B. Hunt Trans,False,2015-07-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JBL.N,Jabil,False,2023-12-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JCI.N,Johnson cntrls,False,2015-01-01,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+JCI.N^I16,Johnson Cntrl,True,2015-01-01,2016-09-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JEF.N,Jefferies Fincl,False,2015-01-01,2019-09-25,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JKHY.OQ,JHA,False,2018-11-13,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JNJ.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JNPR.N^G25,Juniper Networks,True,2015-01-01,2025-07-08,selected_design_candidate,server_network,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+JOY.N^D17,Komatsu Mining,True,2015-01-01,2015-10-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JPM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+JWN.N^E25,Nordstrom,True,2015-01-01,2020-06-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+K.N^L25,Kellanova,True,2015-01-01,2025-12-10,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KD.N,Kyndryl Holdings,False,2021-11-04,2021-11-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KDP.OQ,Keurig Dr Pepper,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KEY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KEYS.N,Keysight Tech,False,2018-11-06,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KHC.OQ,Kraft Heinz,False,2015-07-06,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KIM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KKR.N,KKR & Co,False,2024-06-24,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KLAC.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KLG.N^I25,WK Kellogg,True,2023-10-02,2023-10-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KMB.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KMI.N,Kinder Morgan DE,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KMX.N,Carmax,False,2015-01-01,2025-10-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KO.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KRFT.OQ^G15,Kraft Foods Grp,True,2015-01-01,2015-07-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KSS.N,Kohls,False,2015-01-01,2020-09-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KSU.N^L21,KC Southern,True,2015-01-01,2021-12-13,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KTB.N,Kontoor Brands,False,2019-05-23,2019-05-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+KVUE.N,Kenvue,False,2023-08-25,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+L.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LDOS.N,Leidos Holdings,False,2019-08-09,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LEG.N^H26,Leggett & Platt,True,2015-01-01,2021-12-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LEN.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LH.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LHX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LII.N,LII,False,2024-12-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LIN.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LITE.OQ,Lumentum Hldg,False,2026-03-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LKQ.OQ,LKQ,False,2016-05-23,2025-12-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LLL.N^G19,L3 Tech,True,2015-01-01,2019-06-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LLTC.OQ^C17,Linear Tech,True,2015-01-01,2017-03-12,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LLY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LM.N^H20,Legg Mason,True,2015-01-01,2016-12-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LMT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LNC.N,LNC,False,2015-01-01,2023-09-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LNT.OQ,Alliant Energy,False,2016-07-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LO.N^F15,Lorillard,True,2015-01-01,2015-06-11,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LOW.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LRCX.OQ,Lam Research,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LULU.OQ,Lululemon,False,2023-10-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LUMN.N,Lumen Tech,False,2015-01-01,2023-03-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LUV.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LVLT.N^K17,Level 3 Parent,True,2015-01-01,2017-10-12,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LVS.N,LVSC,False,2019-10-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LW.N,Lamb Weston Hldg,False,2016-11-10,2026-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LYB.N,Lyondell,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+LYV.N,Live Nation,False,2019-12-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+M.N,Macy's,False,2015-01-01,2020-04-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MA.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MAA.N,Mid-America Apt,False,2016-12-02,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MAC.N,Macerich,False,2015-01-01,2019-12-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MAR.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MAS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MAT.OQ,Mattel,False,2015-01-01,2019-06-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MBC.N,MasterBrand,False,2022-12-15,2022-12-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MBGL.N,Mobility Glo,False,2026-07-01,2026-07-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MCD.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MCHP.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MCK.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MCO.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MDLZ.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MDT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MET.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+META.OQ,Meta Platforms,False,2015-01-01,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+MGM.N,MGM Resorts Intl,False,2017-07-26,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MHK.N,Mohawk Inds,False,2015-01-01,2025-12-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MJN.N^F17,Mead Johnson,True,2015-01-01,2017-06-14,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MKC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MKTX.OQ,MarketAxess,False,2019-07-01,2025-09-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MLM.N,Martin Mari Mat,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MMM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MNK.N^J20,Keenova,True,2015-01-01,2017-07-25,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MNST.OQ,Monster Beverage,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MO.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MOH.N,Molina Health,False,2022-03-02,2026-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MON.N^F18,Monsanto,True,2015-01-01,2018-06-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MOS.N,Mosaic,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MPC.N,Marathon Ptrlum,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MPWR.OQ,Monolithic Power,False,2021-02-12,2026-09-07,selected_design_candidate,ai_semiconductor,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+MRK.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MRNA.OQ,Moderna,False,2021-07-21,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MRO.N^K24,Marathn Oil,True,2015-01-01,2024-11-25,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MRP.N,Millrose Propts,False,2025-01-21,2025-02-09,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MRSH.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MRVL.OQ,Marvell Tech,False,2026-06-22,2026-09-07,selected_design_candidate,gpu_accelerator,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+MS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MSCI.N,MSCI,False,2018-04-04,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MSFT.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+MSI.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MTB.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MTCH.OQ,Match Grp,False,2021-09-20,2026-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MTD.N,Mettler-toledo,False,2016-09-06,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MU.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,memory_hbm_storage,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+MUR.N,Murphy Oil,False,2015-01-01,2017-07-25,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MWV.N^G15,Westrock MWV,True,2015-01-01,2015-07-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+MXIM.OQ^H21,Maxim Integrated,True,2018-12-03,2021-08-29,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NAVI.OQ,Navient,False,2015-01-01,2018-06-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NBL.OQ^J20,Noble Energy,True,2015-01-01,2020-10-11,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NBR.N,Nabors Inds,False,2015-01-01,2015-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NCLH.N,Nrwn Crs Ln Hldg,False,2017-10-13,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NDAQ.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NDSN.OQ,Nordson,False,2022-02-15,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NE.N^H20,Noble Corp,True,2015-01-01,2015-07-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NEE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NEM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NFLX.OQ,Netflix,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NFX.N^B19,Ovintiv Exp,True,2015-01-01,2019-02-14,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NGVT.N,Ingevity,False,2016-05-16,2016-05-16,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NI.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NKE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NKTR.OQ,Nektar,False,2018-03-19,2019-10-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NLSN.N^J22,Nielsen Holdings,True,2015-01-01,2022-10-11,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NOC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NOV.N,Nov,False,2015-01-01,2021-09-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NOW.N,ServiceNow,False,2019-11-21,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+NRG.N,NRG Energy,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NSC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NTAP.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,memory_hbm_storage,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+NTRS.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NUE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NVDA.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,gpu_accelerator,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+NVR.N,NVR,False,2019-09-26,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NVT.N,nVent Electric,False,2018-05-01,2018-05-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NWL.OQ,Newell Brands,False,2015-01-01,2023-09-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NWS.OQ,News Corp,False,2015-09-21,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NWSA.OQ,News Corp,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+NXPI.OQ,NXP Semicondtrs,False,2021-03-22,2026-09-07,selected_design_candidate,ai_semiconductor,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+O.N,Realty Income,False,2015-04-07,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ODFL.OQ,Old Dominion,False,2019-12-09,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+OGN.N,Organon,False,2021-06-03,2023-10-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+OI.N,"O-i Glass, Inc",False,2015-01-01,2016-12-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+OKE.N,ONEOK,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+OMC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ON.OQ,ON Semiconductor,False,2022-06-21,2026-09-07,selected_design_candidate,ai_semiconductor,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ONL.N,Orion Propts MD,False,2021-11-15,2021-11-15,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ORCL.N,,False,2015-01-01,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ORLY.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+OTIS.N,Otis Worldwide,False,2020-04-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+OXY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PANW.OQ,Palo Alto,False,2023-06-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PAYC.N,Paycom Software,False,2020-01-28,2026-03-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PAYX.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PBCT.OQ^D22,Peoples Uni,True,2015-01-01,2022-04-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PBI.N,Pitney Bowes,False,2015-01-01,2017-02-28,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PCAR.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PCG.N,PG&E Us,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PCL.N^B16,Plum Creek Timb,True,2015-01-01,2016-02-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PCP.N^B16,Precision Cast,True,2015-01-01,2016-01-31,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PDCO.OQ^D25,Patterson,True,2015-01-01,2018-03-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PEG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PENN.OQ,Penn Ent,False,2021-03-22,2022-09-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PEP.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PETM.OQ^C15,PetSmart,True,2015-01-01,2015-03-11,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PFE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PFG.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PGR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PH.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PHIN.N,Phinia,False,2023-07-05,2023-07-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PHM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PKG.N,Packaging Corp,False,2017-07-26,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PLD.N,Prologis MD,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PLL.N^H15,Pall,True,2015-01-01,2015-08-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PLTR.OQ,Palantir Tech,False,2024-09-23,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+PM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PNC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PNR.N,Pentair,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PNW.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PODD.OQ,Insulet,False,2023-03-15,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+POM.N^C16,Pepco Hldg,True,2015-01-01,2016-03-29,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+POOL.OQ,Pool,False,2020-10-07,2026-06-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PPG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PPL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PRGO.N,Perrigo Company,False,2015-01-01,2021-09-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PRSP.N^E21,Peraton Solns,True,2018-06-01,2018-06-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PRU.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PSA.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PSKY.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PSX.N,Phillips 66,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PTC.OQ,Ptc Inc,False,2021-04-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PVH.N,PVH,False,2015-01-01,2022-09-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PWR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PXD.N^E24,Pioneer Natl Rsc,True,2015-01-01,2024-05-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+PYPL.OQ,PayPal Hldg,False,2015-07-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+Q.N,Qnity Electronic,False,2025-11-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+QCOM.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,ai_semiconductor,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+QCP.N^G18,Quality Care,True,2016-11-01,2016-11-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+QEP.N^C21,QEP Resources,True,2015-01-01,2015-06-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+QRVO.OQ,Qorvo,False,2015-06-12,2024-12-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+R.N,Ryder,False,2015-01-01,2017-06-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RAI.N^G17,Reynolds Amricn,True,2015-01-01,2017-07-25,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RAL.N,Ralliant,False,2025-06-30,2025-06-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RCL.N,Royal Carib Crus,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RDDT.N,Reddit,False,2026-08-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+REG.OQ,Regency Center,False,2017-03-02,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+REGN.OQ,Regeneron Pharms,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+REZI.N,Resideo Tech,False,2018-10-29,2018-10-29,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RF.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RHI.N,Robert Half,False,2015-01-01,2024-06-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RHT.N^G19,Red Hat,True,2015-01-01,2019-07-14,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RIG.N,Transocea,False,2015-01-01,2017-07-25,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RJF.N,Raymond James Fi,False,2017-03-20,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RMD.N,Resmed,False,2017-07-26,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ROK.N,,False,2015-01-01,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ROL.N,Rollins,False,2018-10-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ROP.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ROST.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RRC.N,Range Resource,False,2015-01-01,2018-06-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RSG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RTN.N^D20,Raytheon,True,2015-01-01,2020-04-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RTX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+RVTY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SBAC.OQ,SBA Commns,False,2017-09-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SBNY.OQ^C23,Signature Bank,True,2021-12-20,2023-03-14,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SBUX.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SCG.N^A19,SCANA,True,2015-01-01,2019-01-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SCHW.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SE.N^B17,Spectra Energy,True,2015-01-01,2017-02-26,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SEDG.OQ,Solaredge Tech,False,2021-12-20,2023-12-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SEE.N^D26,Sealed Air,True,2015-01-01,2023-12-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SHW.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SIAL.OQ^K15,Sigma Aldrich,True,2015-01-01,2015-11-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SIG.N,Signet,False,2015-07-29,2018-03-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SIVB.OQ^C23,SVB Fincl Grp,True,2018-03-19,2023-03-14,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SJM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SLB.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SLG.N,SL Green Realty,False,2015-03-23,2021-03-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SLVM.N,Sylvamo,False,2021-10-01,2021-10-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SMCI.OQ,Super Micro Comp,False,2024-03-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SNA.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SNDK.OQ,Sandisk,False,2025-02-24,2026-09-07,selected_design_candidate,memory_hbm_storage,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+SNDK.OQ^E16,Sandsk,True,2015-01-01,2016-05-12,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SNI.OQ^C18,Scripps Networks,True,2015-01-01,2018-03-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SNPS.OQ,Synopsys,False,2017-03-16,2026-09-07,selected_design_candidate,cloud_software,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+SO.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SOLS.OQ,Solstice Advance,False,2025-10-30,2025-12-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SOLV.N,Solventum,False,2024-04-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SPG.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SPGI.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SPLS.OQ^I17,Staples,True,2015-01-01,2017-09-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SRCL.OQ^K24,Stericycle,True,2015-01-01,2018-12-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SRE.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+STE.N,STERIS,False,2019-12-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+STI.N^L19,SunTrust Banks,True,2015-01-01,2019-12-08,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+STJ.N^A17,St Jude Med,True,2015-01-01,2017-01-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+STLD.OQ,Steel Dynamics,False,2022-12-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+STT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+STX.OQ,Seagate,False,2015-01-01,2026-09-07,selected_design_candidate,memory_hbm_storage,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+STZ.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SW.N,Smurfit WestRock,False,2024-07-08,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SWK.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SWKS.OQ,Skyworks Solutns,False,2015-03-12,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SWN.N^J24,Swestn Energy,True,2015-01-01,2017-04-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SWY.N^A15,Safeway US,True,2015-01-01,2015-01-26,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SYF.N,Synchrony Fincl,False,2015-11-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SYK.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+SYY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+T.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TAP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TDC.N,Teradata,False,2015-01-01,2017-06-18,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TDG.N,TransDigm Group,False,2016-06-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TDY.N,Teledyne Tech,False,2020-06-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TE.N^G16,Teco Energy,True,2015-01-01,2016-06-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TECH.OQ,Bio-Techne,False,2021-08-30,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TEG.N^F15,Wec Acquisition,True,2015-01-01,2015-06-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TEL.N,TE Connectity,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TER.OQ,Teradyne,False,2020-09-21,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+TFC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TFCF.OQ^C19,Tfcf,True,2015-09-21,2019-03-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TFCFA.OQ^C19,Tfcf,True,2015-01-01,2019-03-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TFX.N,Teleflex,False,2019-01-18,2025-03-23,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TGNA.N^C26,Tegna,True,2015-01-01,2017-06-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TGT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+THC.N,Tenet Healthcare,False,2015-01-01,2016-04-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TIF.N^A21,Tiffany,True,2015-01-01,2021-01-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TJX.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TKO.N,TKO Grp Hldgs,False,2025-03-24,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TMO.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TMUS.OQ,T-Mobile US,False,2019-07-15,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TNL.N,Travel + Leisure,False,2015-01-01,2018-05-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TPL.N,TX Pac Lnd,False,2024-11-26,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TPR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TRGP.N,Targa Res,False,2022-10-12,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TRIP.OQ,Tripadvisor,False,2015-01-01,2019-12-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TRMB.OQ,Trimble,False,2021-01-21,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+TROW.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TRV.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TSCO.OQ,Tractor Supply,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TSLA.OQ,Tesla,False,2020-12-21,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+TSN.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TSS.N^I19,TSYS,True,2015-01-01,2019-09-22,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TT.N,Trane Tech,False,2015-01-01,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+TTD.OQ,Trade Desk,False,2025-07-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TTWO.OQ,Take-Two,False,2018-03-19,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TWC.N^E16,TWC,True,2015-01-01,2016-05-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TWTR.N^J22,Twitter,True,2018-06-07,2022-10-31,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TWX.N^F18,Time Warner,True,2015-01-01,2018-06-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TXN.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,ai_semiconductor,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+TXT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+TYL.N,Tyler Tech,False,2020-06-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UA.N,Under Armour,False,2016-04-08,2022-06-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UAA.N,Under Armour,False,2015-01-01,2022-06-20,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UAL.OQ,United Arlns,False,2015-09-03,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UBER.N,Uber,False,2023-12-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UDR.N,UDR,False,2016-03-07,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UHS.N,Universal Health,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ULTA.OQ,Ulta Beauty,False,2016-04-18,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UNH.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UNM.N,Unum Group,False,2015-01-01,2021-09-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UNP.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+UPS.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+URBN.OQ,Urban Outfitters,False,2015-01-01,2017-03-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+URI.N,United Rentals,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+USB.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+V.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VAL.N^H20,Valaris,True,2015-01-01,2016-03-29,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VAR.N^D21,Varian Med Syst,True,2015-01-01,2021-04-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VEEV.N,Veeva Systems,False,2026-05-07,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VFC.N,VF,False,2015-01-01,2024-04-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VGNT.N,Versigent,False,2026-04-01,2026-04-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VIAB.OQ^L19,Viacom,True,2015-01-01,2019-12-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VICI.N,VICI,False,2022-06-08,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VLO.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VLTO.N,Veralto,False,2023-10-02,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VMC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VMRK.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VNO.N,Vornado Realty,False,2015-01-01,2023-01-04,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VNT.N,Vontier,False,2020-10-09,2021-03-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VREX.OQ,Varex Imaging,False,2017-01-30,2017-01-30,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VRSK.OQ,Verisk Analytics,False,2015-10-08,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VRSN.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VRT.N,Vertiv Holdg,False,2026-03-23,2026-09-07,selected_design_candidate,data_center_power_cooling,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+VRTX.OQ,Vertex Pharms,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VSM.N^J19,Versum Materials,True,2016-10-03,2016-10-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VSNT.OQ,Versant Media,False,2026-01-05,2026-01-05,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VST.N,Vistra Corp,False,2024-05-08,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VSXY.N,Victoria's Secre,False,2021-08-03,2021-08-03,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VTR.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VTRS.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+VZ.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WAB.N,Westinghouse Air,False,2019-02-27,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WAT.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WBA.OQ^H25,Walgreens Hldg,True,2015-01-01,2025-08-27,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WBD.OQ,Warner Bros Dis,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WCG.N^A20,WellCare Health,True,2018-09-17,2020-01-27,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WDAY.OQ,Workday,False,2024-12-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WDC.OQ,,False,2015-01-01,2026-09-07,selected_design_candidate,memory_hbm_storage,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+WEC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WELL.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WFC.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WFM.OQ^H17,Whole Foods,True,2015-01-01,2017-08-28,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WHR.N,Whirlpool,False,2015-01-01,2024-03-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WIN.OQ^C19,Windstream Hldg,True,2015-01-01,2015-04-06,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WMB.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WMT.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WRB.N,W. R. Berkley,False,2019-12-05,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WRK.N^G24,WestRock Co,True,2015-07-02,2024-07-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WSM.N,Williams-Sonoma,False,2025-03-24,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WST.N,West Pharm Svc,False,2020-05-22,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WTW.OQ,Willis Towers,False,2016-01-05,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WU.N,Western Union,False,2015-01-01,2021-12-19,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WY.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+WYNN.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XEC.N^J21,Coterra,True,2015-01-01,2020-03-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XEL.OQ,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XL.N^I18,XL Grp,True,2015-01-01,2018-09-16,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XLNX.OQ^B22,Xilinx,True,2015-01-01,2022-02-14,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XOM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XRAY.OQ,Dentsply Sirona,False,2015-01-01,2024-04-02,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XRX.OQ,Xerox Hlngs,False,2015-01-01,2021-03-21,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XYL.N,Xylm,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+XYZ.N,Block,False,2025-07-23,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+YUM.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+YUMC.N,Yum China Hldg,False,2016-11-01,2016-11-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ZBH.N,,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ZBRA.OQ,Zebra Tech,False,2019-12-23,2026-09-07,selected_design_candidate,robotics_autonomy,SUPPLY_CHAIN_ROLE_SELECTED_NO_RETURN_SCREEN
+ZIMV.OQ^J25,ZimVie,True,2022-03-01,2022-03-01,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ZION.OQ,Zions Bancorp,False,2015-01-01,2024-03-17,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET
+ZTS.N,Zoetis,False,2015-01-01,2026-09-07,not_selected_design_candidate,,OUTSIDE_FROZEN_49_NAME_DESIGN_SET

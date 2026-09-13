@@ -1,0 +1,12 @@
+{
+  "schema_version": "ai_infrastructure_timing_baseline_v2_ai_era",
+  "purpose": "First AI-era development-only baseline: regularised Logistic timing model versus fixed economic comparators.",
+  "panel_run": "data/model_ready_ai_infrastructure_timing_v2/20260912T103000000000Z",
+  "maximum_development_date": "2025-12-31",
+  "target": "y",
+  "features": ["ai_excess_momentum_5", "ai_excess_momentum_20", "ai_excess_momentum_60", "ai_volatility_20_ann", "ai_max_drawdown_60", "ai_breadth_positive_5", "ai_breadth_positive_20", "ai_breadth_positive_60", "ai_cross_sectional_dispersion_1", "spy_momentum_20", "spy_volatility_20_ann", "vix_level", "vix_change_5d", "term_spread_10y_2y", "broad_dollar_change_20d"],
+  "logistic": {"C": 0.5, "solver": "lbfgs", "max_iter": 2000, "random_state": 5360},
+  "signal_threshold": 0.5,
+  "execution": {"rebalance_every_sessions": 5, "return_basis": "future_nonoverlapping_5_session_return", "transaction_costs": "not_applied_in_this_first_signal_baseline; cost model is a required later stage"},
+  "test_policy": "No sealed 2026 test labels may be opened, loaded, scored, predicted, aggregated or written. The configured panel is development-only through 2025."
+}

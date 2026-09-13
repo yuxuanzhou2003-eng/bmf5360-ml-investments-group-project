@@ -1,0 +1,38 @@
+{
+  "schema_version": "ai_pool_baseline_v1",
+  "purpose": "Training/validation-only controls-only Logistic and Random Forest baseline within the point-in-time AI pool. Test rows remain sealed and are never predicted or scored.",
+  "model_ready_run_id": "20260910T031900000000Z",
+  "target": "y",
+  "continuous_rank_target": "forward_excess_return",
+  "validation_metrics": ["roc_auc", "pr_auc", "brier", "directional_accuracy", "pooled_rank_ic", "mean_monthly_rank_ic", "mean_monthly_top_minus_bottom_spread"],
+  "portfolio_diagnostic": {
+    "side_fraction": 0.2,
+    "minimum_side_size_registered": 10,
+    "tie_break": "sample_id ascending after probability descending/ascending"
+  },
+  "preprocessing": {
+    "imputer": "median",
+    "add_missing_indicator": true,
+    "fit_scope": "training rows only",
+    "winsorization": false,
+    "forward_fill": false,
+    "zero_fill": false
+  },
+  "logistic": {
+    "class_weight": "balanced",
+    "C": 1.0,
+    "max_iter": 2000,
+    "solver": "lbfgs",
+    "random_state": 5360
+  },
+  "random_forest": {
+    "n_estimators": 500,
+    "max_depth": 4,
+    "min_samples_leaf": 100,
+    "max_features": "sqrt",
+    "class_weight": "balanced",
+    "random_state": 5360,
+    "n_jobs": -1
+  },
+  "test_policy": "Do not read, aggregate, score, rank, predict, or inspect any test-period target. Save validation predictions only."
+}

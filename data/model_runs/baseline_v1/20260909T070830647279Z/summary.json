@@ -1,0 +1,344 @@
+{
+  "run_id": "20260909T070830647279Z",
+  "model_ready_run_id": "20260909T064151673764Z",
+  "scope": "training and validation only; test metrics and predictions were not produced",
+  "target": "forward_benchmark_excess",
+  "training_rows": 54241,
+  "validation_rows": 19392,
+  "training_events": 11594,
+  "validation_events": 3957,
+  "selected_hyperparameters": {
+    "simple_network": {},
+    "receiver_ridge": {
+      "alpha": 0.01
+    },
+    "network_ridge": {
+      "alpha": 100.0
+    },
+    "network_hgb": {
+      "learning_rate": 0.03,
+      "max_leaf_nodes": 7,
+      "l2_regularization": 10.0,
+      "max_iter": 200,
+      "min_samples_leaf": 50
+    }
+  },
+  "validation_champion_by_predeclared_metric": "network_ridge",
+  "validation_metrics": [
+    {
+      "rows": 19392,
+      "events": 3957,
+      "event_weighted_mse": 0.0019787874034441323,
+      "event_weighted_rmse": 0.0444835632952682,
+      "event_weighted_mae": 0.03169412821641299,
+      "event_weighted_direction_accuracy": 0.5437958049027041,
+      "weighted_r2": -0.0071375151769927925,
+      "pooled_spearman": NaN,
+      "mean_event_spearman": NaN,
+      "event_spearman_groups": 0,
+      "model": "training_weighted_mean",
+      "params": "{}"
+    },
+    {
+      "rows": 19392,
+      "events": 3957,
+      "event_weighted_mse": 0.001978901928012243,
+      "event_weighted_rmse": 0.04448485054501412,
+      "event_weighted_mae": 0.03169625048155549,
+      "event_weighted_direction_accuracy": 0.5437452615617893,
+      "weighted_r2": -0.00719580440440204,
+      "pooled_spearman": 0.011491878046821372,
+      "mean_event_spearman": 0.009948586118251928,
+      "event_spearman_groups": 3890,
+      "model": "simple_network",
+      "params": "{}"
+    },
+    {
+      "rows": 19392,
+      "events": 3957,
+      "event_weighted_mse": 0.0019624029206379598,
+      "event_weighted_rmse": 0.04429901715205383,
+      "event_weighted_mae": 0.03163930411842769,
+      "event_weighted_direction_accuracy": 0.5311304860584618,
+      "weighted_r2": 0.0012016461053903083,
+      "pooled_spearman": 0.09601696351255652,
+      "mean_event_spearman": 0.01590033393269972,
+      "event_spearman_groups": 3893,
+      "model": "receiver_ridge",
+      "params": "{\"alpha\": 0.01}"
+    },
+    {
+      "rows": 19392,
+      "events": 3957,
+      "event_weighted_mse": 0.001966162561786344,
+      "event_weighted_rmse": 0.044341431661442145,
+      "event_weighted_mae": 0.031707998298223426,
+      "event_weighted_direction_accuracy": 0.5264299553533821,
+      "weighted_r2": -0.0007118872219140648,
+      "pooled_spearman": 0.07434008764109072,
+      "mean_event_spearman": 0.017159003339326996,
+      "event_spearman_groups": 3893,
+      "model": "network_ridge",
+      "params": "{\"alpha\": 100.0}"
+    },
+    {
+      "rows": 19392,
+      "events": 3957,
+      "event_weighted_mse": 0.0019915220890371534,
+      "event_weighted_rmse": 0.044626472962101246,
+      "event_weighted_mae": 0.0317805790954233,
+      "event_weighted_direction_accuracy": 0.5021649397691854,
+      "weighted_r2": -0.013619050071743022,
+      "pooled_spearman": 0.020870363414492336,
+      "mean_event_spearman": -0.0016776321352677968,
+      "event_spearman_groups": 3837,
+      "model": "network_hgb",
+      "params": "{\"l2_regularization\": 10.0, \"learning_rate\": 0.03, \"max_iter\": 200, \"max_leaf_nodes\": 7, \"min_samples_leaf\": 50}"
+    }
+  ],
+  "config": {
+    "purpose": "Training/validation-only baseline comparison; test predictions and test metrics are forbidden in this run.",
+    "model_ready_run_id": "20260909T064151673764Z",
+    "target": "forward_benchmark_excess",
+    "sample_weight": "equal total weight per eligible source event within each fit or scoring sample",
+    "internal_training_folds": [
+      {
+        "name": "validate_2018",
+        "train_end": "2017-12-31",
+        "validation_start": "2018-01-01",
+        "validation_end": "2018-12-31"
+      },
+      {
+        "name": "validate_2019",
+        "train_end": "2018-12-31",
+        "validation_start": "2019-01-01",
+        "validation_end": "2019-12-31"
+      },
+      {
+        "name": "validate_2020",
+        "train_end": "2019-12-31",
+        "validation_start": "2020-01-01",
+        "validation_end": "2020-12-31"
+      }
+    ],
+    "hyperparameter_selection_metric": "mean_internal_event_weighted_mse_min",
+    "validation_family_ranking_metric": "mean_event_spearman_max",
+    "ridge_alphas": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "hist_gradient_boosting_grid": {
+      "learning_rate": [
+        0.03,
+        0.05
+      ],
+      "max_leaf_nodes": [
+        7,
+        15,
+        31
+      ],
+      "l2_regularization": [
+        1.0,
+        10.0
+      ],
+      "max_iter": 200,
+      "min_samples_leaf": 50
+    },
+    "preprocessing": "median imputation fitted inside each training fold; StandardScaler for ridge only; no winsorization",
+    "random_state": 5360,
+    "test_policy": "Do not score, rank, predict, or inspect test-period targets in this run."
+  },
+  "feature_sets": {
+    "simple_network": [
+      "network_signal"
+    ],
+    "receiver_ridge": [
+      "receiver_ret_1",
+      "receiver_mom_5",
+      "receiver_mom_20",
+      "receiver_mom_60",
+      "receiver_vol_20_ann",
+      "receiver_vol_60_ann",
+      "receiver_beta_126",
+      "receiver_idio_vol_126_ann",
+      "receiver_beta_obs_126",
+      "receiver_mom_20_pct_rank",
+      "receiver_vol_20_pct_rank",
+      "market_mom_20",
+      "market_mom_60",
+      "market_vol_20_ann",
+      "market_vol_60_ann",
+      "receiver_volume_median_20_log1p",
+      "receiver_dollar_volume_median_20_log1p",
+      "receiver_spread_median_20_bps",
+      "receiver_dollar_volume_20_pct_rank",
+      "receiver_spread_20_pct_rank",
+      "receiver_dollar_volume_lag1_log1p",
+      "receiver_spread_lag1_bps"
+    ],
+    "network_ridge": [
+      "standardized_surprise",
+      "surprise_abs",
+      "surprise_sign",
+      "residual_correlation",
+      "abs_residual_correlation",
+      "network_signal",
+      "network_signal_abs",
+      "event_neighbor_count",
+      "neighbor_abs_corr_rank",
+      "snapshot_age_days",
+      "analysts_log1p",
+      "source_ret_1",
+      "source_mom_5",
+      "source_mom_20",
+      "source_mom_60",
+      "source_vol_20_ann",
+      "source_vol_60_ann",
+      "source_beta_126",
+      "source_idio_vol_126_ann",
+      "source_beta_obs_126",
+      "receiver_ret_1",
+      "receiver_mom_5",
+      "receiver_mom_20",
+      "receiver_mom_60",
+      "receiver_vol_20_ann",
+      "receiver_vol_60_ann",
+      "receiver_beta_126",
+      "receiver_idio_vol_126_ann",
+      "receiver_beta_obs_126",
+      "receiver_mom_20_pct_rank",
+      "receiver_vol_20_pct_rank",
+      "market_mom_20",
+      "market_mom_60",
+      "market_vol_20_ann",
+      "market_vol_60_ann",
+      "source_volume_median_20_log1p",
+      "source_dollar_volume_median_20_log1p",
+      "source_spread_median_20_bps",
+      "receiver_volume_median_20_log1p",
+      "receiver_dollar_volume_median_20_log1p",
+      "receiver_spread_median_20_bps",
+      "receiver_dollar_volume_20_pct_rank",
+      "receiver_spread_20_pct_rank",
+      "receiver_dollar_volume_lag1_log1p",
+      "receiver_spread_lag1_bps"
+    ],
+    "network_hgb": [
+      "standardized_surprise",
+      "surprise_abs",
+      "surprise_sign",
+      "residual_correlation",
+      "abs_residual_correlation",
+      "network_signal",
+      "network_signal_abs",
+      "event_neighbor_count",
+      "neighbor_abs_corr_rank",
+      "snapshot_age_days",
+      "analysts_log1p",
+      "source_ret_1",
+      "source_mom_5",
+      "source_mom_20",
+      "source_mom_60",
+      "source_vol_20_ann",
+      "source_vol_60_ann",
+      "source_beta_126",
+      "source_idio_vol_126_ann",
+      "source_beta_obs_126",
+      "receiver_ret_1",
+      "receiver_mom_5",
+      "receiver_mom_20",
+      "receiver_mom_60",
+      "receiver_vol_20_ann",
+      "receiver_vol_60_ann",
+      "receiver_beta_126",
+      "receiver_idio_vol_126_ann",
+      "receiver_beta_obs_126",
+      "receiver_mom_20_pct_rank",
+      "receiver_vol_20_pct_rank",
+      "market_mom_20",
+      "market_mom_60",
+      "market_vol_20_ann",
+      "market_vol_60_ann",
+      "source_volume_median_20_log1p",
+      "source_dollar_volume_median_20_log1p",
+      "source_spread_median_20_bps",
+      "receiver_volume_median_20_log1p",
+      "receiver_dollar_volume_median_20_log1p",
+      "receiver_spread_median_20_bps",
+      "receiver_dollar_volume_20_pct_rank",
+      "receiver_spread_20_pct_rank",
+      "receiver_dollar_volume_lag1_log1p",
+      "receiver_spread_lag1_bps"
+    ]
+  },
+  "package_versions": {
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.9.0",
+    "joblib": "1.6.0"
+  },
+  "input_hashes": {
+    "model_features": {
+      "path": "data\\model_ready_v1\\20260909T064151673764Z\\model_features.csv",
+      "sha256": "e84ee514ce57e40feddc57535056bf12cf75d0cc29ff9ae67de6f528f99d9c07"
+    },
+    "metadata": {
+      "path": "data\\model_ready_v1\\20260909T064151673764Z\\metadata.csv",
+      "sha256": "921899b246265a5108b78f0f409b0a86fd774ce25c3257a7e91148fc980dbc0e"
+    },
+    "targets": {
+      "path": "data\\model_ready_v1\\20260909T064151673764Z\\targets.csv",
+      "sha256": "c8092b12dbe9363f4240c86a2d03af0c779c000d066d18cb9cf52c081ebf3760"
+    },
+    "eligibility": {
+      "path": "data\\model_ready_v1\\20260909T064151673764Z\\eligibility.csv",
+      "sha256": "77d52c5fab4f395a3ad942abfbae15916d21d9a6c2d01835acdf4674e7ac6266"
+    },
+    "config": {
+      "path": "baseline_model_v1_config.json",
+      "sha256": "cbef0736c929d78035e76804c19f86fb1bb5425563b718143ab1b7a3fa10c4aa"
+    },
+    "runner_code": {
+      "path": "run_baseline_models_v1.py",
+      "sha256": "fa5416a967e32dd90aeeca622b37f6e6bf150f964dffe5fe4c2d7f6866efa761"
+    },
+    "requirements_ml": {
+      "path": "requirements-ml.txt",
+      "sha256": "022699efbba07594972834c966ec6271a32b01f5ca2d63d24ea35eca68f23fc8"
+    }
+  },
+  "output_hashes": {
+    "cv_results": "286ea61412db94043802a24255636a626e9852814e25083b6eceb9a9c03ec997",
+    "validation_metrics": "07b848be0913855678bc7a277f11f8156647e881e4bb469643eff81d92df9029",
+    "validation_predictions": "85d4e03ab164374699d953398917a88ded8e083c97aefe56b1601a941a1d53c6",
+    "selected_hyperparameters": "6e97eff5263a75f8e53bb0c2668b5bea70e62048ef036dca4e7d962db13d5a5d",
+    "feature_sets": "189a19292d58934160c58fc562cb2bee5c81ddd6d08cee17d737b46ce55e978b"
+  },
+  "model_hashes": {
+    "simple_network": "cb1ba2b1b9110d28134a1b9b6f43efff30931b700193c058409f447c46ea9c16",
+    "receiver_ridge": "56877c5cc04d3fc65ddbf1509bae8080f80b811a24f8fa67e954c2a05bbdb873",
+    "network_ridge": "4acad744dbc1c4b2d40e8f0e2a34cbd485ba12a30b901547a26852536687d123",
+    "network_hgb": "e085e4e3b6d02974ba9b9bf0af56d04d464a246368e060a17757a054cecad742"
+  },
+  "checks": {
+    "development_has_no_test_rows": true,
+    "validation_predictions_have_no_test_rows": true,
+    "training_rows_match_frozen_eligibility": true,
+    "validation_rows_match_frozen_eligibility": true,
+    "internal_folds_chronological": true,
+    "cv_rows_only_expected_folds": true,
+    "event_weights_sum_to_one": true,
+    "all_validation_predictions_finite": true,
+    "all_models_have_validation_metrics": true,
+    "champion_is_non_null_model": true
+  },
+  "limitations": [
+    "Validation comparison is model development evidence, not an out-of-sample fund result.",
+    "Event rows are dependent; reported prediction metrics are descriptive and do not imply IID significance.",
+    "Portfolio aggregation, exposure constraints, turnover and transaction costs have not been applied.",
+    "Test-period predictions and metrics remain intentionally absent."
+  ]
+}

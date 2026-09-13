@@ -1,0 +1,102 @@
+{
+  "schema": "ai_portfolio_validation_v1_1",
+  "run_id": "20260910T133000000000Z",
+  "generated_at_utc": "2026-09-10T11:49:24.562650+00:00",
+  "status": "complete_validation_only",
+  "strategy": "long_high_score_ai_plus_spy_beta_hedge",
+  "runner": {
+    "run_ai_portfolio_validation_v1_1.py": "96eb4da347ab782d3c9f28bd2c4eff82374609b7be5016aca4c733a94de74b90"
+  },
+  "software_versions": {
+    "python": "3.12.14",
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "scikit_learn": "1.9.0",
+    "joblib": "1.6.0"
+  },
+  "inputs": {
+    "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070000000000Z/models/technical_plus_ai_state_logistic.joblib": "5e12d0688b8a93f3905d1794c87e6cac2a654d642d005044cd7670160bbd2783",
+    "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070000000000Z/feature_sets.json": "1ffbdb60efc6b3fa0e5c2c0e11b08795a1ede4b105e4015738a0e0213c6e80cb",
+    "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/model_features.csv": "f52e8fd8ac5e577be9af6bbf5765ff1d3ae43d5c22c34b41274e32eec5ef7fbe",
+    "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/metadata.csv": "e2d07494f4714940081a3a6f47938cb4aee11b4ebba767815316be2e7ee5fc2d",
+    "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/eligibility.csv": "b8e27820152f1b9b3a74f7a0f6f5b4f38289270ad000a8d9c4bb5fc2c17c2da2",
+    "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/ai_state_features.csv": "2c8a196263ffb09351caa461942de23764191dab0ce5a7d8f4db307e4544649c",
+    "data/clean/v3/20260909T012417705069Z/prices.csv": "a4656aed40112abed7124045cc8b8313d49eafb96b86552bf8f1a50fdb0a5bb8",
+    "data/clean/v2/returns.csv": "6bf47e09767024f59a5ea8e54c905226bc05dc74c678ff7f58c9200e204a375d",
+    "data/audit/ai_pool_expansion_v1/20260910T045000Z/candidate_registry.csv": "b165060c7d61be0a3ff31f3b337dda1730f0e154efb1a4ac1b61cf693f038cde",
+    "AI_PORTFOLIO_BACKTEST_SPEC_v1.md": "6d5d740506541bc6e3ce6b0efe3400d7f170031d9dff1072b8540ce1658a28b3"
+  },
+  "outputs": {
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/daily_inference.csv": "8adfc402c9d62ff8ddaedcbb0a26194c1d9c3555c7051a735d04e6b032bacdb8",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/eligibility.csv": "e76d1570cde36ab98d22320bea169d50664915a7311f1ec69ceed2467f457751",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/portfolio_targets.csv": "7070e339d397f27ac63eb167055a87f39803c9ec6e8ab0acce192736a903e06a",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/trades.csv": "dcf00efb65da50f7a003d89731948778d9eb7469af9339dbf8905627a10fe3b6",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/holdings_daily.csv": "a64e33a81d23a275d30734d8db6c04515bcb2042145dc96895ea4d5508782216",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/nav_daily.csv": "00c1dd3d59e15af374682ea33f1b05130f0ac762b5a03242d280671866e83a2d",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/metrics.csv": "f4c47a980ea8e84ab886b9e820431596c35c6a4c74d543d275d1649d3c6d2afd",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/coverage_audit.csv": "677281c6cf7ab5b23b34edcb08906c24bd56e6275427be9536ad48914120237a",
+    "data/backtests/ai_portfolio_v1/20260910T133000000000Z/audit.json": "8578593cb2a310e3037ca3fbe309135543c4def51ec1d0a9233e0f51faf493e4"
+  },
+  "counts": {
+    "daily_inference_rows": 21671,
+    "instruments_scored": 44,
+    "validation_sessions_scored": 503,
+    "complete_holding_blocks": 23,
+    "eligibility_rows": 1127,
+    "rebalance_events": 23,
+    "trade_rows": 292,
+    "nav_rows": 484,
+    "skipped_formations": {
+      "SELECTED_COUNT_LT_5": 4
+    },
+    "average_active_stock_positions": 9.979338842975206,
+    "maximum_active_stock_positions": 20
+  },
+  "metrics": {
+    "performance_observations_including_initial_cost_event": 484,
+    "elapsed_spy_sessions": 483,
+    "cumulative_net_return": -0.030973943800482573,
+    "annualized_return": -0.016281877657568167,
+    "annualized_volatility": 0.09775572463930066,
+    "sharpe_zero_cash": -0.11877558938879987,
+    "sortino_zero_cash": -0.17804942653571618,
+    "max_drawdown": -0.13149988764041254,
+    "beta_to_spy": 0.06358689064509895,
+    "annualized_alpha_zero_cash": -0.016893316128074192,
+    "spy_same_window_cumulative_return": 0.13114890607179186,
+    "total_one_way_turnover": 8.708671868505977,
+    "annualized_turnover": 4.543654887916162,
+    "total_spread_cost_initial_nav_units": 0.0023992845062817576,
+    "ending_nav": 0.9690260561995174
+  },
+  "risk_monitoring": {
+    "max_constructed_name_weight": 0.1,
+    "max_constructed_group_weight": 0.3,
+    "max_realised_name_weight": 0.12779911579862677,
+    "max_realised_group_weight": 0.3233161057167159
+  },
+  "checks": {
+    "test_targets_not_opened": true,
+    "validation_only": true,
+    "daily_inference_rows_21671": true,
+    "formation_rows_49_each": true,
+    "formation_spacing_21": true,
+    "ranking_uses_f_minus_1_only": true,
+    "formation_execution_gate_separate": true,
+    "no_unresolved_nav": true,
+    "probabilities_finite": true,
+    "scheduled_turnover_cap": true,
+    "constructed_name_cap": true,
+    "constructed_group_cap": true,
+    "initial_cost_in_risk_metric_sample": true,
+    "raw_inputs_unchanged": true,
+    "no_second_split_adjustment": true
+  },
+  "limitations": [
+    "This is a development result on 2021-2022 validation data; the 2023-2026 test remains sealed.",
+    "Forty candidate RICs use provisional static AI-role evidence, so universe membership is not fully historical PIT.",
+    "End-of-day bid/ask is an execution-cost proxy and no market impact is estimated in the base case.",
+    "The stored model was trained on non-overlapping anchors but is applied daily for operational scoring.",
+    "Construction caps apply to fresh targets; realised weights can exceed them after price drift or a turnover-limited transition and are reported separately."
+  ]
+}

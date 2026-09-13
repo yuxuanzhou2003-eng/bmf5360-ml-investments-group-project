@@ -1,0 +1,5 @@
+metric,point,ci_2_5,ci_97_5,bootstrap_sd,valid_replicates,method
+technical_only_pooled_auc,0.5394626108380393,0.49048842291426104,0.5869441754631275,0.024614991259060942,1000,21-SPY-session moving-calendar-block bootstrap
+technical_plus_macro_pooled_auc,0.5615590709322795,0.5047940306520763,0.6076825159310983,0.026139011726148315,1000,21-SPY-session moving-calendar-block bootstrap
+pooled_auc_delta_macro_minus_technical,0.022096460094240267,-0.039437299023238954,0.07036654389277844,0.02793863463541176,1000,21-SPY-session moving-calendar-block bootstrap
+within_date_auc_delta_macro_minus_technical,0.006238752249550061,-0.0065821080767733495,0.021835405247676652,0.0071567544643682405,1000,21-SPY-session moving-calendar-block bootstrap

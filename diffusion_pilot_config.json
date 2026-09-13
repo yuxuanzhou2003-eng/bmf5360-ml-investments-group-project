@@ -1,0 +1,14 @@
+{
+  "purpose": "Engineering feasibility only; hand-selected survivor-biased universe, not an investable historical sample or final holdout",
+  "event_start": "2015-01-01",
+  "event_end": "2017-12-31",
+  "warmup_start": "2014-01-01",
+  "price_end": "2018-01-15",
+  "instruments": ["AAPL.O", "MSFT.O", "INTC.O", "CSCO.O", "ORCL.N", "IBM.N", "QCOM.O", "TXN.O", "ADI.O", "AMAT.O", "NVDA.O", "MU.O", "JPM.N", "BAC.N", "WFC.N", "C.N", "GS.N", "MS.N", "V.N", "MA.N", "AXP.N", "CAT.N", "DE.N", "HON.O", "GE.N", "MMM.N", "UPS.N", "FDX.N", "XOM.N", "CVX.N"],
+  "benchmark": "SPY.P",
+  "graph_lookback_sessions": 126,
+  "graph_min_observations": 100,
+  "neighbors_per_event": 3,
+  "forward_sessions": 5,
+  "entry_rule": "First observed benchmark session strictly after announcement calendar date, at close; timezone of vendor announcement still requires confirmation"
+}

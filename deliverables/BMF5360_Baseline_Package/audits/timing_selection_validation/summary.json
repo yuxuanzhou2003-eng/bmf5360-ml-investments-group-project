@@ -1,0 +1,59 @@
+{
+  "purpose": "validation-only timing-versus-selection decomposition; not model selection",
+  "created_at_utc": "2026-09-10T17:01:50.328165+00:00",
+  "inputs": {
+    "data\\model_runs\\ai_pool_daily_state_models_v1_1\\20260910T070000000000Z\\validation_predictions.csv": "66176684ed47ff8a999808bb170221633ed62b3c231d502768fa2636add21fbc",
+    "data\\model_ready_ai_pool_daily_v1\\20260910T052100000000Z\\model_features.csv": "f52e8fd8ac5e577be9af6bbf5765ff1d3ae43d5c22c34b41274e32eec5ef7fbe",
+    "data\\clean\\daily_macro_v1\\20260910T062700000000Z\\macro_features_train_valid.csv": "dafec1f6d237ba4c2dd226c8139ef4c81cd447135f7a8d318b9f3cfc1b9076a3",
+    "ai_pool_daily_state_models_v1_1_config.json": "d0b92845f6297e2fb2ef4cfeaf8c0c4881b7e80ab3511f47c812ee0398de9177"
+  },
+  "test_target_opened": false,
+  "rows": 992,
+  "formation_dates": 89,
+  "calendar_blocks": 23,
+  "block_sessions": 21,
+  "raw_feature_counts": {
+    "technical": 21,
+    "macro": 20,
+    "total": 41
+  },
+  "constant_feature_counts": {
+    "macro": 20,
+    "technical": 7
+  },
+  "model_results": {
+    "technical_only_logistic": {
+      "pooled_auc": 0.5394626108380393,
+      "date_demeaned_pooled_auc_diagnostic": 0.5132843023657645,
+      "pair_weighted_within_date_auc": 0.5173365326934614,
+      "equal_date_within_date_auc": 0.5143502316359302,
+      "within_date_auc_groups": 25,
+      "within_date_pairs": 8335,
+      "mean_date_rank_ic": 0.07760013051635535,
+      "rank_ic_groups": 23
+    },
+    "technical_plus_macro_logistic": {
+      "pooled_auc": 0.5615590709322795,
+      "date_demeaned_pooled_auc_diagnostic": 0.5212406542341046,
+      "pair_weighted_within_date_auc": 0.5235752849430114,
+      "equal_date_within_date_auc": 0.5204511361115539,
+      "within_date_auc_groups": 25,
+      "within_date_pairs": 8335,
+      "mean_date_rank_ic": 0.08580634635777795,
+      "rank_ic_groups": 23
+    }
+  },
+  "spread_median_60_missing": {
+    "rows": 992,
+    "missing_rows": 0,
+    "missing_rate": 0.0,
+    "dates_with_any_missing": 0,
+    "dates_all_missing": 0
+  },
+  "limitations": [
+    "Pooled AUC remains a mixed time-series/cross-sectional measure.",
+    "Block bootstrap is the primary uncertainty estimate; IID DeLong assumptions do not hold for these clustered, overlapping labels.",
+    "Only dates with both classes identify within-date AUC; only nonconstant dates identify rank IC.",
+    "No costs, portfolio construction, test data, refitting, or feature selection are included."
+  ]
+}

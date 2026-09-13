@@ -1,0 +1,15 @@
+check,status,blocking,value,detail
+test_targets_not_opened,PASS,True,,Validator reads validation outputs and the all-period returns table only; no target or label file is opened.
+validation_dates_only,PASS,True,True,All scored formation sessions must lie in 2021-2022.
+rebalance_spacing_21_sessions,PASS,True,"[0, 21, 42, 63, 84, 105, 126, 147, 168, 189, 210, 231, 252, 273, 294, 315, 336, 357, 378, 399, 420, 441, 462]","There must be 23 complete formation blocks, each 21 scored SPY sessions apart."
+eligibility_49_rows_each_formation,PASS,True,"{'formations': 23, 'min': 49, 'max': 49}","All 49 registered candidates must remain visible at every formation, including exclusions."
+formation_close_flag_did_not_change_ranking,PASS,False,0,The preliminary runner included entry_trade_eligible in MODEL_GATE. Zero affected rows means the same-day flag was redundant; the official runner should still separate ranking from execution.
+independent_daily_ledger_reconstruction,PASS,True,"{'missing_return_marks': 0, 'max_nav_or_holding_error': 1.1102230246251565e-15, 'max_gross_return_error': 6.587612400021925e-16, 'max_net_return_error': 6.587612400021925e-16}","Prior holdings are marked with realised returns, then trades and costs are applied; reconstructed NAV and returns must match."
+daily_cost_and_turnover_aggregation,PASS,True,"{'max_cost_error': 8.557065646341844e-17, 'max_turnover_error': 1.0547118733938987e-15}",Daily cost and one-way turnover equal the sum of trade-level contributions.
+half_quoted_spread_trade_cost,PASS,True,7.216449660063518e-14,Each trade cost must equal absolute traded notional times one half of the full quoted spread.
+initial_formation_cost_in_risk_metrics,WARN,False,"{'initial_spread_cost': 0.0001094821650418, 'first_row_in_return_sample': False}","The preliminary cumulative NAV includes initial formation cost. If the first row is excluded from the daily return sample, Sharpe and volatility omit that cost event; the official run should include and disclose it."
+constructed_target_caps,PASS,True,"{'max_name_target': 0.1, 'max_group_target': 0.29999999999999993}",Freshly constructed stock targets must respect 10% per-name and 30% per-group caps.
+realised_weights_after_drift_and_turnover_cap,WARN,False,"{'max_name_weight': 0.1277991157986266, 'max_group_weight': 0.3233161057167155}",Target caps are construction limits. Drift and the turnover cap can leave realised weights temporarily above them; disclose the maxima.
+scheduled_one_way_turnover_cap,PASS,True,0.5000000000000001,Scheduled rebalance one-way turnover must not exceed 50%.
+final_liquidation_complete,PASS,True,"{'events': 1, 'liquidation_turnover': 0.8516131047282869}",The final complete holding block must end with one mandatory liquidation and no remaining holdings.
+skipped_formations_disclosed,PASS,False,{'SELECTED_COUNT_LT_5': 4},Formation dates that failed the minimum-signal rule are retained with reason codes.

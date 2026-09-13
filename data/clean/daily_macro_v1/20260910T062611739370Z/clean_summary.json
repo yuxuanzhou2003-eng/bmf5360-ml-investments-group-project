@@ -1,0 +1,268 @@
+{
+  "schema": "daily_macro_features_summary_v1",
+  "run_id": "20260910T062611739370Z",
+  "built_at_utc": "2026-09-10T06:26:13.814819+00:00",
+  "status": "built_with_credit_spread_training_coverage_unavailable",
+  "inputs": {
+    "schema": "daily_macro_feature_build_v1",
+    "run_id": "20260910T062611739370Z",
+    "built_at_utc": "2026-09-10T06:26:13.814819+00:00",
+    "raw_collection_run_id": "20260910T061957615542Z",
+    "raw_collection_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z",
+    "spy_benchmark_path": "data\\raw\\universe_v3\\20260909T012417705069Z\\prices_benchmark_000.csv",
+    "input_sha256": {
+      "raw_manifest": "c9ef4383fcd1b12938916fe074462e1ab4db336e310e13fcf437f6f78bcf91cd",
+      "spy_benchmark": "e0664cd5e3991a029daf384cedc9cb229a9872e23e4dbc7d27512c35fe262de6",
+      "raw_VIXCLS": "7b98d3b52a49477fcb98c7a3e89ca68b4d23f29c9a53a4265184c0659b5f5ce5",
+      "raw_DGS3MO": "6976e7129c350ca320eb1960338402275c61176598b5c68fbc77008e510443b9",
+      "raw_DGS2": "01edd2d7aab6135cd7156f5994d16f678f397e01697985ef29a4ac87310e9885",
+      "raw_DGS10": "8cc69dfbbee7f3e62091ce9f262345a45374e6eb30c529833ca03369a5994481",
+      "raw_BAMLH0A0HYM2": "a4801255e026d7bba23bc8bdeb3610e74c8d238385b3938ac2ed96ff39882787",
+      "raw_BAMLC0A0CM": "b4abbc240f0689d515ad6eebaa2519e7b340fbb964e17996886e30c39204eb2a",
+      "raw_DTWEXBGS": "f33c3890b8eff1122c648481b49dcaf8c7687a3c003f7107da0ec844c112c24d"
+    },
+    "training_window": [
+      "2015-01-01",
+      "2020-12-31"
+    ],
+    "validation_window": [
+      "2021-01-01",
+      "2022-12-31"
+    ],
+    "test_target_policy": "no test target or model result was read",
+    "missingness_policy": "no imputation; provider missing raw tokens retained; carried aligned value only from prior valid observation",
+    "units_policy": "retain source native units; DGS/OAS levels and changes are percentage points as supplied by FRED; dollar/VIX values retain source units"
+  },
+  "counts": {
+    "spy_raw_rows": 3228,
+    "spy_valid_unique_sessions": 3228,
+    "spy_invalid_rows_quarantined": 0,
+    "spy_duplicate_rows_quarantined": 0,
+    "macro_output_rows": 3228,
+    "macro_train_validation_rows": 2014,
+    "macro_output_instruments": 1,
+    "source_rows_total": 18345
+  },
+  "source_profiles": {
+    "VIXCLS": {
+      "rows": 3352,
+      "instruments": 1,
+      "date_min": "2013-11-01",
+      "date_max": "2026-09-07",
+      "numeric_rows": 3262,
+      "provider_missing_rows": 90,
+      "first_valid_date": "2013-11-01",
+      "raw_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z\\fred_VIXCLS.attempt01.csv",
+      "raw_sha256": "7b98d3b52a49477fcb98c7a3e89ca68b4d23f29c9a53a4265184c0659b5f5ce5"
+    },
+    "DGS3MO": {
+      "rows": 3352,
+      "instruments": 1,
+      "date_min": "2013-11-01",
+      "date_max": "2026-09-07",
+      "numeric_rows": 3211,
+      "provider_missing_rows": 141,
+      "first_valid_date": "2013-11-01",
+      "raw_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z\\fred_DGS3MO.attempt01.csv",
+      "raw_sha256": "6976e7129c350ca320eb1960338402275c61176598b5c68fbc77008e510443b9"
+    },
+    "DGS2": {
+      "rows": 3352,
+      "instruments": 1,
+      "date_min": "2013-11-01",
+      "date_max": "2026-09-07",
+      "numeric_rows": 3211,
+      "provider_missing_rows": 141,
+      "first_valid_date": "2013-11-01",
+      "raw_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z\\fred_DGS2.attempt01.csv",
+      "raw_sha256": "01edd2d7aab6135cd7156f5994d16f678f397e01697985ef29a4ac87310e9885"
+    },
+    "DGS10": {
+      "rows": 3352,
+      "instruments": 1,
+      "date_min": "2013-11-01",
+      "date_max": "2026-09-07",
+      "numeric_rows": 3211,
+      "provider_missing_rows": 141,
+      "first_valid_date": "2013-11-01",
+      "raw_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z\\fred_DGS10.attempt01.csv",
+      "raw_sha256": "8cc69dfbbee7f3e62091ce9f262345a45374e6eb30c529833ca03369a5994481"
+    },
+    "BAMLH0A0HYM2": {
+      "rows": 793,
+      "instruments": 1,
+      "date_min": "2023-09-11",
+      "date_max": "2026-09-07",
+      "numeric_rows": 785,
+      "provider_missing_rows": 8,
+      "first_valid_date": "2023-09-11",
+      "raw_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z\\fred_BAMLH0A0HYM2.attempt01.csv",
+      "raw_sha256": "a4801255e026d7bba23bc8bdeb3610e74c8d238385b3938ac2ed96ff39882787"
+    },
+    "BAMLC0A0CM": {
+      "rows": 793,
+      "instruments": 1,
+      "date_min": "2023-09-11",
+      "date_max": "2026-09-07",
+      "numeric_rows": 784,
+      "provider_missing_rows": 9,
+      "first_valid_date": "2023-09-11",
+      "raw_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z\\fred_BAMLC0A0CM.attempt01.csv",
+      "raw_sha256": "b4abbc240f0689d515ad6eebaa2519e7b340fbb964e17996886e30c39204eb2a"
+    },
+    "DTWEXBGS": {
+      "rows": 3351,
+      "instruments": 1,
+      "date_min": "2013-11-01",
+      "date_max": "2026-09-04",
+      "numeric_rows": 3197,
+      "provider_missing_rows": 154,
+      "first_valid_date": "2013-11-01",
+      "raw_path": "data\\raw\\daily_macro_v1\\20260910T061957615542Z\\fred_DTWEXBGS.attempt01.csv",
+      "raw_sha256": "f33c3890b8eff1122c648481b49dcaf8c7687a3c003f7107da0ec844c112c24d"
+    }
+  },
+  "spy_profile": {
+    "raw_rows": 3228,
+    "valid_unique_sessions": 3228,
+    "invalid_rows": 0,
+    "duplicate_rows": 0,
+    "date_min": "2013-11-04",
+    "date_max": "2026-09-04"
+  },
+  "source_coverage": {
+    "VIXCLS": {
+      "first_valid_source_date": "2013-11-01",
+      "train_rows": 1511,
+      "train_rows_with_value": 1511,
+      "validation_rows": 503,
+      "validation_rows_with_value": 503,
+      "status": "available_with_source_missingness"
+    },
+    "DGS3MO": {
+      "first_valid_source_date": "2013-11-01",
+      "train_rows": 1511,
+      "train_rows_with_value": 1511,
+      "validation_rows": 503,
+      "validation_rows_with_value": 503,
+      "status": "available_with_source_missingness"
+    },
+    "DGS2": {
+      "first_valid_source_date": "2013-11-01",
+      "train_rows": 1511,
+      "train_rows_with_value": 1511,
+      "validation_rows": 503,
+      "validation_rows_with_value": 503,
+      "status": "available_with_source_missingness"
+    },
+    "DGS10": {
+      "first_valid_source_date": "2013-11-01",
+      "train_rows": 1511,
+      "train_rows_with_value": 1511,
+      "validation_rows": 503,
+      "validation_rows_with_value": 503,
+      "status": "available_with_source_missingness"
+    },
+    "BAMLH0A0HYM2": {
+      "first_valid_source_date": "2023-09-11",
+      "train_rows": 1511,
+      "train_rows_with_value": 0,
+      "validation_rows": 503,
+      "validation_rows_with_value": 0,
+      "status": "TRAINING_COVERAGE_UNAVAILABLE"
+    },
+    "BAMLC0A0CM": {
+      "first_valid_source_date": "2023-09-11",
+      "train_rows": 1511,
+      "train_rows_with_value": 0,
+      "validation_rows": 503,
+      "validation_rows_with_value": 0,
+      "status": "TRAINING_COVERAGE_UNAVAILABLE"
+    },
+    "DTWEXBGS": {
+      "first_valid_source_date": "2013-11-01",
+      "train_rows": 1511,
+      "train_rows_with_value": 1511,
+      "validation_rows": 503,
+      "validation_rows_with_value": 503,
+      "status": "available_with_source_missingness"
+    }
+  },
+  "feature_columns": [
+    "vix_level",
+    "vix_change_1d",
+    "vix_change_5d",
+    "vix_change_20d",
+    "vix_percentile_252d",
+    "dgs3mo_level",
+    "dgs3mo_change_5d",
+    "dgs3mo_change_20d",
+    "dgs2_level",
+    "dgs2_change_5d",
+    "dgs2_change_20d",
+    "dgs10_level",
+    "dgs10_change_5d",
+    "dgs10_change_20d",
+    "high_yield_oas_level",
+    "high_yield_oas_change_5d",
+    "high_yield_oas_change_20d",
+    "investment_grade_oas_level",
+    "investment_grade_oas_change_5d",
+    "investment_grade_oas_change_20d",
+    "broad_dollar_level",
+    "broad_dollar_change_5d",
+    "broad_dollar_change_20d",
+    "broad_dollar_change_60d",
+    "term_spread_10y_2y",
+    "term_spread_10y_3m"
+  ],
+  "recommended_train_validation_feature_columns": [
+    "vix_level",
+    "vix_change_1d",
+    "vix_change_5d",
+    "vix_change_20d",
+    "vix_percentile_252d",
+    "dgs3mo_level",
+    "dgs3mo_change_5d",
+    "dgs3mo_change_20d",
+    "dgs2_level",
+    "dgs2_change_5d",
+    "dgs2_change_20d",
+    "dgs10_level",
+    "dgs10_change_5d",
+    "dgs10_change_20d",
+    "broad_dollar_level",
+    "broad_dollar_change_5d",
+    "broad_dollar_change_20d",
+    "broad_dollar_change_60d",
+    "term_spread_10y_2y",
+    "term_spread_10y_3m"
+  ],
+  "excluded_credit_spread_features": [
+    "high_yield_oas_level",
+    "high_yield_oas_change_5d",
+    "high_yield_oas_change_20d",
+    "investment_grade_oas_level",
+    "investment_grade_oas_change_5d",
+    "investment_grade_oas_change_20d"
+  ],
+  "quarantine": "data\\clean\\daily_macro_v1\\20260910T062611739370Z\\spy_sessions_quarantine.csv",
+  "deletions": {
+    "source_rows": 0,
+    "spy_rows_from_valid_output": 0,
+    "reason": "invalid/duplicate SPY session keys excluded from the unique alignment key and retained in quarantine; no source observation row deleted"
+  },
+  "checks_expected_for_independent_validation": [
+    "raw FRED hashes remain equal to collection manifest",
+    "macro rows equal unique valid SPY sessions",
+    "reference_spy_session is strictly prior for all non-first sessions",
+    "no source/value observation date exceeds reference_spy_session",
+    "carry ages are non-negative and reason codes agree",
+    "credit spread train/validation values are absent and flagged TRAINING_COVERAGE_UNAVAILABLE"
+  ],
+  "limitations": [
+    "FRED current CSV is not a complete vintage database; revision risk remains.",
+    "The endpoint does not expose release timestamps in this raw CSV; the one-SPY-session lag is a conservative timing rule, not a release-time proof.",
+    "Credit spread series begin in 2023-09 and are retained for later exploratory use but excluded from the current train/validation feature recommendation."
+  ]
+}

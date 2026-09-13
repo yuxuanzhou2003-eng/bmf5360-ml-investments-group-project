@@ -1,0 +1,21 @@
+{
+  "purpose": "Event/neighbour panel on the reconstructed point-in-time S&P 500 universe. Engineering artefact; no model fitted, no strategy performance claimed.",
+  "benchmark": "SPY.P",
+  "event_start": "2015-01-01",
+  "event_end": "2026-06-30",
+  "graph_lookback_sessions": 126,
+  "graph_min_observations": 100,
+  "forward_sessions": 5,
+  "max_snapshot_age_days": 14,
+  "entry_rule": "first_market_session_strictly_after_announcement_day",
+  "liquidity_feature_lag_sessions": 1,
+  "price_adjustments": "exchangeCorrection,manualCorrection,CCH,CRE,RPO,RTS",
+  "estimate_frequency": "weekly",
+  "neighbor_selection": {
+    "mode": "topk_with_threshold",
+    "max_neighbors": 5,
+    "min_abs_correlation": 0.3,
+    "positive_only": false,
+    "approved": "2026-09-08; replaces the v1 forced top-3 with no threshold"
+  }
+}

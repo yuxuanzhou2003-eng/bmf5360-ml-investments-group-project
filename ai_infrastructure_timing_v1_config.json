@@ -1,0 +1,43 @@
+{
+  "schema_version": "ai_infrastructure_timing_panel_v1",
+  "purpose": "Development-only AI Infrastructure Core basket panel for a five-session relative-SPY timing model.",
+  "candidate_registry_path": "data/audit/ai_pool_expansion_v1/20260910T045000Z/candidate_registry.csv",
+  "returns_path": "data/clean/v2/returns.csv",
+  "macro_path": "data/clean/daily_macro_v1/20260910T062700000000Z/macro_features_train_valid.csv",
+  "start_date": "2015-01-01",
+  "end_date": "2022-12-31",
+  "benchmark_ric": "SPY.P",
+  "core_roles": [
+    "gpu_accelerator",
+    "ai_semiconductor",
+    "memory_hbm_storage",
+    "server_network",
+    "cloud_software",
+    "data_center_power_cooling"
+  ],
+  "excluded_roles": ["robotics_autonomy"],
+  "sleeve_weighting": "equal_weight_across_roles_then_equal_weight_among_same_day_valid_member_returns",
+  "missing_return_policy": "do_not_impute; reweight within sleeve only when at least one valid member return exists; mark basket unavailable when any sleeve is unavailable",
+  "horizon_sessions": 5,
+  "train_end": "2020-12-31",
+  "validation_start": "2021-01-01",
+  "validation_end": "2022-12-31",
+  "features": [
+    "ai_excess_momentum_5",
+    "ai_excess_momentum_20",
+    "ai_excess_momentum_60",
+    "ai_volatility_20_ann",
+    "ai_max_drawdown_60",
+    "ai_breadth_positive_5",
+    "ai_breadth_positive_20",
+    "ai_breadth_positive_60",
+    "ai_cross_sectional_dispersion_1",
+    "spy_momentum_20",
+    "spy_volatility_20_ann",
+    "vix_level",
+    "vix_change_5d",
+    "term_spread_10y_2y",
+    "broad_dollar_change_20d"
+  ],
+  "test_policy": "Do not read, construct, aggregate, score, rank, predict or write any sealed test-period future return or label. This panel ends on 2022-12-31."
+}

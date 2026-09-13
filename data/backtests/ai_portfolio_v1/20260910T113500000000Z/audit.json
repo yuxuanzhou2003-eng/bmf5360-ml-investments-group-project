@@ -1,0 +1,11 @@
+{
+  "test_targets_not_opened": true,
+  "validation_only": true,
+  "daily_inference_rows_21671": true,
+  "formation_rows_49_each": true,
+  "formation_spacing_21": true,
+  "no_unresolved_nav": true,
+  "probabilities_finite": true,
+  "raw_inputs_unchanged": true,
+  "no_second_split_adjustment": true
+}

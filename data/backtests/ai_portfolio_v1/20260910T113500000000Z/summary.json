@@ -1,0 +1,61 @@
+{
+  "schema": "ai_portfolio_validation_v1",
+  "run_id": "20260910T113500000000Z",
+  "generated_at_utc": "2026-09-10T11:13:27.702185+00:00",
+  "status": "complete_validation_only",
+  "strategy": "long_high_score_ai_plus_spy_beta_hedge",
+  "inputs": {
+    "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070000000000Z/models/technical_plus_ai_state_logistic.joblib": "5e12d0688b8a93f3905d1794c87e6cac2a654d642d005044cd7670160bbd2783",
+    "data/model_runs/ai_pool_daily_state_models_v1_1/20260910T070000000000Z/feature_sets.json": "1ffbdb60efc6b3fa0e5c2c0e11b08795a1ede4b105e4015738a0e0213c6e80cb",
+    "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/model_features.csv": "f52e8fd8ac5e577be9af6bbf5765ff1d3ae43d5c22c34b41274e32eec5ef7fbe",
+    "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/metadata.csv": "e2d07494f4714940081a3a6f47938cb4aee11b4ebba767815316be2e7ee5fc2d",
+    "data/model_ready_ai_pool_daily_v1/20260910T052100000000Z/eligibility.csv": "b8e27820152f1b9b3a74f7a0f6f5b4f38289270ad000a8d9c4bb5fc2c17c2da2",
+    "data/clean/ai_daily_macro_features_v1/20260910T144000000000Z/ai_state_features.csv": "2c8a196263ffb09351caa461942de23764191dab0ce5a7d8f4db307e4544649c",
+    "data/clean/v3/20260909T012417705069Z/prices.csv": "a4656aed40112abed7124045cc8b8313d49eafb96b86552bf8f1a50fdb0a5bb8",
+    "data/clean/v2/returns.csv": "6bf47e09767024f59a5ea8e54c905226bc05dc74c678ff7f58c9200e204a375d",
+    "data/audit/ai_pool_expansion_v1/20260910T045000Z/candidate_registry.csv": "b165060c7d61be0a3ff31f3b337dda1730f0e154efb1a4ac1b61cf693f038cde",
+    "AI_PORTFOLIO_BACKTEST_SPEC_v1.md": "cd131336b6e472b73418dda91048eb772165af653e1cda6e550a04cc26063dc9"
+  },
+  "counts": {
+    "daily_inference_rows": 21671,
+    "instruments_scored": 44,
+    "validation_sessions_scored": 503,
+    "complete_holding_blocks": 23,
+    "eligibility_rows": 1127,
+    "rebalance_events": 23,
+    "trade_rows": 292,
+    "nav_rows": 484
+  },
+  "metrics": {
+    "return_days": 483,
+    "cumulative_net_return": -0.030973943800482573,
+    "annualized_return": -0.016281877657568167,
+    "annualized_volatility": 0.09785706768829414,
+    "sharpe_zero_cash": -0.11831452013373212,
+    "sortino_zero_cash": -0.17766883668323524,
+    "max_drawdown": -0.13149988764041243,
+    "beta_to_spy": 0.06358669731569518,
+    "annualized_alpha_zero_cash": -0.01687115471466774,
+    "total_one_way_turnover": 8.708671868505975,
+    "annualized_turnover": 4.54365488791616,
+    "total_spread_cost_nav": 0.002399284506281757,
+    "ending_nav": 0.9690260561995174
+  },
+  "checks": {
+    "test_targets_not_opened": true,
+    "validation_only": true,
+    "daily_inference_rows_21671": true,
+    "formation_rows_49_each": true,
+    "formation_spacing_21": true,
+    "no_unresolved_nav": true,
+    "probabilities_finite": true,
+    "raw_inputs_unchanged": true,
+    "no_second_split_adjustment": true
+  },
+  "limitations": [
+    "Validation portfolio is a development result and is not the sealed test.",
+    "Forty candidate RICs use provisional static AI-role evidence.",
+    "End-of-day bid/ask is a cost proxy.",
+    "The stored model was trained on non-overlapping anchors but is applied daily for operational scoring."
+  ]
+}

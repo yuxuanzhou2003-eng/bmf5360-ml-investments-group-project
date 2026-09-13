@@ -1,0 +1,94 @@
+{
+  "schema_version": "ai_pool_expansion_candidates_v1",
+  "config_version": "1.0.0",
+  "status": "frozen_design_candidate_registry",
+  "taxonomy": "AI_SUPPLY_CHAIN_TAXONOMY_v2.0",
+  "taxonomy_path": "AI_SUPPLY_CHAIN_TAXONOMY_v2.md",
+  "purpose": "Create an auditable 30-50 name AI supply-chain candidate registry from the existing 781 literal-RIC universe without return-based selection.",
+  "inputs": {
+    "membership_spans": "data/audit/universe_rebuild/eligible_spans_2015_2026_corrected.csv",
+    "raw_root": "data/raw/ai_factor_v1/20260909T183801359195Z",
+    "raw_segment_glob": "segments_fy0_*.csv",
+    "raw_announcement_glob": "is_dates_*.csv",
+    "existing_pool_membership": "data/clean/ai_pool_v1/20260910T023221976393Z/ai_pool_membership_pit.csv"
+  },
+  "forbidden_inputs": [
+    "returns",
+    "targets",
+    "labels",
+    "model_outputs",
+    "portfolio",
+    "ETF price performance"
+  ],
+  "pit_policy": {
+    "identity": "Use literal RIC only; curated company names never replace the RIC.",
+    "formation_date": "Orig income-statement announcement calendar date when a historical segment match joins by Instrument + period_end.",
+    "static_source_rule": "Official issuer pages are retrieval-date evidence only and cannot backfill historical membership.",
+    "unknown_rule": "No dated evidence means provisional_static_source; downstream PIT membership must remain membership_unknown until historical evidence is obtained.",
+    "delisted_rule": "Retain delisted RICs and annotate member_to/delisted_ric; delisting is not an exclusion reason."
+  },
+  "candidate_count_target": {"minimum": 30, "maximum": 50, "selected": 49},
+  "source_policy": {
+    "source_urls_are_downloaded": false,
+    "source_urls_are_current_snapshots": true,
+    "etf_constituents_available_in_project": false,
+    "etf_price_only_symbols": ["AIQ.OQ", "BOTZ.OQ", "IGV.P", "SOXX.OQ", "XLK.P"]
+  },
+  "candidates": [
+    {"ric":"NVDA.OQ","canonical_name":"NVIDIA Corporation","primary_group":"gpu_accelerator","inclusion_reason":"GPU and accelerated data-center computing platform supplier.","source_url":"https://www.nvidia.com/en-us/about-nvidia/","source_title":"NVIDIA About NVIDIA","source_type":"official_issuer_description"},
+    {"ric":"AMD.OQ","canonical_name":"Advanced Micro Devices, Inc.","primary_group":"gpu_accelerator","inclusion_reason":"CPU/GPU and adaptive-computing supplier with data-center accelerators.","source_url":"https://www.amd.com/en/corporate.html","source_title":"AMD Corporate Information","source_type":"official_issuer_description"},
+    {"ric":"AVGO.OQ","canonical_name":"Broadcom Inc.","primary_group":"gpu_accelerator","inclusion_reason":"Custom accelerator, switching and data-center connectivity silicon supplier.","source_url":"https://investors.broadcom.com/overview/default.aspx","source_title":"Broadcom Investor Overview","source_type":"official_issuer_description"},
+    {"ric":"INTC.OQ","canonical_name":"Intel Corporation","primary_group":"gpu_accelerator","inclusion_reason":"Data-center CPU/accelerator and foundry supplier.","source_url":"https://www.intel.com/content/www/us/en/company-overview/company-overview.html","source_title":"Intel Company Overview","source_type":"official_issuer_description"},
+    {"ric":"MRVL.OQ","canonical_name":"Marvell Technology, Inc.","primary_group":"gpu_accelerator","inclusion_reason":"Data infrastructure, custom compute and networking silicon supplier.","source_url":"https://www.marvell.com/company.html","source_title":"Marvell Company","source_type":"official_issuer_description"},
+
+    {"ric":"QCOM.OQ","canonical_name":"QUALCOMM Incorporated","primary_group":"ai_semiconductor","inclusion_reason":"AI-capable mobile/edge compute and connectivity silicon supplier.","source_url":"https://www.qualcomm.com/company","source_title":"Qualcomm Company","source_type":"official_issuer_description"},
+    {"ric":"TXN.OQ","canonical_name":"Texas Instruments Incorporated","primary_group":"ai_semiconductor","inclusion_reason":"Analog, embedded and power semiconductor supplier used in edge and industrial compute.","source_url":"https://www.ti.com/about-ti/company-profile.html","source_title":"Texas Instruments Company Profile","source_type":"official_issuer_description"},
+    {"ric":"ADI.OQ","canonical_name":"Analog Devices, Inc.","primary_group":"ai_semiconductor","inclusion_reason":"Analog, mixed-signal and edge-compute semiconductor supplier.","source_url":"https://www.analog.com/en/about-adi.html","source_title":"Analog Devices About ADI","source_type":"official_issuer_description"},
+    {"ric":"NXPI.OQ","canonical_name":"NXP Semiconductors N.V.","primary_group":"ai_semiconductor","inclusion_reason":"Automotive/industrial edge processing and connectivity semiconductor supplier.","source_url":"https://www.nxp.com/company/about-nxp","source_title":"NXP About NXP","source_type":"official_issuer_description"},
+    {"ric":"ON.OQ","canonical_name":"onsemi","primary_group":"ai_semiconductor","inclusion_reason":"Intelligent power and sensing semiconductor supplier for edge and data-center systems.","source_url":"https://www.onsemi.com/company/about-us","source_title":"onsemi About Us","source_type":"official_issuer_description"},
+    {"ric":"MPWR.OQ","canonical_name":"Monolithic Power Systems, Inc.","primary_group":"ai_semiconductor","inclusion_reason":"Power-management semiconductor supplier for computing and data-center systems.","source_url":"https://www.monolithicpower.com/en/about-mps","source_title":"MPS About MPS","source_type":"official_issuer_description"},
+
+    {"ric":"MU.OQ","canonical_name":"Micron Technology, Inc.","primary_group":"memory_hbm_storage","inclusion_reason":"DRAM/HBM and data-center memory supplier.","source_url":"https://www.micron.com/about","source_title":"Micron About","source_type":"official_issuer_description"},
+    {"ric":"WDC.OQ","canonical_name":"Western Digital Corporation","primary_group":"memory_hbm_storage","inclusion_reason":"Enterprise HDD/flash and data-storage supplier for large-scale compute.","source_url":"https://www.westerndigital.com/company","source_title":"Western Digital Company","source_type":"official_issuer_description"},
+    {"ric":"STX.OQ","canonical_name":"Seagate Technology Holdings plc","primary_group":"memory_hbm_storage","inclusion_reason":"Mass-capacity enterprise storage supplier used by data centers.","source_url":"https://www.seagate.com/company/about-us/","source_title":"Seagate About Us","source_type":"official_issuer_description"},
+    {"ric":"SNDK.OQ","canonical_name":"SanDisk Corporation","primary_group":"memory_hbm_storage","inclusion_reason":"Flash/NAND and enterprise storage supplier.","source_url":"https://www.sandisk.com/company/about","source_title":"SanDisk About","source_type":"official_issuer_description"},
+    {"ric":"NTAP.OQ","canonical_name":"NetApp, Inc.","primary_group":"memory_hbm_storage","inclusion_reason":"Enterprise data-storage and hybrid-cloud infrastructure supplier.","source_url":"https://www.netapp.com/company/","source_title":"NetApp Company","source_type":"official_issuer_description"},
+
+    {"ric":"HPE.N","canonical_name":"Hewlett Packard Enterprise Company","primary_group":"server_network","inclusion_reason":"HPC and AI-server systems supplier.","source_url":"https://www.hpe.com/us/en/about.html","source_title":"HPE About","source_type":"official_issuer_description"},
+    {"ric":"DELL.N","canonical_name":"Dell Technologies Inc.","primary_group":"server_network","inclusion_reason":"Enterprise server and AI infrastructure OEM.","source_url":"https://www.dell.com/en-us/dt/corporate/about-us.htm","source_title":"Dell Technologies About Us","source_type":"official_issuer_description"},
+    {"ric":"ANET.N","canonical_name":"Arista Networks, Inc.","primary_group":"server_network","inclusion_reason":"Cloud and data-center Ethernet switching/networking supplier.","source_url":"https://www.arista.com/en/company/about-us","source_title":"Arista About Us","source_type":"official_issuer_description"},
+    {"ric":"CSCO.OQ","canonical_name":"Cisco Systems, Inc.","primary_group":"server_network","inclusion_reason":"Data-center networking, switching and security infrastructure supplier.","source_url":"https://www.cisco.com/c/en/us/about.html","source_title":"Cisco About","source_type":"official_issuer_description"},
+    {"ric":"JNPR.N^G25","canonical_name":"Juniper Networks, Inc.","primary_group":"server_network","inclusion_reason":"Data-center/networking equipment supplier; historical RIC retained through its delisting span.","source_url":"https://www.juniper.net/us/en/company.html","source_title":"Juniper Company","source_type":"official_issuer_description"},
+    {"ric":"CIEN.N","canonical_name":"Ciena Corporation","primary_group":"server_network","inclusion_reason":"Optical and packet networking infrastructure supplier for cloud/data-center traffic.","source_url":"https://www.ciena.com/about","source_title":"Ciena About","source_type":"official_issuer_description"},
+
+    {"ric":"MSFT.OQ","canonical_name":"Microsoft Corporation","primary_group":"cloud_software","inclusion_reason":"Cloud AI services and machine-learning platform provider.","source_url":"https://www.microsoft.com/en-us/about","source_title":"Microsoft About","source_type":"official_issuer_description"},
+    {"ric":"AMZN.OQ","canonical_name":"Amazon.com, Inc.","primary_group":"cloud_software","inclusion_reason":"Cloud AI infrastructure and managed AI services provider.","source_url":"https://www.aboutamazon.com/about-us","source_title":"About Amazon","source_type":"official_issuer_description"},
+    {"ric":"GOOG.OQ","canonical_name":"Alphabet Inc.","primary_group":"cloud_software","inclusion_reason":"Cloud AI platform, model and AI-enabled services provider.","source_url":"https://about.google/intl/en_us/company-info/","source_title":"Google Company Info","source_type":"official_issuer_description"},
+    {"ric":"META.OQ","canonical_name":"Meta Platforms, Inc.","primary_group":"cloud_software","inclusion_reason":"Large-scale AI model, recommendation and data-center compute operator.","source_url":"https://about.meta.com/company-info/","source_title":"Meta Company Info","source_type":"official_issuer_description"},
+    {"ric":"ORCL.N","canonical_name":"Oracle Corporation","primary_group":"cloud_software","inclusion_reason":"Cloud infrastructure, database and enterprise AI services provider.","source_url":"https://www.oracle.com/corporate/","source_title":"Oracle Corporate","source_type":"official_issuer_description"},
+    {"ric":"IBM.N","canonical_name":"International Business Machines Corporation","primary_group":"cloud_software","inclusion_reason":"Enterprise AI software, hybrid cloud and AI services provider.","source_url":"https://www.ibm.com/about","source_title":"IBM About","source_type":"official_issuer_description"},
+    {"ric":"NOW.N","canonical_name":"ServiceNow, Inc.","primary_group":"cloud_software","inclusion_reason":"Enterprise cloud workflow platform with embedded generative/AI services.","source_url":"https://www.servicenow.com/company.html","source_title":"ServiceNow Company","source_type":"official_issuer_description"},
+    {"ric":"PLTR.OQ","canonical_name":"Palantir Technologies Inc.","primary_group":"cloud_software","inclusion_reason":"Enterprise AI/data analytics platform provider.","source_url":"https://www.palantir.com/about/","source_title":"Palantir About","source_type":"official_issuer_description"},
+    {"ric":"SNPS.OQ","canonical_name":"Synopsys, Inc.","primary_group":"cloud_software","inclusion_reason":"Electronic-design automation and AI-assisted chip design software platform.","source_url":"https://www.synopsys.com/company.html","source_title":"Synopsys Company","source_type":"official_issuer_description"},
+    {"ric":"CDNS.OQ","canonical_name":"Cadence Design Systems, Inc.","primary_group":"cloud_software","inclusion_reason":"Electronic-design automation, simulation and AI-enabled chip design platform.","source_url":"https://www.cadence.com/en_US/home/company.html","source_title":"Cadence Company","source_type":"official_issuer_description"},
+
+    {"ric":"EQIX.OQ","canonical_name":"Equinix, Inc.","primary_group":"data_center_power_cooling","inclusion_reason":"Colocation data-center operator and interconnection provider.","source_url":"https://investor.equinix.com/overview/default.aspx","source_title":"Equinix Investor Overview","source_type":"official_issuer_description"},
+    {"ric":"DLR.N","canonical_name":"Digital Realty Trust, Inc.","primary_group":"data_center_power_cooling","inclusion_reason":"Data-center real-estate and colocation infrastructure operator.","source_url":"https://www.digitalrealty.com/about","source_title":"Digital Realty About","source_type":"official_issuer_description"},
+    {"ric":"AMT.N","canonical_name":"American Tower Corporation","primary_group":"data_center_power_cooling","inclusion_reason":"Communications infrastructure operator with data-center assets.","source_url":"https://www.americantower.com/company/about-us","source_title":"American Tower About Us","source_type":"official_issuer_description"},
+    {"ric":"IRM.N","canonical_name":"Iron Mountain Incorporated","primary_group":"data_center_power_cooling","inclusion_reason":"Data-center and information infrastructure operator.","source_url":"https://www.ironmountain.com/about-us","source_title":"Iron Mountain About Us","source_type":"official_issuer_description"},
+    {"ric":"VRT.N","canonical_name":"Vertiv Holdings Co","primary_group":"data_center_power_cooling","inclusion_reason":"Data-center power, thermal management and liquid-cooling equipment supplier.","source_url":"https://www.vertiv.com/en-us/about/company/","source_title":"Vertiv Company","source_type":"official_issuer_description"},
+    {"ric":"ETN.N","canonical_name":"Eaton Corporation plc","primary_group":"data_center_power_cooling","inclusion_reason":"Power-management, UPS and electrical-distribution supplier for data centers.","source_url":"https://www.eaton.com/us/en-us/company/about-us.html","source_title":"Eaton About Us","source_type":"official_issuer_description"},
+    {"ric":"TT.N","canonical_name":"Trane Technologies plc","primary_group":"data_center_power_cooling","inclusion_reason":"Thermal-management and cooling systems supplier, including data-center cooling.","source_url":"https://www.tranetechnologies.com/en/index/company/about-us.html","source_title":"Trane Technologies About Us","source_type":"official_issuer_description"},
+    {"ric":"JCI.N","canonical_name":"Johnson Controls International plc","primary_group":"data_center_power_cooling","inclusion_reason":"Building-management and cooling/thermal systems supplier for critical facilities.","source_url":"https://www.johnsoncontrols.com/about-us","source_title":"Johnson Controls About Us","source_type":"official_issuer_description"},
+    {"ric":"CARR.N","canonical_name":"Carrier Global Corporation","primary_group":"data_center_power_cooling","inclusion_reason":"HVAC and thermal-management equipment supplier for data-center facilities.","source_url":"https://www.carr.com/about-us","source_title":"Carrier About Us","source_type":"official_issuer_description"},
+
+    {"ric":"TSLA.OQ","canonical_name":"Tesla, Inc.","primary_group":"robotics_autonomy","inclusion_reason":"Autonomous-driving software and robotic vehicle systems developer.","source_url":"https://www.tesla.com/about","source_title":"Tesla About","source_type":"official_issuer_description"},
+    {"ric":"TER.OQ","canonical_name":"Teradyne, Inc.","primary_group":"robotics_autonomy","inclusion_reason":"Industrial and collaborative robotics plus semiconductor test systems supplier.","source_url":"https://www.teradyne.com/about-us/","source_title":"Teradyne About Us","source_type":"official_issuer_description"},
+    {"ric":"ROK.N","canonical_name":"Rockwell Automation, Inc.","primary_group":"robotics_autonomy","inclusion_reason":"Industrial automation, controls and machine-vision systems supplier.","source_url":"https://www.rockwellautomation.com/en-us/company/about-us.html","source_title":"Rockwell Automation About Us","source_type":"official_issuer_description"},
+    {"ric":"HON.OQ","canonical_name":"Honeywell International Inc.","primary_group":"robotics_autonomy","inclusion_reason":"Industrial automation, sensing and autonomous operations systems supplier.","source_url":"https://www.honeywell.com/us/en/company","source_title":"Honeywell Company","source_type":"official_issuer_description"},
+    {"ric":"ISRG.OQ","canonical_name":"Intuitive Surgical, Inc.","primary_group":"robotics_autonomy","inclusion_reason":"Robotic surgical systems and related software supplier.","source_url":"https://www.intuitive.com/en-us/about-us","source_title":"Intuitive About Us","source_type":"official_issuer_description"},
+    {"ric":"ZBRA.OQ","canonical_name":"Zebra Technologies Corporation","primary_group":"robotics_autonomy","inclusion_reason":"Machine-vision, industrial automation and asset-intelligence systems supplier.","source_url":"https://www.zebra.com/us/en/about-zebra.html","source_title":"Zebra About Zebra","source_type":"official_issuer_description"},
+    {"ric":"TRMB.OQ","canonical_name":"Trimble Inc.","primary_group":"robotics_autonomy","inclusion_reason":"Autonomous positioning, machine control and industrial automation technology supplier.","source_url":"https://www.trimble.com/en/company/about","source_title":"Trimble About","source_type":"official_issuer_description"},
+    {"ric":"APTV.N","canonical_name":"Aptiv PLC","primary_group":"robotics_autonomy","inclusion_reason":"Advanced driver-assistance and autonomous vehicle electrical/software architecture supplier.","source_url":"https://www.aptiv.com/en/about","source_title":"Aptiv About","source_type":"official_issuer_description"}
+  ]
+}

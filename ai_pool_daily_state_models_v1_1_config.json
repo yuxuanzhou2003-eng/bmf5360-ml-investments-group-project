@@ -1,0 +1,113 @@
+{
+  "schema_version": "ai_pool_daily_state_models_v1",
+  "purpose": "Coverage-safe training/validation-only comparison of technical, macro, AI-state and combined daily H21 non-overlap anchor feature sets.",
+  "config_revision": "v1.1_coverage_safe_ai_incremental",
+  "output_root": "data/model_runs/ai_pool_daily_state_models_v1_1",
+  "model_ready_run_id": "20260910T052100000000Z",
+  "macro_run_id": "20260910T062700000000Z",
+  "ai_state_run_id": "20260910T144000000000Z",
+  "ai_state_safe_feature_audit": {
+    "run_id": "20260910T065044522242Z",
+    "summary_path": "data/audit/ai_daily_enhanced_inputs_v1/20260910T065044522242Z/summary.json",
+    "feature_list_name": "safe_feature_lists.ai_recommended_incremental"
+  },
+  "horizon_sessions": 21,
+  "training_years": [2015, 2016, 2017, 2018, 2019, 2020],
+  "validation_years": [2021, 2022],
+  "technical_features": [
+    "momentum_1", "momentum_5", "momentum_20", "momentum_60",
+    "volatility_20_ann", "volatility_60_ann",
+    "volume_median_20_log1p", "volume_median_60_log1p",
+    "dollar_volume_median_20_log1p", "dollar_volume_median_60_log1p",
+    "spread_median_20_bps", "spread_median_60_bps",
+    "beta_126", "idio_vol_126_ann", "beta_obs_126",
+    "spy_momentum_1", "spy_momentum_5", "spy_momentum_20", "spy_momentum_60",
+    "spy_volatility_20_ann", "spy_volatility_60_ann"
+  ],
+  "macro_features": [
+    "vix_level", "vix_change_1d", "vix_change_5d", "vix_change_20d", "vix_percentile_252d",
+    "dgs3mo_level", "dgs3mo_change_5d", "dgs3mo_change_20d",
+    "dgs2_level", "dgs2_change_5d", "dgs2_change_20d",
+    "dgs10_level", "dgs10_change_5d", "dgs10_change_20d",
+    "broad_dollar_level", "broad_dollar_change_5d", "broad_dollar_change_20d", "broad_dollar_change_60d",
+    "term_spread_10y_2y", "term_spread_10y_3m"
+  ],
+  "excluded_credit_spread_features": [
+    "high_yield_oas_level", "high_yield_oas_change_5d", "high_yield_oas_change_20d",
+    "investment_grade_oas_level", "investment_grade_oas_change_5d", "investment_grade_oas_change_20d"
+  ],
+  "ai_state_features": [
+    "etf_soxx_momentum_5", "etf_soxx_momentum_20", "etf_soxx_momentum_60",
+    "etf_soxx_volatility_20_ann", "etf_soxx_volatility_60_ann", "etf_soxx_max_drawdown_60",
+    "etf_xlk_momentum_5", "etf_xlk_momentum_20", "etf_xlk_momentum_60",
+    "etf_xlk_volatility_20_ann", "etf_xlk_volatility_60_ann", "etf_xlk_max_drawdown_60",
+    "soxx_relative_spy_return_5", "soxx_relative_spy_return_20", "soxx_relative_spy_return_60",
+    "pool_breadth_up_1", "pool_breadth_above_ma20", "pool_breadth_above_ma60",
+    "pool_cross_sectional_dispersion_1", "pool_equal_weight_return_1", "pool_equal_weight_relative_spy_return_1"
+  ],
+  "feature_alias_exclusions": {
+    "technical_duplicates": [],
+    "numeric_aliases": {
+      "spy_return_1": "spy_momentum_1"
+    },
+    "allow_pre_excluded_alias": true,
+    "upstream_safe_list_exclusions": [
+      "etf_aiq_momentum_5", "etf_aiq_momentum_20", "etf_aiq_momentum_60",
+      "etf_aiq_volatility_20_ann", "etf_aiq_volatility_60_ann", "etf_aiq_max_drawdown_60",
+      "etf_botz_momentum_5", "etf_botz_momentum_20", "etf_botz_momentum_60",
+      "etf_botz_volatility_20_ann", "etf_botz_volatility_60_ann", "etf_botz_max_drawdown_60",
+      "etf_igv_momentum_5", "etf_igv_momentum_20", "etf_igv_momentum_60",
+      "etf_igv_volatility_20_ann", "etf_igv_volatility_60_ann", "etf_igv_max_drawdown_60",
+      "spy_momentum_5", "spy_momentum_20", "spy_momentum_60", "spy_return_1"
+    ],
+    "rule": "use the independently audited safe incremental AI list; retain technical columns if any overlap is present"
+  },
+  "preprocessing": {
+    "imputer": "sklearn SimpleImputer(strategy=median, add_indicator=True, keep_empty_features=True)",
+    "fit_scope": "each training fold only; final fit uses primary training anchors only",
+    "all_missing_training_column": "retain column and indicator; sklearn empty-column fallback is recorded per fit",
+    "winsorization": false,
+    "forward_fill": false,
+    "zero_fill": false,
+    "raw_input_mutation": false
+  },
+  "logistic": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 2000,
+    "solver": "lbfgs",
+    "random_state": 5360
+  },
+  "random_forest_tuning_grid": [
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 20, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 20, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 50, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 50, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 100, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 3, "min_samples_leaf": 100, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 20, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 20, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 50, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 50, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 100, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": 6, "min_samples_leaf": 100, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 20, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 20, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 50, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 50, "max_features": 0.5},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 100, "max_features": "sqrt"},
+    {"n_estimators": 200, "max_depth": null, "min_samples_leaf": 100, "max_features": 0.5}
+  ],
+  "random_forest_fixed": {
+    "class_weight": "balanced",
+    "random_state": 5360,
+    "n_jobs": -1
+  },
+  "tuning": {
+    "fold_validation_years": [2018, 2019, 2020],
+    "metric": "roc_auc",
+    "tie_break": "mean roc_auc descending, mean brier ascending, grid order",
+    "purge_sessions": 21
+  },
+  "test_policy": "Do not open, parse, aggregate, score, rank or predict sealed test targets. Save validation predictions only."
+}
