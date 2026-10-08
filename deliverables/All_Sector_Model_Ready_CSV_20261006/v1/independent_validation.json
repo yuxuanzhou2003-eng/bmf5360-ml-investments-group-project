@@ -1,0 +1,67 @@
+{
+  "schema": "all_sector_model_ready_csv_independent_validation_v1",
+  "status": "passed",
+  "validated_utc": "2026-10-08T02:13:35.641130+00:00",
+  "manifest_sha256": "7121e5bd3d066a94f74f7f50d0d52d1d12421481575bee61be8f76908cf1b7bc",
+  "validator_sha256": "31faccdb7e5bfb6232a0ed772948916a95074ca10a2d7782a94e5c550cdb940d",
+  "frozen_output_hash_checks": {
+    "feature_dictionary.csv": true,
+    "macro_current_vintage_sensitivity_2020_2025.csv": true,
+    "model_ready_train_2021_2023.csv.gz": true,
+    "model_ready_validation_2024_2025.csv.gz": true,
+    "model_ready_warmup_2020.csv.gz": true,
+    "universe_5214.csv": true
+  },
+  "partitions": {
+    "warmup": {
+      "file": "model_ready_warmup_2020.csv.gz",
+      "rows": 1319142,
+      "instruments": 5214,
+      "sessions": 253,
+      "date_min": "2020-01-02",
+      "date_max": "2020-12-31",
+      "score_eligible": 10960,
+      "supervised_eligible": 0,
+      "m1_supervised_eligible": 0,
+      "sha256": "e1f47303455010564459e37b8acf888914e587eb03d2a1ab531ed11ec53945f7"
+    },
+    "train": {
+      "file": "model_ready_train_2021_2023.csv.gz",
+      "rows": 3926142,
+      "instruments": 5214,
+      "sessions": 753,
+      "date_min": "2021-01-04",
+      "date_max": "2023-12-29",
+      "score_eligible": 2402938,
+      "supervised_eligible": 2381464,
+      "m1_supervised_eligible": 633553,
+      "sha256": "6c1584598fda91c0e563686cabb1f5626c7a465b2f68a02d83a6b2a98c40f2fa"
+    },
+    "validation": {
+      "file": "model_ready_validation_2024_2025.csv.gz",
+      "rows": 2617428,
+      "instruments": 5214,
+      "sessions": 502,
+      "date_min": "2024-01-02",
+      "date_max": "2025-12-31",
+      "score_eligible": 1868016,
+      "supervised_eligible": 1844314,
+      "m1_supervised_eligible": 489581,
+      "sha256": "2de85bcac16185a08db7640316c2d3e578b32651235c7d9a5c06983da9a5de65"
+    }
+  },
+  "macro_rows": 1508,
+  "universe_rows": 5214,
+  "dictionary_rows": 96,
+  "checks": {
+    "all_files_reread": true,
+    "fixed_company_date_grid": true,
+    "strict_key_order_and_uniqueness": true,
+    "partition_and_date_boundaries": true,
+    "no_2026_dates": true,
+    "target_direction_and_missingness": true,
+    "eligibility_mask_identities": true,
+    "macro_vintage_flags": true,
+    "share_volume_exclusion_contract": true
+  }
+}

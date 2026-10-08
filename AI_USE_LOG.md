@@ -641,3 +641,8 @@ Executed probe_screenshot_lseg_session.py with credential redaction and a 40-sec
 
 ## Screenshot additions vendor refresh 2026-09-13T03:26:06.616326+00:00
 Executed collect_screenshot_history_v2.py SHA256 7605a10cb998d71d5149fc36d8fcd4af3c00a092d064304eb77e40c6c2c13df2. Input data\audit\screenshot_additions\20260913T030723Z\additional_candidates.csv; output data\raw\screenshot_additions_v2\20260913T032531Z. Nine locally evidenced RICs requested, raw prices with explicit adjustments ['exchangeCorrection', 'manualCorrection', 'CCH', 'CRE', 'RPO', 'RTS'], daily TR.TotalReturn in vendor units, 2020-01-01 to 2025-12-31. Raw vendor responses preserved with request/status/count/hash manifest. No cleaning, imputation, deduplication, currency conversion, company exclusion or model run. Returned row counts do not establish complete coverage. Identity and corporate-action review remain required.
+
+### 2026-10-08 — AI准备完整冻结CSV的Git LFS发布
+
+- 用户在获知GitHub仓库公开和证券级LSEG派生表公开可下载后，明确要求上传完整数据。Codex从最新 `origin/main` 建立隔离发布工作树，避免把主工作区未提交的删除和其他研究文件带入提交。
+- Codex只复制既有冻结10文件包和两份导出/校验脚本，为三张大于100MB的压缩CSV配置精确路径Git LFS，并补充下载及授权边界说明。没有修改CSV、重跑处理或模型，也没有上传凭证和raw LSEG响应。远端推送和GitHub端复核尚待完成。

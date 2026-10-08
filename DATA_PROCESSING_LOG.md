@@ -1507,3 +1507,10 @@ Executed probe_screenshot_lseg_session.py with credential redaction and a 40-sec
 
 ## Screenshot additions vendor refresh 2026-09-13T03:26:06.616326+00:00
 Executed collect_screenshot_history_v2.py SHA256 7605a10cb998d71d5149fc36d8fcd4af3c00a092d064304eb77e40c6c2c13df2. Input data\audit\screenshot_additions\20260913T030723Z\additional_candidates.csv; output data\raw\screenshot_additions_v2\20260913T032531Z. Nine locally evidenced RICs requested, raw prices with explicit adjustments ['exchangeCorrection', 'manualCorrection', 'CCH', 'CRE', 'RPO', 'RTS'], daily TR.TotalReturn in vendor units, 2020-01-01 to 2025-12-31. Raw vendor responses preserved with request/status/count/hash manifest. No cleaning, imputation, deduplication, currency conversion, company exclusion or model run. Returned row counts do not establish complete coverage. Identity and corporate-action review remain required.
+
+### 2026-10-08 — 完整冻结CSV公开上传（用户授权覆盖此前公开子集边界）
+
+- **目的和授权**：在明确告知目标GitHub仓库为PUBLIC、三张证券级冻结表将可被任何访问者下载后，用户明确要求上传完整冻结数据，并说明课程项目不会大规模使用。此前“仅公开聚合子集”的决定保留在历史日志中，但本次授权将其覆盖。
+- **输入与输出**：发布 `deliverables/All_Sector_Model_Ready_CSV_20261006/v1/` 的完整10文件冻结包：2020 warm-up、2021–2023 train、2024–2025 validation、5,214证券样本池、特征字典、current-vintage宏观敏感性表、manifest、独立验证与README；同时发布导出和独立校验脚本。三张超过100MB的 `.csv.gz` 使用精确路径Git LFS规则，其余文件使用普通Git。
+- **处理规则**：本阶段只复制和版本发布，不改变CSV内容；无行删除、公司排除、缺失值替换、填0、前填、去重、缩尾、单位或日期转换，也不重跑模型。空字段继续表示缺失而不是真实0。未上传 `.env`、凭证或LSEG raw API响应。
+- **规模与核验基准**：warm-up 1,319,142行/5,214证券/253日，train 3,926,142行/5,214证券/753日，validation 2,617,428行/5,214证券/502日。独立验证文件状态为passed，确认固定公司×日期网格、键唯一、分区边界、资格恒等式和无2026日期。三个大文件SHA-256分别为 `e1f47303455010564459e37b8acf888914e587eb03d2a1ab531ed11ec53945f7`、`6c1584598fda91c0e563686cabb1f5626c7a465b2f68a02d83a6b2a98c40f2fa`、`2de85bcac16185a08db7640316c2d3e578b32651235c7d9a5c06983da9a5de65`。状态：`staged_for_lfs_upload_remote_verification_pending`。
