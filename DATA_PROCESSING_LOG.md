@@ -1520,3 +1520,9 @@ Executed collect_screenshot_history_v2.py SHA256 7605a10cb998d71d5149fc36d8fcd4a
 - 数据提交 0ef5ca9 已从最新远端 5046903 快进推送到PUBLIC仓库 main。Git LFS报告3/3对象上传成功、总传输约2.2GB；GitHub API与 git ls-remote 均返回数据提交为远端HEAD，目录10个冻结包文件全部可见。
 - 上传前独立校验器重新完整读取约786万行并返回 passed：文件hash、固定公司×日期网格、键唯一、分区边界、标签和缺失规则、资格恒等式、宏观vintage标志及无2026日期均通过。暂存路径和文本内容扫描未发现 .env、token、password、API key或raw响应文件。
 - 新增 GITHUB_UPLOAD_RECEIPT.json 保存仓库、公开状态、提交、包规模和远端树核验信息。本步骤仍未改变任何CSV。状态：complete_remote_verified。
+
+### 2026-10-08 — Git发布换行规范化修复
+
+- 远端首次复核发现普通CSV/JSON被Git的Windows文本过滤从CRLF规范为LF；行数和数值未变，但远端blob字节大小及冻结hash与本地不一致。三张Git LFS压缩CSV未受影响。
+- 在 .gitattributes 对完整冻结目录增加 -text，并从工作树原文件重新写入Git索引。修复提交 ed9c773 推送后，COMPLETE、README、feature dictionary、independent validation、macro、manifest、universe及receipt的索引blob大小和本地文件逐一相等；GitHub API显示主要CSV大小恢复为22,172、1,607,417和6,680,920 bytes。
+- 本修复只阻止版本控制换行转换，不改变任何数据值、行、证券、缺失值或研究假设。状态：complete_byte_preservation_verified。

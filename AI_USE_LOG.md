@@ -651,3 +651,8 @@ Executed collect_screenshot_history_v2.py SHA256 7605a10cb998d71d5149fc36d8fcd4a
 
 - Git LFS成功上传3/3个大对象（约2.2GB），数据提交 0ef5ca9 快进进入GitHub公开仓库 main。Codex通过GitHub API和 git ls-remote 复核远端HEAD及冻结目录，并记录上传收据。
 - 上传前独立校验重读约786万行并通过全部冻结合同；敏感文件名和凭证模式扫描无命中。没有更改CSV、使用2026数据、重跑模型或夹带主工作区的删除记录。
+
+### 2026-10-08 — AI修复Git文本过滤导致的冻结hash偏差
+
+- 远端检查发现普通冻结文件因Git CRLF到LF规范化产生字节差异。Codex增加目录级 -text 属性并重新写入原始工作树字节；修复后GitHub文件大小与本地一致，LFS对象不变。
+- 这是发布层字节保真修复，没有变更CSV内容或模型结果；原因、影响和修复提交已写入处理日志及上传收据。

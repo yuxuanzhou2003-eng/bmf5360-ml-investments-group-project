@@ -1,6 +1,6 @@
 {
   "schema": "github_frozen_csv_upload_receipt_v1",
-  "verified_utc": "2026-10-08T02:17:12.9118981+00:00",
+  "verified_utc": "2026-10-08T10:17:12.9118981+08:00",
   "repository": "yuxuanzhou2003-eng/bmf5360-ml-investments-group-project",
   "repository_visibility": "public",
   "branch": "main",
@@ -25,5 +25,20 @@
     "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/model_ready_warmup_2020.csv.gz\t134",
     "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/universe_5214.csv\t6675705"
   ],
-  "lfs_dry_run_after_push": []
+  "lfs_dry_run_after_push": [],
+  "byte_preservation_correction_commit": "ed9c773dab7ee9722218ac134a31c0f43851b12c",
+  "regular_artifact_bytes_match_local": true,
+  "github_tree_entries_after_byte_fix": [
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/COMPLETE.json\t306",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/GITHUB_UPLOAD_RECEIPT.json\t1648",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/README.md\t1702",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/feature_dictionary.csv\t22172",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/independent_validation.json\t2370",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/macro_current_vintage_sensitivity_2020_2025.csv\t1607417",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/manifest.json\t6039",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/model_ready_train_2021_2023.csv.gz\t135",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/model_ready_validation_2024_2025.csv.gz\t134",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/model_ready_warmup_2020.csv.gz\t134",
+    "deliverables/All_Sector_Model_Ready_CSV_20261006/v1/universe_5214.csv\t6680920"
+  ]
 }
