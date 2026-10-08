@@ -1514,3 +1514,9 @@ Executed collect_screenshot_history_v2.py SHA256 7605a10cb998d71d5149fc36d8fcd4a
 - **输入与输出**：发布 `deliverables/All_Sector_Model_Ready_CSV_20261006/v1/` 的完整10文件冻结包：2020 warm-up、2021–2023 train、2024–2025 validation、5,214证券样本池、特征字典、current-vintage宏观敏感性表、manifest、独立验证与README；同时发布导出和独立校验脚本。三张超过100MB的 `.csv.gz` 使用精确路径Git LFS规则，其余文件使用普通Git。
 - **处理规则**：本阶段只复制和版本发布，不改变CSV内容；无行删除、公司排除、缺失值替换、填0、前填、去重、缩尾、单位或日期转换，也不重跑模型。空字段继续表示缺失而不是真实0。未上传 `.env`、凭证或LSEG raw API响应。
 - **规模与核验基准**：warm-up 1,319,142行/5,214证券/253日，train 3,926,142行/5,214证券/753日，validation 2,617,428行/5,214证券/502日。独立验证文件状态为passed，确认固定公司×日期网格、键唯一、分区边界、资格恒等式和无2026日期。三个大文件SHA-256分别为 `e1f47303455010564459e37b8acf888914e587eb03d2a1ab531ed11ec53945f7`、`6c1584598fda91c0e563686cabb1f5626c7a465b2f68a02d83a6b2a98c40f2fa`、`2de85bcac16185a08db7640316c2d3e578b32651235c7d9a5c06983da9a5de65`。状态：`staged_for_lfs_upload_remote_verification_pending`。
+
+### 2026-10-08 — 完整冻结CSV GitHub上传完成
+
+- 数据提交 0ef5ca9 已从最新远端 5046903 快进推送到PUBLIC仓库 main。Git LFS报告3/3对象上传成功、总传输约2.2GB；GitHub API与 git ls-remote 均返回数据提交为远端HEAD，目录10个冻结包文件全部可见。
+- 上传前独立校验器重新完整读取约786万行并返回 passed：文件hash、固定公司×日期网格、键唯一、分区边界、标签和缺失规则、资格恒等式、宏观vintage标志及无2026日期均通过。暂存路径和文本内容扫描未发现 .env、token、password、API key或raw响应文件。
+- 新增 GITHUB_UPLOAD_RECEIPT.json 保存仓库、公开状态、提交、包规模和远端树核验信息。本步骤仍未改变任何CSV。状态：complete_remote_verified。

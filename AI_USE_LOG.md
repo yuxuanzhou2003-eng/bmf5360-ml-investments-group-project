@@ -646,3 +646,8 @@ Executed collect_screenshot_history_v2.py SHA256 7605a10cb998d71d5149fc36d8fcd4a
 
 - 用户在获知GitHub仓库公开和证券级LSEG派生表公开可下载后，明确要求上传完整数据。Codex从最新 `origin/main` 建立隔离发布工作树，避免把主工作区未提交的删除和其他研究文件带入提交。
 - Codex只复制既有冻结10文件包和两份导出/校验脚本，为三张大于100MB的压缩CSV配置精确路径Git LFS，并补充下载及授权边界说明。没有修改CSV、重跑处理或模型，也没有上传凭证和raw LSEG响应。远端推送和GitHub端复核尚待完成。
+
+### 2026-10-08 — AI完成完整冻结CSV远端上传与复核
+
+- Git LFS成功上传3/3个大对象（约2.2GB），数据提交 0ef5ca9 快进进入GitHub公开仓库 main。Codex通过GitHub API和 git ls-remote 复核远端HEAD及冻结目录，并记录上传收据。
+- 上传前独立校验重读约786万行并通过全部冻结合同；敏感文件名和凭证模式扫描无命中。没有更改CSV、使用2026数据、重跑模型或夹带主工作区的删除记录。
